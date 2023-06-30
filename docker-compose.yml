@@ -5,15 +5,14 @@ networks:
     alvearium-web:
 
 services:
-
     nginx:
         image: nginx:stable
-        volumes: 
+        volumes:
             - ./html:/var/www/html
             - ./default.conf:/etc/nginx/conf.d/default.conf
         ports:
-            - 80:80
-        
+            - 8080:80
+
         depends_on:
             - php
             - db
@@ -21,24 +20,24 @@ services:
             - alvearium-web
 
     php:
-        build: 
+        build:
             context: .
             dockerfile: ./Dockerfile-php
-        volumes: 
+        volumes:
             - ./html:/var/www/html
         ports:
-            - 9000:9000
-        
+            - 9123:9000
+
         networks:
             - alvearium-web
 
     db:
         image: mysql:latest
-        volumes: 
+        volumes:
             - ./db:/var/lib/mysql
         ports:
-            - 3306:3306
-        
+            - 5123:3306
+
         environment:
             - MYSQL_DATABASE=alvearium-web
             - MYSQL_USER=admin
