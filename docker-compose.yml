@@ -12,7 +12,7 @@ services:
             - ./html:/var/www/html
             - ./default.conf:/etc/nginx/conf.d/default.conf
         ports:
-            - 80:80
+            - 8080:80
         
         depends_on:
             - php
@@ -27,7 +27,7 @@ services:
         volumes: 
             - ./html:/var/www/html
         ports:
-            - 9000:9000
+            - 9123:9000
         
         networks:
             - alvearium-web
@@ -37,7 +37,7 @@ services:
         volumes: 
             - ./db:/var/lib/mysql
         ports:
-            - 3306:3306
+            - 5123:3306
         
         environment:
             - MYSQL_DATABASE=alvearium-web
