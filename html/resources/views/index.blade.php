@@ -37,6 +37,22 @@
     </header>
 
 
+    <section class="aboutUsContainer">
+        <div class="aboutUsTitulo">
+            <h2>titulo</h2>
+        </div>
+        <div class="aboutUsMedia">
+
+            <div class="aboutUsVideo">
+                <iframe width="330" height="215" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="aboutUsCarrusel">
+                <h3>carrusel</h3>
+            </div>
+        </div>
+    </section>
+
+
 
     <script src="{{ asset('navbar.js') }}"></script>
 </body>
