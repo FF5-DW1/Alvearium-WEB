@@ -12,7 +12,7 @@
 
 <body>
     <header class="main-header">
-    <div class="nav-container">
+    
 
         <a href="#">
             <img class="main-logo" src="img/alvearium-logo.png" alt="Logo">
@@ -31,23 +31,22 @@
             <span></span>
             <span></span>
         </button>
-    </div>
+    
         
         
     </header>
-
-
+    
     <section class="aboutUsContainer">
         <div class="aboutUsTitulo">
-            <h2>titulo</h2>
+            <h2>Conoce más sobre Alvearium</h2>
         </div>
         <div class="aboutUsMedia">
 
             <div class="aboutUsVideo">
-                <iframe width="330" height="215" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="430" height="315" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="aboutUsCarrusel">
-                <h3>carrusel</h3>
+                <h3>Perfiles</h3>
             </div>
         </div>
     </section>

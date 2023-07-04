@@ -1,11 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-.nav-container {
-    display: inherit;
-}
+/* ----------------------------------------------------navbar------------------------------- */
 .main-header {
     height: 50px;
     display: flex;
@@ -13,13 +11,16 @@
     align-items: center;
     background-color: white;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    margin-top: -7rem;
 }
 
 .main-logo {
     width: 200px;
     height: 57px;
     padding: 10px;
-    margin: 20px 0px 0px -10px;
+    margin: 15px 0px 0px -10px;
 }
 
 .main-nav {
@@ -88,8 +89,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-top: 42px;
-    margin-right: 10px;
+    margin-top: 1rem;
+    margin-right: -1.1rem;
 }
 
 .button-menu span {
@@ -117,54 +118,33 @@
     display: none;
 }
 
-/* --------------------------------------------------section video y carrusel */
-.aboutUsContainer{
-    
-    
+/* ---------------------------------------------------------------section video y perfil --------------------------------------------*/
+.aboutUsContainer {
+    background: linear-gradient(to right, #330072, pink);
+    margin-top: 7rem;
 }
-.aboutUsTitulo{
-    margin-left: 6rem;
+.aboutUsTitulo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
-.aboutUsMedia{
-    
-
+.aboutUsMedia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
-.aboutUsVideo{
-    
+.aboutUsVideo {
 }
-.aboutUsCarrusel{
-
+.aboutUsCarrusel {
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media query de Navbar */
+/* -----------------------------------------------@media query de Navbar --------------------------------------*/
 @media screen and (min-width: 768px) {
-    .nav-container {
-        height: 50px;
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        padding: 3rem;
-        position: fixed;
-    }
-
     .main-header {
         padding: 3rem;
+        position: fixed;
+        width: 100%;
+        margin-top: -7rem;
     }
 
     .button-menu {
@@ -198,6 +178,27 @@
     }
 }
 
+/* --------------------------------------------------@media query section video y carrusel */
+.aboutUsContainer {
+    margin-top: 7rem;
+}
+.aboutUsTitulo {
+    display: flex;
+    justify-content: center;
+}
+.aboutUsMedia {
+    display: flex;
+    justify-content: space-around;
+}
+.aboutUsVideo {
+}
+.aboutUsCarrusel {
+}
+
+
+@media screen and (min-width: 992px){
 
 
 
+
+}
