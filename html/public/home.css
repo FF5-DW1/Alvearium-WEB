@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.305);
+    background-color: rgba(255, 255, 255, 0.852);
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -18,10 +18,10 @@
 }
 
 .main-logo {
-    width: 200px;
-    height: 57px;
+    width: 15rem;
+    height: 5rem;
     padding: 10px;
-    margin: 15px 0px 0px -10px;
+    margin: 2.5rem 0px 0rem 0rem;;
 }
 
 .main-nav {
@@ -90,8 +90,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-right: -1.1rem;
+    margin-top: 2.5rem;
+    margin-right: -0.1rem;
 }
 
 .button-menu span {
@@ -199,6 +199,8 @@
     }
     
     .main-logo {
+        width: 15rem;
+        height: 5rem;
         flex-basis: 30%;
         margin-top: 19px;
     }
@@ -316,7 +318,8 @@
 @media screen and (min-width: 992px){
     /* -----------------------------------------------@media query de Navbar --------------------------------------*/
 .main-logo {
-    
+    width: 21rem;
+    height: 6rem;
     margin-top: 19px;
 }
 
