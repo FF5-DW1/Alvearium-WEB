@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "briller";
+    src: url(../fonts/briller/Briller-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "briller bold";
+    src: url(../fonts/briller/Briller-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "open sans";
+    src: url(../fonts/open_sans/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "open sans bold";
+    src: url(../fonts/open_sans/OpenSans-Bold.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aboutUsContainer {
+    background: linear-gradient(to right, #330072, pink);
+    font-family: "open sans";
+}
+.aboutUsTitulo {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    text-align: center;
+    font-family: "briller";
+}
+
+.aboutUsTitulo h2 {
+    font-size: 2.2rem;
+}
+
+.aboutUsMedia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.aboutUsVideo iframe {
+    padding: 2rem;
+}
+
+.aboutUsPerfil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 50rem;
+    padding: 10px;
+}
+
+.aboutInstitutions {
+    width: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutComercial {
+    width: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutOcio {
+    width: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutCreate {
+    width: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutBrands {
+    width: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutUsers {
+    width: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+
+/* --------------------------------------------------@media query section video y carrusel ----------------------------------------*/
+/* REVISAR */
+.aboutUsTitulo {
+    display: flex;
+    justify-content: center;
+}
+.aboutUsMedia {
+    display: flex;
+    justify-content: space-around;
+}
+.aboutUsVideo {
+    width: 30rem;
+    height: 20rem;
+}
+
+.aboutUsPerfil {
+    gap: 1rem;
+    width: 40rem;
+    justify-content: center;
+    align-content: space-evenly;
+}
+.aboutInstitutions {
+    width: 40%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutImgInstitutions {
+    width: 100%;
+    height: 100%;
+}
+.aboutComercial {
+    width: 40%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutImgComercial {
+    width: 100%;
+    height: 100%;
+}
+.aboutOcio {
+    width: 40%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutImgOcio {
+    width: 100%;
+    height: 100%;
+}
+.aboutCreate {
+    width: 40%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutImgCreate {
+    width: 100%;
+    height: 100%;
+}
+.aboutBrands {
+    width: 40%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutImgBrands {
+    width: 100%;
+    height: 100%;
+}
+.aboutUsers {
+    width: 40%;
+    margin: 1rem;
+    text-align: center;
+}
+.aboutImgUsers {
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------------------------------@media query escritorio------------------------------------------ */
+@media screen and (min-width: 992px) {
+    /* -----------------------------------------------@media query de Navbar --------------------------------------*/
+    .main-logo {
+        margin-top: 19px;
+    }
+
+    .nav-links {
+        padding-top: 0px;
+    }
+
+    /* --------------------------------------------------@media query section video y carrusel ----------------------------------------*/
+    .aboutUsVideo {
+        width: 40rem;
+        height: 20rem;
+    }
+
+    .aboutUsPerfil {
+        gap: 1rem;
+        width: 40rem;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+    .aboutInstitutions {
+        width: 40%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .aboutComercial {
+        width: 40%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .aboutOcio {
+        width: 40%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .aboutCreate {
+        width: 40%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .aboutBrands {
+        width: 40%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .aboutUsers {
+        width: 40%;
+        margin: 1rem;
+        text-align: center;
+    }
+}

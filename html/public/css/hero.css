@@ -42,9 +42,9 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    /* z-index: -2; */
+    position: relative;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
+    margin-top: 7rem;
 }
 
 .hero-content {
@@ -55,11 +55,10 @@
     gap: 2rem;
     padding: 2rem;
     z-index: 2;
-    
 }
 
 #particles-js {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
@@ -89,7 +88,8 @@
 .hero-content > div:last-of-type {
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
+    position: relative;
 }
 
 .hero-content .buttonWrapper a {
