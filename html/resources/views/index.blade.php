@@ -52,19 +52,19 @@
                     <p>
                         Instituciones Públicas
                     </p>
-                    <img class="aboutImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="">
+                    <img class="ImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="">
                 </div>
                 <div class="aboutInstitutions">
                     <p>
                         Comercios
                     </p>
-                    <img class="aboutImgComercial" src="{{asset('img/comercios1.png')}}" alt="">
+                    <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="">
                 </div>
                 <div class="aboutInstitutions">
                     <p>
                         Ocio
                     </p>
-                    <img class="aboutImgOcio" src="{{asset('img/ocio1.png')}}" alt="">
+                    <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="">
                 </div>
                 
             <div class="perfiles">
@@ -73,19 +73,19 @@
                         <p>
                             Creadores
                         </p>
-                        <img class="aboutImgCreate" src="{{asset('img/creadores.png')}}" alt="">
+                        <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="">
                     </div>
                     <div class="aboutInstitutions">
                         <p>
                             Marcas
                         </p>
-                        <img class="aboutImgBrands" src="{{asset('img/marcas.png')}}" alt="">
+                        <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="">
                     </div>
                     <div class="aboutInstitutions">
                         <p>
                             Usuarios
                         </p>
-                        <img class="aboutImgUsers" src="{{asset('img/usuarios.png')}}" alt="">
+                        <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="">
                     </div>
                     
             </div>
