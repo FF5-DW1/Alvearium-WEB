@@ -92,37 +92,43 @@
                     <p>
                         Instituciones Públicas
                     </p>
-                    <img class="ImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="">
+                    
+                    <img class="ImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="" width="615px" height="405px">
                 </div>
                 <div class="aboutInstitutions">
                     <p>
                         Comercios
                     </p>
-                    <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="">
+                    <br>
+                    <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="" width="615px" height="405px">
                 </div>
                 <div class="aboutInstitutions">
                     <p>
                         Ocio
                     </p>
-                    <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="">
+                    <br>
+                    <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="" width="615px" height="405px">
                 </div>
                 <div class="aboutInstitutions">
                     <p>
                         Creadores
                     </p>
-                    <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="">
+                    
+                    <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="" width="615px" height="405px">
                 </div>
                 <div class="aboutInstitutions">
                     <p>
                         Marcas
                     </p>
-                    <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="">
+                    
+                    <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="" width="615px" height="405px">
                 </div>
                 <div class="aboutInstitutions">
                     <p>
                         Usuarios
                     </p>
-                    <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="">
+                    
+                    <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="" width="615px" height="405px">
                 </div>
                 
                 

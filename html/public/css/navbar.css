@@ -1,13 +1,14 @@
 .main-header {
-    height: 50px;
+    height: 125px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.852);
-    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.949);
+    padding: 0rem 1rem 0px 1rem;
     position: fixed;
     width: 100%;
-    margin-top: -7rem;
+    margin-top: -9rem;
+    z-index: 3;
 }
 
 .main-logo {
@@ -115,10 +116,17 @@
 @media screen and (min-width: 768px) {
     /* -----------------------------------------------@media query de Navbar --------------------------------------*/
     .main-header {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.949);
         padding: 3rem;
         position: fixed;
         width: 100%;
         margin-top: -7rem;
+        z-index: 3;
+        
     }
     
     .button-menu {
@@ -145,7 +153,7 @@
         /* flex-wrap: wrap; */
         align-items: center;
         justify-content: flex-end;
-        background: rgba(255, 255, 255, 0.458);
+        background: none;
         padding-top: 0px;
         margin-top: 0.5rem;
         margin-left: 3.2rem;
@@ -159,10 +167,27 @@
 
 @media screen and (min-width: 992px){
     /* -----------------------------------------------@media query de Navbar --------------------------------------*/
+    .main-header{
+        height: 113px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        margin-top: -7rem;
+        z-index: 3;
+        
+}
+.main-nav{
+    background: none;
+    padding-bottom: 1rem;
+    margin-right: 3.5rem;
+}
 .main-logo {
     width: 23rem;
     height: 8rem;
-    margin-top: 31px;
+    margin-top: 0rem;
     z-index: 5;
 }
 .link-item {
@@ -172,6 +197,7 @@
 .nav-links {
     
     padding-top: 0px;
+    background-color: none;
     
 }
 }
