@@ -43,7 +43,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    z-index: -2;
+    /* z-index: -2; */
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 
@@ -54,13 +54,15 @@
     align-items: center;
     gap: 2rem;
     padding: 2rem;
+    z-index: 2;
+    
 }
 
 #particles-js {
     width: 100vw;
     height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     left: 0;
 }

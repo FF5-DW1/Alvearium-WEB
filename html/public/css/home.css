@@ -14,6 +14,7 @@
     position: fixed;
     width: 100%;
     margin-top: -7rem;
+    z-index: 99;
 }
 
 .main-logo {
@@ -136,9 +137,9 @@
     flex-wrap: wrap;
     gap: 3rem;
 }
-.aboutUsVideo {
+/* .aboutUsVideo {
 
-}
+} */
 .aboutUsPerfil {
     display: flex;
     flex-wrap: wrap;
