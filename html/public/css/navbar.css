@@ -14,7 +14,7 @@
     width: 15rem;
     height: 5rem;
     padding: 10px;
-    margin: 2.5rem 0px 0rem 0rem;;
+    margin: 3.5rem 0px 0rem 0rem;;
 }
 
 .main-nav {
@@ -83,7 +83,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     margin-right: -0.1rem;
 }
 
@@ -142,28 +142,32 @@
     .nav-links {
         width: 100%;
         flex-direction: row;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         align-items: center;
         justify-content: flex-end;
         background: rgba(255, 255, 255, 0.458);
         padding-top: 0px;
-        }
-    
-    .link-item {
-        display: inline-block;
-        margin-top: 0;
-        margin-right: 2rem;
+        margin-top: 0.5rem;
+        margin-left: 3.2rem;
     }
+    .link-item {
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 22.5px;
+        }
 }
 
 @media screen and (min-width: 992px){
     /* -----------------------------------------------@media query de Navbar --------------------------------------*/
 .main-logo {
-    width: 21rem;
-    height: 6rem;
-    margin-top: 19px;
+    width: 23rem;
+    height: 8rem;
+    margin-top: 31px;
+    z-index: 5;
 }
-
+.link-item {
+    font-size: 1.5rem;
+}
 
 .nav-links {
     
