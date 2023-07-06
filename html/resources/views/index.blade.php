@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/team.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
 </head>
 
 <body>
@@ -197,6 +198,54 @@
                     < </button>
             </div>
         </div>
+    </section>
+
+    {{-- Portfolio --}}
+
+    <section class="portfolio">
+        <h2 class="portfolio_tittle_section">PORTFOLIO</h2>
+        <div class="portfolio_container_item">
+            <div class="portfolio_item">
+                <div class="portfolio_item_img">
+                    <img src="https://picsum.photos/300/200" alt="">
+                </div>
+                <div class="portfolio_item_tittle">
+                    <h3>Proyecto 1</h3>
+                </div>
+                <div class="portfolio_item_text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis. Exercitationem illo mollitia corporis.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio_item">
+                <div class="portfolio_item_img">
+                    <img src="https://picsum.photos/300/200" alt="">
+                </div>
+                <div class="portfolio_item_tittle">
+                    <h3>Proyecto 1</h3>
+                </div>
+                <div class="portfolio_item_text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis. Exercitationem illo mollitia corporis.
+                        </p>
+                </div>
+            </div>
+            <div class="portfolio_item">
+                <div class="portfolio_item_img">
+                    <img src="https://picsum.photos/300/200" alt="">
+                </div>
+                <div class="portfolio_item_tittle">
+                    <h3>Proyecto 1</h3>
+                </div>
+                <div class="portfolio_item_text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis. Exercitationem illo mollitia corporis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <script src="{{ asset('navbar.js') }}"></script>

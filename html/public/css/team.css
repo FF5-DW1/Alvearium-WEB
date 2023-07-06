@@ -74,7 +74,6 @@
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
-    /* left: 3%; */
 }
 #next {
     left: unset;
@@ -109,7 +108,7 @@
     color: #ff3c2d;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
     #prev {
         left: 27%;
@@ -120,7 +119,7 @@
     }
 }
 
-/*Large devices (laptops/desktops, 992px and up)*/
+
 @media only screen and (min-width: 992px) {
     #prev {
         left: 30%;
