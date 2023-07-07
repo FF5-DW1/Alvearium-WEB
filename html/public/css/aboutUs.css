@@ -62,36 +62,51 @@ font-weight: bold;
     padding: 10px;
     justify-content: center;
 }
+.perfiles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    margin-top: -5rem;
+}
 
 .aboutInstitutions {
     width: 50%;
     margin: 1rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 .aboutComercial {
     width: 50%;
     margin: 1rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 .aboutOcio {
     width: 50%;
     margin: 1rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 .aboutCreate {
     width: 50%;
     margin: 1rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 .aboutBrands {
     width: 50%;
     margin: 1rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 .aboutUsers {
     width: 50%;
     margin: 1rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .ImgOcio {
@@ -147,6 +162,15 @@ font-weight: bold;
         width: 40rem;
         justify-content: center;
         align-content: space-evenly;
+        margin-bottom: 4rem
+    }
+    .perfiles{
+        gap: 1rem;
+        width: 40rem;
+        justify-content: center;
+        align-content: space-evenly;
+        margin-bottom: 2rem;
+        margin-top: -2rem;
     }
 
     .aboutInstitutions {
@@ -154,6 +178,7 @@ font-weight: bold;
         margin: 1rem;
         text-align: center;
     }
+
 
     
     .aboutComercial {
@@ -183,6 +208,7 @@ font-weight: bold;
     .ImgInstitutions {
         width: 100%;
         height: 100%;
+        
     }
     .ImgComercial {
         width: 100%;
@@ -191,7 +217,7 @@ font-weight: bold;
     
     .ImgOcio {
         width: 100%;
-        height: 58%;
+        height: 100%;
         
     }
     .ImgCreate{
@@ -225,7 +251,8 @@ font-weight: bold;
     /* --------------------------------------------------@media query section video y carrusel ----------------------------------------*/
     .aboutUsVideo {
         width: 40rem;
-        height: 20rem;
+        height: 25rem;
+        margin-top: 1rem;
     }
     
     .aboutUsPerfil {
@@ -235,12 +262,15 @@ font-weight: bold;
         width: 30rem;
         justify-content: center;
         align-content: space-evenly;
+        margin-bottom: 4rem;
+        margin-top: 3rem;
     }
 
     .aboutInstitutions{
         width: 16.6%;
         margin: 1rem;
         text-align: center;
+        
     }
     .aboutComercial{
         width: 16.6%;

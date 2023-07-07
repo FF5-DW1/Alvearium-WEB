@@ -21,7 +21,7 @@
 
 
         <a href="#">
-            <img class="main-logo" src="img/alvearium-logo.png" alt="Logo">
+            <img class="main-logo" src="{{asset('img/alvearium-logo.png')}}" alt="Logo">
         </a>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
@@ -89,46 +89,49 @@
             <div class="aboutUsPerfil">
 
                 <div class="aboutInstitutions">
+                    
+                    <img class="ImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="Instituciones" width="615px" height="405px">
                     <p>
                         Instituciones Públicas
                     </p>
-                    
-                    <img class="ImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="" width="615px" height="405px">
                 </div>
                 <div class="aboutInstitutions">
+                    
+                    <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="Comercial" width="615px" height="405px">
                     <p>
                         Comercios
                     </p>
-                    <br>
-                    <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="" width="615px" height="405px">
                 </div>
                 <div class="aboutInstitutions">
-                    <p>
+                    
+                    
+                    <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="Ocio" width="615px" height="405px">
+                    <p id="">
                         Ocio
                     </p>
-                    <br>
-                    <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="" width="615px" height="405px">
                 </div>
-                <div class="aboutInstitutions">
-                    <p>
-                        Creadores
-                    </p>
+                <div class="perfiles">
+                    <div class="aboutInstitutions">
                     
-                    <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="" width="615px" height="405px">
-                </div>
-                <div class="aboutInstitutions">
-                    <p>
-                        Marcas
-                    </p>
+                        <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="Creadores" width="615px" height="405px">
+                        <p>
+                            Creadores
+                        </p>
+                    </div>
+                    <div class="aboutInstitutions">
                     
-                    <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="" width="615px" height="405px">
-                </div>
-                <div class="aboutInstitutions">
-                    <p>
-                        Usuarios
-                    </p>
+                        <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="Marcas" width="615px" height="405px">
+                        <p>
+                            Marcas
+                        </p>
+                    </div>
+                    <div class="aboutInstitutions">
                     
-                    <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="" width="615px" height="405px">
+                        <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="Usuarios" width="615px" height="405px">
+                        <p>
+                            Usuarios
+                        </p>
+                    </div>
                 </div>
                 
                 
