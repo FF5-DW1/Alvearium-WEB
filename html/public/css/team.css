@@ -86,12 +86,12 @@
 
 .name_equip {
     font-size: 1.4rem;
-    color: #320071;
+    color: var(--compPurple);
     font-family: "Open Sans", sans-serif;
 }
 
 .profile_equip {
-    color: #ff3c2e;
+    color: var(--compOrange);
     font-size: 1.15rem;
     margin-top: 5px;
     font-family: "Open Sans", sans-serif;
@@ -100,12 +100,12 @@
 .tittle-section {
     text-align: center;
     font-size: 2.2rem;
-    color: #320071;
-    font-family: "briller", Helvetica, Arial, Lucida, sans-serif;
+    color: var(--compPurple);
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
 }
 
 .tittle-section-second_color {
-    color: #ff3c2d;
+    color: var(--compOrange);
 }
 
 

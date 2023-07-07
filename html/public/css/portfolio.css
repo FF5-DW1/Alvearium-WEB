@@ -15,19 +15,17 @@
 .portfolio_container_item{
     display: flex;
     justify-content: center;
-    /* gap:35px; */
     flex-wrap: wrap;
     
 }
 
 .portfolio_item{
     width:350px;
-    height: 550px;
+    height: 560px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     background-color:  #4f1fb7c8;
-    /* margin: 60px 0 30px 0; */
     margin: 30px 0 0 0;
     padding: 15px;
     gap:10px;
@@ -44,26 +42,31 @@
 
 .portfolio_item_tittle h3{
     text-align: left;
-    
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
-
 
 .portfolio_tittle_section {
     font-size: 2.2rem;
     text-align: center;
-    font-family: "briller";
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
     padding-top: 30px;
     color:white;
     margin-bottom: 15px;
 }
 
 .portfolio_item_img img{
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.portfolio_item_text{
+    margin-bottom: 15px;
 }
 
 .portfolio_item p{
     font-size: 1rem;
     text-align: justify;
+    font-family: "open sans", Arial, Helvetica, sans-serif;
+    
 
 }
 
