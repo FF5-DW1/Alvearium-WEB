@@ -95,14 +95,14 @@
                         Instituciones Públicas
                     </p>
                 </div>
-                <div class="aboutInstitutions">
+                <div class="aboutComercial">
                     
                     <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="Comercial" width="615px" height="405px">
                     <p>
                         Comercios
                     </p>
                 </div>
-                <div class="aboutInstitutions">
+                <div class="aboutOcio">
                     
                     
                     <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="Ocio" width="615px" height="405px">
@@ -111,21 +111,21 @@
                     </p>
                 </div>
                 <div class="perfiles">
-                    <div class="aboutInstitutions">
+                    <div class="aboutCreate">
                     
                         <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="Creadores" width="615px" height="405px">
                         <p>
                             Creadores
                         </p>
                     </div>
-                    <div class="aboutInstitutions">
+                    <div class="aboutBrands">
                     
                         <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="Marcas" width="615px" height="405px">
                         <p>
                             Marcas
                         </p>
                     </div>
-                    <div class="aboutInstitutions">
+                    <div class="aboutUsers">
                     
                         <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="Usuarios" width="615px" height="405px">
                         <p>
