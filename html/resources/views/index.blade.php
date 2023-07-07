@@ -23,7 +23,7 @@
 
 
         <a href="#">
-            <img class="main-logo" src="img/alvearium-logo.png" alt="Logo">
+            <img class="main-logo" src="{{asset('img/alvearium-logo.png')}}" alt="Logo">
         </a>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
@@ -86,48 +86,57 @@
         <div class="aboutUsMedia">
 
             <div class="aboutUsVideo">
-                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
             </div>
             <div class="aboutUsPerfil">
 
                 <div class="aboutInstitutions">
+                    
+                    <img class="ImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="Instituciones" width="615px" height="405px">
                     <p>
                         Instituciones Públicas
                     </p>
-                    <img class="aboutImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="">
                 </div>
-                <div class="aboutInstitutions">
+                <div class="aboutComercial">
+                    
+                    <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="Comercial" width="615px" height="405px">
                     <p>
                         Comercios
                     </p>
-                    <img class="aboutImgComercial" src="{{asset('img/comercios1.png')}}" alt="">
                 </div>
-                <div class="aboutInstitutions">
-                    <p>
+                <div class="aboutOcio">
+                    
+                    
+                    <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="Ocio" width="615px" height="405px">
+                    <p id="">
                         Ocio
                     </p>
-                    <img class="aboutImgOcio" src="{{asset('img/ocio1.png')}}" alt="">
                 </div>
-                <div class="aboutInstitutions">
-                    <p>
-                        Creadores
-                    </p>
-                    <img class="aboutImgCreate" src="{{asset('img/creadores.png')}}" alt="">
+                <div class="perfiles">
+                    <div class="aboutCreate">
+                    
+                        <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="Creadores" width="615px" height="405px">
+                        <p>
+                            Creadores
+                        </p>
+                    </div>
+                    <div class="aboutBrands">
+                    
+                        <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="Marcas" width="615px" height="405px">
+                        <p>
+                            Marcas
+                        </p>
+                    </div>
+                    <div class="aboutUsers">
+                    
+                        <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="Usuarios" width="615px" height="405px">
+                        <p>
+                            Usuarios
+                        </p>
+                    </div>
                 </div>
-                <div class="aboutInstitutions">
-                    <p>
-                        Marcas
-                    </p>
-                    <img class="aboutImgBrands" src="{{asset('img/marcas.png')}}" alt="">
-                </div>
-                <div class="aboutInstitutions">
-                    <p>
-                        Usuarios
-                    </p>
-                    <img class="aboutImgUsers" src="{{asset('img/usuarios.png')}}" alt="">
-                </div>
-
-
+                
+                
             </div>
         </div>
     </section>

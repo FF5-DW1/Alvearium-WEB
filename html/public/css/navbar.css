@@ -1,22 +1,22 @@
 .main-header {
-    height: 50px;
+    height: 125px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255);
-    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.949);
+    padding: 0rem 1rem 0px 1rem;
     position: fixed;
     width: 100%;
-    margin-top: -7rem;
-    z-index: 99;
-    font-family: "open sans bold";
+    margin-top: -9rem;
+    z-index: 3;
+    font-family: sans-serif;
 }
 
 .main-logo {
-    width: 200px;
-    height: 57px;
+    width: 15rem;
+    height: 5rem;
     padding: 10px;
-    margin: 15px 0px 0px -10px;
+    margin: 3.5rem 0px 0rem 0rem;;
 }
 
 .main-nav {
@@ -85,8 +85,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-right: -1.1rem;
+    margin-top: 3.5rem;
+    margin-right: -0.1rem;
 }
 
 .button-menu span {
@@ -114,43 +114,91 @@
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    /* -----------------------------------------------@media query de Navbar --------------------------------------*/
     .main-header {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.949);
         padding: 3rem;
         position: fixed;
         width: 100%;
         margin-top: -7rem;
+        z-index: 3;
+        
     }
-
+    
     .button-menu {
         display: none;
     }
-
+    
     .main-logo {
+        width: 15rem;
+        height: 5rem;
         flex-basis: 30%;
         margin-top: 19px;
     }
-
+    
     .main-nav {
         position: static;
         margin-left: 0;
         flex-basis: 70%;
         height: 100%;
     }
-
+    
     .nav-links {
         width: 100%;
         flex-direction: row;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         align-items: center;
         justify-content: flex-end;
-        background: rgba(255, 255, 255, 0.458);
+        background: none;
         padding-top: 0px;
+        margin-top: 0.5rem;
+        margin-left: 3.2rem;
     }
-
     .link-item {
-        display: inline-block;
-        margin-top: 0;
-        margin-right: 2rem;
-    }
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 22.5px;
+        }
+}
+
+@media screen and (min-width: 992px){
+    /* -----------------------------------------------@media query de Navbar --------------------------------------*/
+    .main-header{
+        height: 113px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        margin-top: -7rem;
+        z-index: 3;
+        
+}
+.main-nav{
+    background: none;
+    padding-bottom: 1rem;
+    margin-right: 3.5rem;
+}
+.main-logo {
+    width: 23rem;
+    height: 8rem;
+    margin-top: 0rem;
+    z-index: 5;
+}
+.link-item {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    
+    padding-top: 0px;
+    background-color: none;
+    
+}
 }
