@@ -32,6 +32,7 @@
                 <a class="link-item" href="#">Fundación</a>
                 <a class="link-item" href="#">Equipo & Partners</a>
                 <a class="link-item" href="#">Roadmap</a>
+                <img class="main-logo-movil" src="{{ asset('img/alvearium-logo.png') }}" alt="Logo">
             </div>
         </nav>
 

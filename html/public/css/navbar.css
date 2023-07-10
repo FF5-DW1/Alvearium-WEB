@@ -18,7 +18,13 @@
     padding: 10px;
     margin: 3.5rem 0px 0rem 0rem;;
 }
+.main-logo-movil {
 
+    width: 17rem;
+    height: 5rem;
+    margin-top: 5rem;
+    display: block;
+}
 .main-nav {
     position: fixed;
     top: 0;
@@ -52,9 +58,10 @@
 }
 
 .link-item {
-    margin-top: 2rem;
+    margin-top: 5rem;
     color: #444444;
     text-decoration: none;
+    font-size: 1.8rem;
     font-weight: bold;
     position: relative;
 }
@@ -140,6 +147,9 @@
         flex-basis: 30%;
         margin-top: 19px;
     }
+    .main-logo-movil {
+        display: none;
+    }
     
     .main-nav {
         position: static;
@@ -163,6 +173,7 @@
             display: inline-block;
             margin-top: 0;
             margin-right: 22.5px;
+            font-size: 1rem;
         }
 }
 
@@ -190,6 +201,9 @@
     height: 8rem;
     margin-top: 0rem;
     z-index: 5;
+}
+.main-logo-movil {
+    display: none;
 }
 .link-item {
     font-size: 1.5rem;
