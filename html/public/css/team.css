@@ -97,14 +97,14 @@
     font-family: "Open Sans", sans-serif;
 }
 
-.tittle-section {
+.title-section {
     text-align: center;
     font-size: 2.2rem;
     color: var(--compPurple);
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
 }
 
-.tittle-section-second_color {
+.title-section-second_color {
     color: var(--compOrange);
 }
 
