@@ -43,142 +43,116 @@
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+    justify-content: center;
+}
+.aboutUsMedia p{
+font-size: 1.1rem;
+color: #330072;
+font-weight: bold;
 }
 
 .aboutUsVideo iframe {
     padding: 2rem;
 }
-
 .aboutUsPerfil {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     width: 50rem;
     padding: 10px;
-}
-
-.aboutInstitutions {
-    width: 50%;
-    margin: 1rem;
-    text-align: center;
-}
-.aboutComercial {
-    width: 50%;
-    margin: 1rem;
-    text-align: center;
-}
-.aboutOcio {
-    width: 50%;
-    margin: 1rem;
-    text-align: center;
-}
-.aboutCreate {
-    width: 50%;
-    margin: 1rem;
-    text-align: center;
-}
-.aboutBrands {
-    width: 50%;
-    margin: 1rem;
-    text-align: center;
-}
-.aboutUsers {
-    width: 50%;
-    margin: 1rem;
-    text-align: center;
-}
-
-/* --------------------------------------------------@media query section video y carrusel ----------------------------------------*/
-/* REVISAR */
-.aboutUsTitulo {
-    display: flex;
     justify-content: center;
 }
-.aboutUsMedia {
+.perfiles{
     display: flex;
-    justify-content: space-around;
-}
-.aboutUsVideo {
-    width: 30rem;
-    height: 20rem;
-}
-
-.aboutUsPerfil {
+    flex-wrap: wrap;
     gap: 1rem;
-    width: 40rem;
+    width: 100%;
+    padding: 10px;
     justify-content: center;
-    align-content: space-evenly;
+    margin-top: -5rem;
 }
+
 .aboutInstitutions {
-    width: 40%;
+    width: 50%;
     margin: 1rem;
     text-align: center;
-}
-.aboutImgInstitutions {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 4rem;
 }
 .aboutComercial {
-    width: 40%;
+    width: 50%;
     margin: 1rem;
     text-align: center;
-}
-.aboutImgComercial {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 4rem;
 }
 .aboutOcio {
-    width: 40%;
+    width: 50%;
     margin: 1rem;
     text-align: center;
-}
-.aboutImgOcio {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 4rem;
 }
 .aboutCreate {
-    width: 40%;
+    width: 50%;
     margin: 1rem;
     text-align: center;
-}
-.aboutImgCreate {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 4rem;
 }
 .aboutBrands {
-    width: 40%;
+    width: 50%;
     margin: 1rem;
     text-align: center;
-}
-.aboutImgBrands {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 4rem;
 }
 .aboutUsers {
-    width: 40%;
+    width: 50%;
     margin: 1rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
-.aboutImgUsers {
+
+.ImgOcio {
     width: 100%;
     height: 100%;
 }
 
-/* ------------------------------------------------------------@media query escritorio------------------------------------------ */
-@media screen and (min-width: 992px) {
-    /* -----------------------------------------------@media query de Navbar --------------------------------------*/
-    .main-logo {
-        margin-top: 19px;
+.ImgInstitutions {
+    width: 100%;
+    height: 100%;
+}
+
+.ImgComercial {
+    width: 100%;
+    height: 100%;
+}
+.ImgCreate{
+    width: 100%;
+    height: 100%;
+}
+.ImgBrands{
+    width: 100%;
+    height: 100%;
+}
+.ImgUsers {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------------------------------@media query tablet ----------------------------------------*/
+@media screen and (min-width: 768px) {
+    
+
+    .aboutUsTitulo {
+        display: flex;
+        justify-content: center;
     }
 
-    .nav-links {
-        padding-top: 0px;
+    .aboutUsMedia {
+        display: flex;
+        justify-content: space-around;
     }
 
-    /* --------------------------------------------------@media query section video y carrusel ----------------------------------------*/
     .aboutUsVideo {
-        width: 40rem;
-        height: 20rem;
+        width: 100%;
+        height: 23rem;
     }
 
     .aboutUsPerfil {
@@ -186,34 +160,149 @@
         width: 40rem;
         justify-content: center;
         align-content: space-evenly;
+        margin-bottom: 4rem
     }
+    .perfiles{
+        gap: 1rem;
+        width: 40rem;
+        justify-content: center;
+        align-content: space-evenly;
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+
     .aboutInstitutions {
         width: 40%;
         margin: 1rem;
         text-align: center;
     }
+
+
+    
     .aboutComercial {
         width: 40%;
         margin: 1rem;
         text-align: center;
     }
+    
+    
     .aboutOcio {
         width: 40%;
         margin: 1rem;
         text-align: center;
     }
+    
+    
+    .perfiles {
+        display: flex;
+        
+    }
+    
     .aboutCreate {
         width: 40%;
         margin: 1rem;
         text-align: center;
     }
-    .aboutBrands {
+    .ImgInstitutions {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .ImgComercial {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .ImgOcio {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .ImgCreate{
+        width: 100%;
+        height: 100%;
+    }
+    .ImgBrands{
+        width: 100%;
+        height: 100%;
+    }
+    .ImgUsers {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutBrands{
         width: 40%;
         margin: 1rem;
         text-align: center;
     }
     .aboutUsers {
         width: 40%;
+        margin: 1rem;
+        text-align: center;
+    }
+}
+
+/* ------------------------------------------------------------@media query escritorio------------------------------------------ */
+@media screen and (min-width: 992px) {
+
+    /* --------------------------------------------------@media query section video y carrusel ----------------------------------------*/
+    .aboutUsVideo {
+        width: 40rem;
+        height: 25rem;
+        margin-top: 1rem;
+    }
+    
+    .aboutUsPerfil {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        width: 30rem;
+        justify-content: center;
+        align-content: space-evenly;
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+    }
+
+    .aboutInstitutions{
+        width: 16.6%;
+        margin: 1rem;
+        text-align: center;
+        
+    }
+    .aboutComercial{
+        width: 16.6%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .aboutOcio {
+        width: 16.6%;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .ImgOcio {
+        width: 100%;
+        height: 100%;
+    }
+
+    .perfiles {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aboutCreate{
+        width: 16.6%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .aboutBrands{
+        width: 16.6%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .aboutUsers {
+        width: 16.6%;
         margin: 1rem;
         text-align: center;
     }
