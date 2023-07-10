@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/frase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/team.css') }}">
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
@@ -187,6 +188,17 @@
         </div>
         </div>
     </section>
+
+    <!-- Frase -->
+
+    <section class="frase">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium dolore ipsum consectetur deserunt perspiciatis amet facilis consequatur quae? Omnis quod enim deleniti impedit sit rem obcaecati id numquam iusto eum.</div>
+        
+    </section>
+    <!--end Frase-->
+
+
+
 
     <!-- Team -->
     <section class="team-direction_slider">
@@ -438,6 +450,7 @@
     <script src="lib/particles/app.js"></script>
     <script src="js/cards.js"></script>
     <script src="js/modal.js"></script>
+
 </body>
 
 </html>

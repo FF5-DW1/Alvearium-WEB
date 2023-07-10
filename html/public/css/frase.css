@@ -1,0 +1,22 @@
+.frase {
+    width: 100%;
+    height: 10rem;
+    animation: gradient 2s infinite alternate linear;
+    background:hsl(270, 100%, 20%);
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    100% {
+        background: hsl(338, 52%, 45%);
+    }
+}
+
+.frase div{
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    
+}
