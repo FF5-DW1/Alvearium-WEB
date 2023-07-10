@@ -52,7 +52,7 @@
                 <h1 class="hero-title_layer">Comienza una nueva experiencia</h1>
                 <div class="buttonWrapper">
                     <a href="https://discord.com/invite/Wmq2gzRRhf">Únete al Discord de <img src="{{ asset('img/w3_white.png') }}" alt="Logo de LaunchW3"></a>
-                    <a href="#">Info Token</a>
+                    <a href="#">Información Tokenomics</a>
                 </div>
             </div>
             <div>
@@ -86,27 +86,27 @@
         <div class="aboutUsMedia">
 
             <div class="aboutUsVideo">
-                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="aboutUsPerfil">
 
                 <div class="aboutInstitutions">
-                    
+
                     <img class="ImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="Instituciones" width="615px" height="405px">
                     <p>
                         Instituciones Públicas
                     </p>
                 </div>
                 <div class="aboutComercial">
-                    
+
                     <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="Comercial" width="615px" height="405px">
                     <p>
                         Comercios
                     </p>
                 </div>
                 <div class="aboutOcio">
-                    
-                    
+
+
                     <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="Ocio" width="615px" height="405px">
                     <p id="">
                         Ocio
@@ -114,29 +114,29 @@
                 </div>
                 <div class="perfiles">
                     <div class="aboutCreate">
-                    
+
                         <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="Creadores" width="615px" height="405px">
                         <p>
                             Creadores
                         </p>
                     </div>
                     <div class="aboutBrands">
-                    
+
                         <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="Marcas" width="615px" height="405px">
                         <p>
                             Marcas
                         </p>
                     </div>
                     <div class="aboutUsers">
-                    
+
                         <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="Usuarios" width="615px" height="405px">
                         <p>
                             Usuarios
                         </p>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
     </section>
@@ -209,7 +209,7 @@
             </div>
         </div>
 
-        
+
     </section>
 
     {{-- Portfolio --}}
@@ -226,7 +226,7 @@
                 </div>
                 <div class="portfolio_item_text">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis. 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
                     </p>
                 </div>
             </div>
@@ -239,8 +239,8 @@
                 </div>
                 <div class="portfolio_item_text">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis. 
-                        </p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
+                    </p>
                 </div>
             </div>
             <div class="portfolio_item">
@@ -252,7 +252,7 @@
                 </div>
                 <div class="portfolio_item_text">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis. 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
                     </p>
                 </div>
             </div>
@@ -271,7 +271,7 @@
             <div class="partners_item">
                 <img class="partnert_img_1" src="{{ asset('img/partnersEstrategicos/1._paisajeDeLaLuz.png') }}" alt="logotipo de partner">
             </div>
-            
+
             <div class="partners_item">
                 <img class="partnert_img_2" src="{{ asset('img/partnersEstrategicos/2._AyuntamientoMadrid.png') }}" alt="logotipo de partner">
             </div>
@@ -338,7 +338,7 @@
             <div class="partners_item">
                 <img class="partnert_img_23" src="{{ asset('img/partnersEstrategicos/23._Comgo.png') }}" alt="logotipo de partner">
             </div>
-            
+
             <div class="partners_item">
                 <img class="partnert_img_24" src="{{ asset('img/partnersEstrategicos/24._RozettAi.png') }}" alt="logotipo de partner">
             </div>

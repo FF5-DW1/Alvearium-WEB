@@ -8,7 +8,7 @@
     position: fixed;
     width: 100%;
     margin-top: -9rem;
-    z-index: 3;
+    z-index: 4;
     font-family: sans-serif;
 }
 
@@ -16,7 +16,7 @@
     width: 15rem;
     height: 5rem;
     padding: 10px;
-    margin: 3.5rem 0px 0rem 0rem;;
+    margin: 3.5rem 0px 0rem 0rem;
 }
 
 .main-nav {
@@ -126,28 +126,26 @@
         position: fixed;
         width: 100%;
         margin-top: -7rem;
-        z-index: 3;
-        
     }
-    
+
     .button-menu {
         display: none;
     }
-    
+
     .main-logo {
         width: 15rem;
         height: 5rem;
         flex-basis: 30%;
         margin-top: 19px;
     }
-    
+
     .main-nav {
         position: static;
         margin-left: 0;
         flex-basis: 70%;
         height: 100%;
     }
-    
+
     .nav-links {
         width: 100%;
         flex-direction: row;
@@ -160,15 +158,15 @@
         margin-left: 3.2rem;
     }
     .link-item {
-            display: inline-block;
-            margin-top: 0;
-            margin-right: 22.5px;
-        }
+        display: inline-block;
+        margin-top: 0;
+        margin-right: 22.5px;
+    }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     /* -----------------------------------------------@media query de Navbar --------------------------------------*/
-    .main-header{
+    .main-header {
         height: 113px;
         display: flex;
         justify-content: space-between;
@@ -177,28 +175,24 @@
         position: fixed;
         width: 100%;
         margin-top: -7rem;
-        z-index: 3;
-        
-}
-.main-nav{
-    background: none;
-    padding-bottom: 1rem;
-    margin-right: 3.5rem;
-}
-.main-logo {
-    width: 23rem;
-    height: 8rem;
-    margin-top: 0rem;
-    z-index: 5;
-}
-.link-item {
-    font-size: 1.5rem;
-}
+    }
+    .main-nav {
+        background: none;
+        padding-bottom: 1rem;
+        margin-right: 3.5rem;
+    }
+    .main-logo {
+        width: 23rem;
+        height: 8rem;
+        margin-top: 0rem;
+        z-index: 5;
+    }
+    .link-item {
+        font-size: 1.5rem;
+    }
 
-.nav-links {
-    
-    padding-top: 0px;
-    background-color: none;
-    
-}
+    .nav-links {
+        padding-top: 0px;
+        background-color: none;
+    }
 }
