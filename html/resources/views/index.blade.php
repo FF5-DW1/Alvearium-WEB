@@ -209,7 +209,7 @@
             </div>
         </div>
 
-        
+        <button class="button_aboutUs">Quienes somos +</button>
     </section>
 
     {{-- Portfolio --}}
