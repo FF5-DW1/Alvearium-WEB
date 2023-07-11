@@ -46,7 +46,7 @@
 }
 
 .portfolio_tittle_section {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     text-align: center;
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
     padding-top: 30px;
@@ -93,6 +93,10 @@
     .portfolio_item{ 
         margin-top: 10px;
     } 
+
+    .portfolio_tittle_section {
+        font-size: 2.2rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
