@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alvearium</title>
+    <link rel="icon" type="image/jpg" href="{{ asset('img/favicon-Alvearium.png') }}">
 
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
