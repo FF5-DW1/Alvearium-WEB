@@ -1,4 +1,4 @@
-.contenedor {
+.team-direction_slider .contenedor {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -37,13 +37,13 @@
     z-index: -5;
 }
 
-.slider {
+.team-direction_slider .slider {
     position: relative;
     width: 100%;
     height: 370px;
     overflow: hidden;
 }
-.item {
+.team-direction_slider .item {
     position: absolute;
     width: 200px;
     height: 320px;
@@ -84,27 +84,27 @@
     left: 3%;
 }
 
-.name_equip {
+.team-direction_slider .name_equip {
     font-size: 1.4rem;
     color: var(--compPurple);
     font-family: "Open Sans", sans-serif;
 }
 
-.profile_equip {
+.team-direction_slider .profile_equip {
     color: var(--compOrange);
     font-size: 1.15rem;
     margin-top: 5px;
     font-family: "Open Sans", sans-serif;
 }
 
-.title-section {
+.team-direction_slider .title-section {
     text-align: center;
     font-size: 2.2rem;
     color: var(--compPurple);
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
 }
 
-.title-section-second_color {
+.team-direction_slider .title-section-second_color {
     color: var(--compOrange);
 }
 
