@@ -52,10 +52,10 @@
             <div id="particles-js"></div>
             <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
             <div>
-                <h1>Comienza una nueva experiencia</h1>
+                <h1 class="hero-title_layer">Comienza una nueva experiencia</h1>
                 <div class="buttonWrapper">
-                    <a href="https://discord.com/invite/Kuc9H6Y5B4">Únete a Discord</a>
-                    <a href="#">Consigue tu NFT</a>
+                    <a href="https://discord.com/invite/Wmq2gzRRhf">Únete al Discord de <img src="{{ asset('img/w3_white.png') }}" alt="Logo de LaunchW3"></a>
+                    <a href="#">Información Tokenomics</a>
                 </div>
             </div>
             <div>
@@ -88,13 +88,11 @@
         </div>
         <div class="aboutUsMedia">
             <div class="aboutUsVideo">
-                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="aboutUsPerfil">
                 <div class="aboutInstitutions">
+                    
                     <a class="botonAbout abrirModal">
                         <img class="ImgInstitutions" src="{{ asset('img/instituciones1.png') }}" alt="Instituciones"
                             width="615px" height="405px">
@@ -109,6 +107,7 @@
                     </div>
                 </div>
                 <div class="aboutComercial">
+                    
                     <a class="botonAbout abrirModal">
                         <img class="ImgComercial" src="{{ asset('img/comercios1.png') }}" alt="Comercial"
                             width="615px" height="405px">
@@ -123,6 +122,7 @@
                     </div>
                 </div>
                 <div class="aboutOcio">
+                    
                     <a class="botonAbout abrirModal">
                         <img class="ImgOcio" src="{{ asset('img/ocio1.png') }}" alt="Ocio" width="615px"
                             height="405px">
@@ -181,11 +181,9 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
-
-
-
-        </div>
         </div>
     </section>
 
@@ -202,7 +200,7 @@
 
     <!-- Team -->
     <section class="team-direction_slider">
-        <h2 class="tittle-section">Equipo <span class="tittle-section-second_color">Dirección</span></h2>
+        <h2 class="title-section">Equipo <span class="title-section-second_color">Dirección</span></h2>
         <div class="contenedor">
             <div class="slider">
                 <div class="item">
@@ -274,26 +272,25 @@
                     < </button>
             </div>
         </div>
+
+
     </section>
 
     {{-- Portfolio --}}
 
     <section class="portfolio">
-        <h2 class="portfolio_tittle_section">PORTFOLIO</h2>
+        <h2 class="portfolio_title_section">PORTFOLIO</h2>
         <div class="portfolio_container_item">
             <div class="portfolio_item">
                 <div class="portfolio_item_img">
-                    <img src="https://picsum.photos/300/200" alt="">
+                    <img src="https://picsum.photos/301/200" alt="">
                 </div>
-                <div class="portfolio_item_tittle">
+                <div class="portfolio_item_title">
                     <h3>Proyecto 1</h3>
                 </div>
                 <div class="portfolio_item_text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
-                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
-                        ipsam in. Expedita iure molestias doloribus. <br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
-                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
                     </p>
                 </div>
             </div>
@@ -301,31 +298,25 @@
                 <div class="portfolio_item_img">
                     <img src="https://picsum.photos/300/200" alt="">
                 </div>
-                <div class="portfolio_item_tittle">
+                <div class="portfolio_item_title">
                     <h3>Proyecto 1</h3>
                 </div>
                 <div class="portfolio_item_text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
-                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
-                        ipsam in. Expedita iure molestias doloribus. <br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
-                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
                     </p>
                 </div>
             </div>
             <div class="portfolio_item">
                 <div class="portfolio_item_img">
-                    <img src="https://picsum.photos/300/200" alt="">
+                    <img src="https://picsum.photos/299/200" alt="">
                 </div>
-                <div class="portfolio_item_tittle">
+                <div class="portfolio_item_title">
                     <h3>Proyecto 1</h3>
                 </div>
                 <div class="portfolio_item_text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
-                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
-                        ipsam in. Expedita iure molestias doloribus. <br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
-                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit ipsam in. Expedita iure molestias doloribus. <br><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis, illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
                     </p>
                 </div>
             </div>
@@ -337,7 +328,7 @@
 
     <section class="partners">
 
-        <h2 class="partners_tittle_section">PARTNERS ESTRATEGICOS</h2>
+        <h2 class="partners_title_section">PARTNERS ESTRATEGICOS</h2>
 
         <div class="partners_container_item">
 
@@ -345,6 +336,7 @@
                 <img class="partnert_img_1" src="{{ asset('img/partnersEstrategicos/1._paisajeDeLaLuz.png') }}"
                     alt="logotipo de partner">
             </div>
+
 
             <div class="partners_item">
                 <img class="partnert_img_2" src="{{ asset('img/partnersEstrategicos/2._AyuntamientoMadrid.png') }}"
@@ -435,6 +427,7 @@
                 <img class="partnert_img_23" src="{{ asset('img/partnersEstrategicos/23._Comgo.png') }}"
                     alt="logotipo de partner">
             </div>
+
 
             <div class="partners_item">
                 <img class="partnert_img_24" src="{{ asset('img/partnersEstrategicos/24._RozettAi.png') }}"

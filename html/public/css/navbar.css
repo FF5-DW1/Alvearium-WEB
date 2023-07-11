@@ -8,7 +8,7 @@
     position: fixed;
     width: 100%;
     margin-top: -9rem;
-    z-index: 3;
+    z-index: 4;
     font-family: sans-serif;
 }
 
@@ -16,7 +16,7 @@
     width: 15rem;
     height: 5rem;
     padding: 10px;
-    margin: 3.5rem 0px 0rem 0rem;;
+    margin: 3.5rem 0px 0rem 0rem;
 }
 .main-logo-movil {
 
@@ -133,14 +133,12 @@
         position: fixed;
         width: 100%;
         margin-top: -7rem;
-        z-index: 3;
-        
     }
-    
+
     .button-menu {
         display: none;
     }
-    
+
     .main-logo {
         width: 15rem;
         height: 5rem;
@@ -157,7 +155,7 @@
         flex-basis: 70%;
         height: 100%;
     }
-    
+
     .nav-links {
         width: 100%;
         flex-direction: row;
@@ -177,9 +175,9 @@
         }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     /* -----------------------------------------------@media query de Navbar --------------------------------------*/
-    .main-header{
+    .main-header {
         height: 113px;
         display: flex;
         justify-content: space-between;
@@ -209,10 +207,8 @@
     font-size: 1.5rem;
 }
 
-.nav-links {
-    
-    padding-top: 0px;
-    background-color: none;
-    
-}
+    .nav-links {
+        padding-top: 0px;
+        background-color: none;
+    }
 }
