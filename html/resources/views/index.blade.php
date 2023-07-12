@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/team.css') }}">
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/news.css') }}">
     <link rel="stylesheet" href="{{ asset('css/partners.css') }}">
 </head>
 
@@ -260,11 +261,60 @@
 
     </section>
 
+    <!-- News -->
+    <section class="news">
+        <h2>NOTICIAS</h2>
+        <div class="slider">
+            <input type="radio" name="toggle" id="btn-1" checked>
+            <input type="radio" name="toggle" id="btn-2">
+            <input type="radio" name="toggle" id="btn-3">
+
+            <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+            </div>
+
+            <ul class="slides">
+                <li class="slide">
+                    <div class="slide-content">
+                        <p class="slide-image">
+                            <img src="/img/instituciones.png" alt="stuff" width="320" height="240">
+                        </p>
+                        <h2 class="slide-title">Slide #1</h2>
+                        <a href="#" class="slide-link">Learn more</a>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Slide #2</h2>
+                        <p class="slide-text">Nisi ratione magni ea quis animi incidunt velit voluptate dolorem enim possimus, nam provident excepturi ipsam nihil molestiae minus delectus!</p>
+                        <a href="#" class="slide-link">Amazing deal</a>
+                    </div>
+                    <p class="slide-image">
+                        <img src="https://placeimg.com/320/240/animals" alt="stuff" width="320" height="240">
+                    </p>
+                </li>
+                <li class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Slide #3</h2>
+                        <p class="slide-text">Quisquam quod ut quasi, vero obcaecati laudantium asperiores corporis ad atque. Expedita fugit dicta maxime vel doloribus sequi, facilis dignissimos.</p>
+                        <a href="#" class="slide-link">Get started</a>
+                    </div>
+                    <p class="slide-image">
+                        <img src="https://placeimg.com/320/240/any" alt="stuff" width="320" height="240">
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- News end -->
+
     {{-- Partners --}}
 
     <section class="partners">
 
-        <h2 class="partners_title_section">PARTNERS ESTRATEGICOS</h2>
+        <h2 class="partners_title_section">PART</h2>
 
         <div class="partners_container_item">
 
