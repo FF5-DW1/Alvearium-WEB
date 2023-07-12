@@ -16,10 +16,10 @@
             <div id="particles-js"></div>
             <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
             <div>
-                <h1>Comienza una nueva experiencia</h1>
+                <h1 class="hero-title_layer">Comienza una nueva experiencia</h1>
                 <div class="buttonWrapper">
-                    <a href="https://discord.com/invite/Kuc9H6Y5B4">Únete a Discord</a>
-                    <a href="#">Consigue tu NFT</a>
+                    <a href="https://discord.com/invite/Wmq2gzRRhf">Únete al Discord de <img src="{{ asset('img/w3_white.png') }}" alt="Logo de LaunchW3"></a>
+                    <a href="#">Información Tokenomics</a>
                 </div>
             </div>
             <div>
