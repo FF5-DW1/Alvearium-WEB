@@ -8,6 +8,7 @@
     <link rel="icon" type="image/jpg" href="{{ asset('img/favicon-Alvearium.png') }}">
     <title>Alvearium</title>
 
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}" />

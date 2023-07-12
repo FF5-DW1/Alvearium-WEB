@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "briller";
+    src: url(../fonts/briller/Briller-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "briller bold";
+    src: url(../fonts/briller/Briller-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "open sans";
+    src: url(../fonts/open_sans/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "open sans bold";
+    src: url(../fonts/open_sans/OpenSans-Bold.ttf) format("truetype");
+}
+
+:root {
+    --mainOrange: #dd4124;
+    --mainPurple: #440099;
+    --compOrange: #ff3c2d;
+    --compViolet: #7300f6;
+    --compPurple: #330072;
+    --compPink: #e10098;
+    --compBlue: #00cfb4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
