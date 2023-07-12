@@ -10,10 +10,12 @@
 
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/frase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/team.css') }}">
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
     <link rel="stylesheet" href="{{ asset('css/partners.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 </head>
 
 <body>
@@ -85,62 +87,115 @@
             <h2>Conoce más sobre Alvearium</h2>
         </div>
         <div class="aboutUsMedia">
-
             <div class="aboutUsVideo">
-                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
             <div class="aboutUsPerfil">
-
                 <div class="aboutInstitutions">
-                    
-                    <img class="ImgInstitutions" src="{{asset('img/instituciones1.png')}}" alt="Instituciones" width="615px" height="405px">
-                    <p>
-                        Instituciones Públicas
-                    </p>
+                    <a class="botonAbout abrirModal">
+                        <img class="ImgInstitutions" src="{{ asset('img/instituciones1.png') }}" alt="Instituciones"
+                            width="615px" height="405px">
+                        <p>Instituciones Públicas</p>
+                    </a>
+                    <div id="ventanaModal1" class="modal">
+                        <div class="contenido-modal">
+                            <span class="cerrar">&times;</span>
+                            <h2>Ventana modal</h2>
+                            <p>Esto es el texto de la ventana</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="aboutComercial">
-                    
-                    <img class="ImgComercial" src="{{asset('img/comercios1.png')}}" alt="Comercial" width="615px" height="405px">
-                    <p>
-                        Comercios
-                    </p>
+                    <a class="botonAbout abrirModal">
+                        <img class="ImgComercial" src="{{ asset('img/comercios1.png') }}" alt="Comercial"
+                            width="615px" height="405px">
+                        <p>Comercios</p>
+                    </a>
+                    <div id="ventanaModal2" class="modal">
+                        <div class="contenido-modal">
+                            <span class="cerrar">&times;</span>
+                            <h2>Ventana modal</h2>
+                            <p>Esto es el texto de la ventana</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="aboutOcio">
-                    
-                    
-                    <img class="ImgOcio" src="{{asset('img/ocio1.png')}}" alt="Ocio" width="615px" height="405px">
-                    <p id="">
-                        Ocio
-                    </p>
+                    <a class="botonAbout abrirModal">
+                        <img class="ImgOcio" src="{{ asset('img/ocio1.png') }}" alt="Ocio" width="615px"
+                            height="405px">
+                        <p id="">Ocio</p>
+                    </a>
+                    <div id="ventanaModal3" class="modal">
+                        <div class="contenido-modal">
+                            <span class="cerrar">&times;</span>
+                            <h2>Ventana modal</h2>
+                            <p>Esto es el texto de la ventana</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="perfiles">
                     <div class="aboutCreate">
-                    
-                        <img class="ImgCreate" src="{{asset('img/creadores.png')}}" alt="Creadores" width="615px" height="405px">
-                        <p>
-                            Creadores
-                        </p>
+                        <a class="botonAbout abrirModal">
+                            <img class="ImgCreate" src="{{ asset('img/creadores.png') }}" alt="Creadores"
+                                width="615px" height="405px">
+                            <p>Creadores</p>
+                        </a>
+                        <div id="ventanaModal4" class="modal">
+                            <div class="contenido-modal">
+                                <span class="cerrar">&times;</span>
+                                <h2>Ventana modal</h2>
+                                <p>Esto es el texto de la ventana</p>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="aboutBrands">
-                    
-                        <img class="ImgBrands" src="{{asset('img/marcas.png')}}" alt="Marcas" width="615px" height="405px">
-                        <p>
-                            Marcas
-                        </p>
+                        <a class="botonAbout abrirModal">
+                            <img class="ImgBrands" src="{{ asset('img/marcas.png') }}" alt="Marcas"
+                                width="615px" height="405px">
+                            <p>Marcas</p>
+                        </a>
+                        <div id="ventanaModal5" class="modal">
+                            <div class="contenido-modal">
+                                <span class="cerrar">&times;</span>
+                                <h2>Ventana modal</h2>
+                                <p>Esto es el texto de la ventana</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="aboutUsers">
-                    
-                        <img class="ImgUsers" src="{{asset('img/usuarios.png')}}" alt="Usuarios" width="615px" height="405px">
-                        <p>
-                            Usuarios
-                        </p>
+                        <a class="botonAbout abrirModal">
+                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios"
+                                width="615px" height="405px">
+                            <p>Usuarios</p>
+                        </a>
+                        <div id="ventanaModal6" class="modal">
+                            <div class="contenido-modal">
+                                <span class="cerrar">&times;</span>
+                                <h2>Ventana modal</h2>
+                                <p>Esto es el texto de la ventana</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                
             </div>
+
+
+
+        </div>
         </div>
     </section>
+
+    <!-- Frase -->
+
+    <section class="frase">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium dolore ipsum consectetur deserunt perspiciatis amet facilis consequatur quae? Omnis quod enim deleniti impedit sit rem obcaecati id numquam iusto eum.</div>
+        
+    </section>
+    <!--end Frase-->
 
     <!-- Team -->
     <section class="team-direction_slider">
@@ -352,6 +407,7 @@
     <script src="lib/particles/particles.min.js"></script>
     <script src="lib/particles/app.js"></script>
     <script src="js/cards.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
