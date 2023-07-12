@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/jpg" href="{{ asset('img/favicon-Alvearium.png') }}">
     <title>Alvearium</title>
 
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}" />
@@ -269,78 +271,78 @@
         <div class="partners_container_item">
 
             <div class="partners_item">
-                <img class="partnert_img_1" src="{{ asset('img/partnersEstrategicos/1._paisajeDeLaLuz.png') }}" alt="logotipo de partner">
+                <img class="partner_img_1-1" src="{{ asset('img/partnersEstrategicos/1-1_PDL_Vector.svg') }}" alt="logotipo de partner">
             </div>
             
             <div class="partners_item">
-                <img class="partnert_img_2" src="{{ asset('img/partnersEstrategicos/2._AyuntamientoMadrid.png') }}" alt="logotipo de partner">
+                <img class="partner_img_1-2" src="{{ asset('img/partnersEstrategicos/1-2_AyuntamientoMadrid_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_3" src="{{ asset('img/partnersEstrategicos/3._CamaraMadrid.png') }}" alt="logotipo de partner">
+                <img class="partner_img_1-3" src="{{ asset('img/partnersEstrategicos/1-3_CC_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_4" src="{{ asset('img/partnersEstrategicos/4._BizkaiaBeaz.png') }}" alt="logotipo de partner">
+                <img class="partner_img_1-4" src="{{ asset('img/partnersEstrategicos/1-4_Beaz_Bizkaia_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_5" src="{{ asset('img/partnersEstrategicos/5._CaixaDayone.png') }}" alt="logotipo de partner">
+                <img class="partner_img_2-1" src="{{ asset('img/partnersEstrategicos/2-1_CaixaDayOne_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_6" src="{{ asset('img/partnersEstrategicos/6._PoliciaNacional.png') }}" alt="logotipo de partner">
+                <img class="partner_img_2-2" src="{{ asset('img/partnersEstrategicos/2-2_PoliciaNacional_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_7" src="{{ asset('img/partnersEstrategicos/7._BBVA.png') }}" alt="logotipo de partner">
+                <img class="partner_img_2-3" src="{{ asset('img/partnersEstrategicos/2-3_BBVA_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_8" src="{{ asset('img/partnersEstrategicos/8._IBM.png') }}" alt="logotipo de partner">
+                <img class="partner_img_2-4" src="{{ asset('img/partnersEstrategicos/2-4_IBM_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_9" src="{{ asset('img/partnersEstrategicos/9._Oneway.png') }}" alt="logotipo de partner">
+                <img class="partner_img_3-1" src="{{ asset('img/partnersEstrategicos/3-1_GrupoOneway_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_10" src="{{ asset('img/partnersEstrategicos/10._UberEats.png') }}" alt="logotipo de partner">
+                <img class="partner_img_3-2" src="{{ asset('img/partnersEstrategicos/3-2_UberEats_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_11" src="{{ asset('img/partnersEstrategicos/11._Auren.png') }}" alt="logotipo de partner">
+                <img class="partner_img_3-3" src="{{ asset('img/partnersEstrategicos/3-3_Auren_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_12" src="{{ asset('img/partnersEstrategicos/12._MetaVersoPro.png') }}" alt="logotipo de partner">
+                <img class="partner_img_3-4" src="{{ asset('img/partnersEstrategicos/3-4_MetaversoPro_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_13" src="{{ asset('img/partnersEstrategicos/13._UtHub.png') }}" alt="logotipo de partner">
+                <img class="partner_img_4-1" src="{{ asset('img/partnersEstrategicos/4-1_UTHub_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_14" src="{{ asset('img/partnersEstrategicos/14._MadridInGame.png') }}" alt="logotipo de partner">
+                <img class="partner_img_4-2" src="{{ asset('img/partnersEstrategicos/4-2_MIG_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_15" src="{{ asset('img/partnersEstrategicos/15._MondragonUnibertsitatea.png') }}" alt="logotipo de partner">
+                <img class="partner_img_4-3" src="{{ asset('img/partnersEstrategicos/4-3_MU_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_16" src="{{ asset('img/partnersEstrategicos/16._ButicTheNewSchool.png') }}" alt="logotipo de partner">
+                <img class="partner_img_4-4" src="{{ asset('img/partnersEstrategicos/4-4_Butic_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_17" src="{{ asset('img/partnersEstrategicos/17._MagicFennec.png') }}" alt="logotipo de partner">
+                <img class="partner_img_5-1" src="{{ asset('img/partnersEstrategicos/5-1_MagicFennec_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_18" src="{{ asset('img/partnersEstrategicos/18._VrArAssociation.png') }}" alt="logotipo de partner">
+                <img class="partner_img_5-2" src="{{ asset('img/partnersEstrategicos/5-2_VRARAsociation_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_19" src="{{ asset('img/partnersEstrategicos/19._Integra.png') }}" alt="logotipo de partner">
+                <img class="partner_img_5-3" src="{{ asset('img/partnersEstrategicos/5-3_Integra_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_20" src="{{ asset('img/partnersEstrategicos/20._DeuSens.png') }}" alt="logotipo de partner">
+                <img class="partner_img_5-4" src="{{ asset('img/partnersEstrategicos/5-4_Deusens_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_21" src="{{ asset('img/partnersEstrategicos/21._W3.png') }}" alt="logotipo de partner">
+                <img class="partner_img_6-1" src="{{ asset('img/partnersEstrategicos/6-1_LaunchW3_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_22" src="{{ asset('img/partnersEstrategicos/22._OWO.png') }}" alt="logotipo de partner">
+                <img class="partner_img_6-2" src="{{ asset('img/partnersEstrategicos/6-2_Owo_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partnert_img_23" src="{{ asset('img/partnersEstrategicos/23._Comgo.png') }}" alt="logotipo de partner">
+                <img class="partner_img_6-3" src="{{ asset('img/partnersEstrategicos/6-3_Comgo_Vector.svg') }}" alt="logotipo de partner">
             </div>
             
             <div class="partners_item">
-                <img class="partnert_img_24" src="{{ asset('img/partnersEstrategicos/24._RozettAi.png') }}" alt="logotipo de partner">
+                <img class="partner_img_6-4" src="{{ asset('img/partnersEstrategicos/6-4_RozzetAI_Vector.svg') }}" alt="logotipo de partner">
             </div>
         </div>
 

@@ -8,7 +8,7 @@
     position: fixed;
     width: 100%;
     margin-top: -9rem;
-    z-index: 3;
+    z-index: 4;
     font-family: sans-serif;
 }
 
@@ -16,9 +16,15 @@
     width: 15rem;
     height: 5rem;
     padding: 10px;
-    margin: 3.5rem 0px 0rem 0rem;;
+    margin: 3.5rem 0px 0rem 0rem;
 }
+.main-logo-movil {
 
+    width: 17rem;
+    height: 5rem;
+    margin-top: 5rem;
+    display: block;
+}
 .main-nav {
     position: fixed;
     top: 0;
@@ -52,9 +58,10 @@
 }
 
 .link-item {
-    margin-top: 2rem;
+    margin-top: 5rem;
     color: #444444;
     text-decoration: none;
+    font-size: 1.8rem;
     font-weight: bold;
     position: relative;
 }
@@ -126,19 +133,20 @@
         position: fixed;
         width: 100%;
         margin-top: -7rem;
-        z-index: 3;
-        
     }
-    
+
     .button-menu {
         display: none;
     }
-    
+
     .main-logo {
         width: 15rem;
         height: 5rem;
         flex-basis: 30%;
         margin-top: 19px;
+    }
+    .main-logo-movil {
+        display: none;
     }
     
     .main-nav {
@@ -147,7 +155,7 @@
         flex-basis: 70%;
         height: 100%;
     }
-    
+
     .nav-links {
         width: 100%;
         flex-direction: row;
@@ -163,12 +171,13 @@
             display: inline-block;
             margin-top: 0;
             margin-right: 22.5px;
+            font-size: 1rem;
         }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     /* -----------------------------------------------@media query de Navbar --------------------------------------*/
-    .main-header{
+    .main-header {
         height: 113px;
         display: flex;
         justify-content: space-between;
@@ -191,14 +200,15 @@
     margin-top: 0rem;
     z-index: 5;
 }
+.main-logo-movil {
+    display: none;
+}
 .link-item {
     font-size: 1.5rem;
 }
 
-.nav-links {
-    
-    padding-top: 0px;
-    background-color: none;
-    
-}
+    .nav-links {
+        padding-top: 0px;
+        background-color: none;
+    }
 }
