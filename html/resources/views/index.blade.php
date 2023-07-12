@@ -211,7 +211,7 @@
             </div>
         </div>
 
-        <button class="button_aboutUs">Quienes somos +</button>
+        <button class="button_aboutUs">Conocenos +</button>
     </section>
 
     {{-- Portfolio --}}
@@ -350,9 +350,9 @@
 
     <script src="{{ asset('navbar.js') }}"></script>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
-    <script src="lib/particles/particles.min.js"></script>
-    <script src="lib/particles/app.js"></script>
-    <script src="js/cards.js"></script>
+    <script src="{{ asset('lib/particles/particles.min.js') }}"></script>
+    <script src="{{ asset('lib/particles/app.js') }}"></script>
+    <script src="{{ asset('js/cards.js') }}"></script>
 </body>
 
 </html>
