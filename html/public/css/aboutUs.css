@@ -18,11 +18,7 @@
     src: url(../fonts/open_sans/OpenSans-Bold.ttf) format("truetype");
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 .aboutUsContainer {
     background: linear-gradient(to right, #330072, pink);
     font-family: "open sans";

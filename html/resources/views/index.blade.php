@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/team.css') }}">
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/roadmap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/partners.css') }}">
     <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 </head>
@@ -313,6 +314,69 @@
                     </p>
                 </div>
             </div>
+        </div>
+
+    </section>
+
+    <!--Roadmap-->
+
+    <section class="road_container">
+
+        <div class="road_phase">
+            <div class="road_img_phase">
+                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
+                <p class="road_p">F.I</p>
+            </div>
+
+            <h3>
+                2022-2023
+            </h3>
+        </div>
+        <div class="road_state">
+            <div class="road_img_state">
+                <img src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
+            </div>
+            <h3>
+                Paisaje de la Luz
+            </h3>
+        </div>
+
+        <div class="road_phase">
+            <div class="road_img_phase">
+                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
+                <p class="road_p">F.I</p>
+            </div>
+
+            <h3>
+                2022-2023
+            </h3>
+        </div>
+        <div class="road_state">
+            <div class="road_img_state">
+                <img src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
+            </div>
+            <h3>
+                Paisaje de la Luz
+            </h3>
+        </div>
+
+        <div class="road_phase">
+            <div class="road_img_phase">
+                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
+                <p class="road_p">F.I</p>
+            </div>
+
+            <h3>
+                2022-2023
+            </h3>
+        </div>
+        <div class="road_state">
+            <div class="road_img_state">
+                <img src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
+            </div>
+            <h3>
+                Paisaje de la Luz
+            </h3>
         </div>
 
     </section>

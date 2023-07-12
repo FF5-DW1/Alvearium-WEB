@@ -1,0 +1,46 @@
+.road_container{
+    background-image: url("/img/roadmap/road_fondo.png");
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.road_phase{
+    width: 30%;
+    margin-left:15%;
+
+
+}
+
+.road_img_phase{
+    position:relative;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+
+}
+.road_img_phase_img{
+    position:relative;
+    width: 308px;
+    height: 308px;
+}
+.road_p{
+    position:absolute;
+    left: 125px;
+    top: 115px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 50px;
+    z-index: 3;    
+}
+
+.road_state{
+    width: 30%;
+    padding-bottom: 5%;
+}
+
+.road_img_state{
+    width: 330px;
+    height: 330px;
+}
