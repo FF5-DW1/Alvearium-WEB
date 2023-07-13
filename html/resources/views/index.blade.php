@@ -260,7 +260,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Andres_Cosialls.png') }}" alt="Imagen de perfil equipo de dirección Diana Baldero">
+                    <img src="{{ asset('img/profile_pictures_direction/Andres_Cosialls.png') }}" alt="Imagen de perfil equipo de dirección Andrés Cosialls">
                     <div>
                         <h3 class="name_equip">Andrés Cosialls</h3>
                         <h3 class="profile_equip">Tech</h3>
