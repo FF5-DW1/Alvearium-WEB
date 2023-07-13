@@ -204,7 +204,7 @@
         <div class="contenedor">
             <div class="slider">
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/alvearium-team-alejandro-1.png') }}" alt="Imagen de perfil equipo de dirección Alejandro Ansodi">
+                    <img src="{{ asset('img/profile_pictures_direction/Alejandro_Ansodi.png') }}" alt="Imagen de perfil equipo de dirección Alejandro Ansodi">
                     <div>
                         <h3 class="name_equip">Alejandro Ansodi</h3>
                         <h3 class="profile_equip">CDO (Design)</h3>
@@ -212,15 +212,15 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/alvearium-team-Diana.png') }}" alt="Imagen de perfil equipo de dirección Diana Baldero">
+                    <img src="{{ asset('img/profile_pictures_direction/Andres_Cosialls.png') }}" alt="Imagen de perfil equipo de dirección Diana Baldero">
                     <div>
-                        <h3 class="name_equip">Diana Baldero</h3>
-                        <h3 class="profile_equip"> CFO </h3>
+                        <h3 class="name_equip">Andrés Cosialls</h3>
+                        <h3 class="profile_equip">Tech</h3>
                     </div>
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/alvearium-team-pol-1.png') }}" alt="Imagen de perfil equipo de dirección Pol Echarri">
+                    <img src="{{ asset('img/profile_pictures_direction/Pol_Echarri.png') }}" alt="Imagen de perfil equipo de dirección Pol Echarri">
                     <div>
                         <h3 class="name_equip">Pol Echarri</h3>
                         <h3 class="profile_equip"> CTO (Talent) </h3>
@@ -228,7 +228,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/alvearium-team-luis-manuel-1.png') }}" alt="Imagen de perfil equipo de dirección Luis Manuel Fernández">
+                    <img src="{{ asset('img/profile_pictures_direction/Luis_Manuel_Fernandez.png') }}" alt="Imagen de perfil equipo de dirección Luis Manuel Fernández">
                     <div>
                         <h3 class="name_equip">Luis Manuel Fernández</h3>
                         <h3 class="profile_equip"> CEO</h3>
@@ -236,7 +236,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/alvearium-team-jose-miguel-1.png') }}" alt="Imagen de perfil equipo de dirección José Miguel Fernández">
+                    <img src="{{ asset('img/profile_pictures_direction/Jose_M_Fernandez.png') }}" alt="Imagen de perfil equipo de dirección José Miguel Fernández">
                     <div>
                         <h3 class="name_equip">José Miguel Fernández</h3>
                         <h3 class="profile_equip">CTO (Tech)</h3>
@@ -245,7 +245,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/alvearium-team-luis-1.png') }}" alt="Imagen de perfil equipo de dirección Luis Martín">
+                    <img src="{{ asset('img/profile_pictures_direction/Luis_Martin.png') }}" alt="Imagen de perfil equipo de dirección Luis Martín">
                     <div>
                         <h3 class="name_equip">Luis Martín</h3>
                         <h3 class="profile_equip">CMO (Marketing)</h3>
@@ -253,7 +253,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/alvearium-team-oscar-1.png') }}" alt="Imagen de perfil equipo de dirección Oscar Escallada">
+                    <img src="{{ asset('img/profile_pictures_direction/Oscar_Escallada.png') }}" alt="Imagen de perfil equipo de dirección Oscar Escallada">
                     <div>
                         <h3 class="name_equip">Oscar Escallada</h3>
                         <h3 class="profile_equip"> CXO (Experience)</h3>
