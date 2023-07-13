@@ -305,7 +305,8 @@ hr {
     color: var(--compOrange);
 }
 
-.team-direction-item , .team-operational-item{
+.team-direction-item,
+.team-operational-item {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -324,7 +325,7 @@ hr {
     font-family: "Open Sans", sans-serif;
 }
 
-.team-operational{
+.team-operational {
     margin-top: 35px;
 }
 .team-operational-item .item,
@@ -340,7 +341,7 @@ hr {
     width: 250px;
 }
 
-.text-item-equip{
+.text-item-equip {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -348,7 +349,6 @@ hr {
 }
 
 .socials {
-   
     min-width: 40px;
     min-height: 40px;
     height: 35px;
@@ -389,7 +389,8 @@ hr {
         --tabs-height: 42px;
     }
 
-    .quienesSomos_title_section , .title-section {
+    .quienesSomos_title_section,
+    .title-section {
         font-size: 2.2rem;
     }
 

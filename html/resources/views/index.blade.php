@@ -320,7 +320,7 @@
     {{-- Portfolio --}}
 
     <section class="portfolio">
-        <h2 class="portfolio_title_section">PORTFOLIO</h2>
+        <h2 class="portfolio_title_section">Portfolio</h2>
         <div class="portfolio_container_item">
             <div class="portfolio_item">
                 <div class="portfolio_item_img">
@@ -440,7 +440,7 @@
 
     <section class="partners">
 
-        <h2 class="partners_title_section">PARTNERS ESTRATEGICOS</h2>
+        <h2 class="partners_title_section">Partners Estratégicos</h2>
 
         <div class="partners_container_item">
 

@@ -11,14 +11,14 @@
     overflow: auto; /* Se activará el scroll si es necesario */
     background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
 }
-.about_text_1{
+.about_text_1 {
     position: absolute;
     transform: rotate(-45deg);
     left: 50px;
     top: 145px;
     color: white;
 }
-.about_text_2{
+.about_text_2 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
@@ -26,14 +26,14 @@
     top: 190px;
     color: white;
 }
-.about_text_3{
+.about_text_3 {
     position: absolute;
     transform: rotate(-45deg);
     left: 100px;
     top: 145px;
     color: white;
 }
-.about_text_4{
+.about_text_4 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
@@ -41,14 +41,14 @@
     top: 178px;
     color: white;
 }
-.about_text_5{
+.about_text_5 {
     position: absolute;
     transform: rotate(-45deg);
     left: 135px;
     top: 145px;
     color: white;
 }
-.about_text_6{
+.about_text_6 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
@@ -56,14 +56,14 @@
     top: 178px;
     color: white;
 }
-.about_text_7{
+.about_text_7 {
     position: absolute;
     transform: rotate(-45deg);
     left: 100px;
     top: 145px;
     color: white;
 }
-.about_text_8{
+.about_text_8 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
@@ -71,14 +71,14 @@
     top: 178px;
     color: white;
 }
-.about_text_9{
+.about_text_9 {
     position: absolute;
     transform: rotate(-45deg);
     left: 120px;
     top: 145px;
     color: white;
 }
-.about_text_10{
+.about_text_10 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
@@ -86,14 +86,14 @@
     top: 178px;
     color: white;
 }
-.about_text_11{
+.about_text_11 {
     position: absolute;
     transform: rotate(-45deg);
     left: 110px;
     top: 145px;
     color: white;
 }
-.about_text_12{
+.about_text_12 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
@@ -105,7 +105,7 @@
 /* Ventana o caja modal */
 .contenido-modal {
     position: relative; /* Relativo con respecto al contenedor -modal- */
-    background-image: url('/img/modal_fondo.png');
+    background-image: url("/img/modal_fondo.png");
     margin: auto; /* Centrada */
     padding: 20px;
     width: 30rem;
@@ -146,7 +146,7 @@
 }
 
 /* Botón cerrar */
-.cerrar{
+.cerrar {
     position: absolute;
     top: 89px;
     left: 95px;
