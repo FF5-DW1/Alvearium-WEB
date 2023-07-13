@@ -17,9 +17,12 @@ return new class extends Migration
             $table->string('image');
             $table->string('description');
             $table->string('content');
-            $table->string('author');
+            $table->unsignedBigInteger('user_id'); // Crear columna para la clave foránea
+            $table->foreign('user_id')->references('id')->on('users'); // Definir la clave foránea
             $table->timestamps();
         });
+        
+        
     }
 
     /**

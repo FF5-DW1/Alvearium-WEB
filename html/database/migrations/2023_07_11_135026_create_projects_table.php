@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('short_description');
             $table->string('state');
             $table->string('logo');
+            
             $table->timestamps();
         });
     }
