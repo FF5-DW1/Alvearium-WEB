@@ -1,12 +1,13 @@
 
 .frase {
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     background-image: url("/img/alvearium-alvea.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
     padding-top: 8%;
+    font-family: "open sans";
 }
 
 
@@ -46,7 +47,7 @@
 @media screen and (min-width: 992px){
 
     .frase{
-        padding-top: 4.5%;
+        padding-top: 2.5%;
     }
 
 
