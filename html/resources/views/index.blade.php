@@ -314,7 +314,7 @@
             </div>
         </div>
 
-        <button class="button_aboutUs">Conocenos +</button>
+        <div class="buttonWrapper"> <a href="{{ route('quienes-somos') }}">Quiénes somos</a></div>
     </section>
 
     {{-- Portfolio --}}

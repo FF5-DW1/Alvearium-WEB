@@ -46,7 +46,7 @@
 
         <div class="container_pestañas">
 
-            <h2 class="quienesSomos_title_section">QUIENES SOMOS</h2>
+            <h2 class="quienesSomos_title_section">Quiénes somos</h2>
 
             <div class="tabs">
                 <div class="tab-container">
@@ -54,7 +54,10 @@
                         <a href="#tab3">HISTORIA</a>
                         <div class="tab-content">
                             <h2>NUESTRA HISTORIA:</h2>
-                            <p>Lorem ipsum ...</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ipsum, dolores temporibus iusto pariatur odio totam? Inventore accusantium natus nostrum corrupti aspernatur obcaecati debitis. Aliquam fugit accusantium ipsa recusandae architecto.
+                            Placeat fuga vero aliquid, accusamus nemo deserunt eius, dolore minima rem quis, vitae earum iusto. Distinctio necessitatibus repudiandae voluptate consectetur, non modi odit laborum officia ipsum doloribus qui? Maxime, asperiores.
+                            Minima fugit exercitationem temporibus inventore reprehenderit suscipit provident consequuntur. Nobis ipsa eum reiciendis, fugit nihil earum hic. Sed, repellendus cum iste praesentium necessitatibus quo, corporis officiis ad ex consectetur laboriosam?
+                            Veniam consectetur dolorem reiciendis optio vero dolore recusandae eos, sapiente tempora ratione esse officia placeat unde similique eius dolor suscipit. Qui ad ut officia atque nihil voluptatum enim aliquam sit.</p>
                         </div>
                     </div>
                     <div id="tab2" class="tab">
