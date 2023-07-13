@@ -23,4 +23,3 @@ Route::get('/', function () {
 Route::get('/quienes-somos', function () {
     return view('quienes-somos');
 });
-

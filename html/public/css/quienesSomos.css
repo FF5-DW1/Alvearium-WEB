@@ -8,7 +8,6 @@
     background-size: cover;
     position: relative;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
-    /* margin-top: 7rem; */
 }
 
 .hero-content {
@@ -58,7 +57,7 @@
     z-index: 2;
     position: relative;
 }
-.hero-content .socials {
+.socials {
     background-color: var(--compPurple);
     text-decoration: none;
     display: inline-block;
@@ -137,31 +136,20 @@
 :root {
     --tabs-border-color: #abcdef;
     --tabs-border-size: 3px;
-    --tabs-text-color: white;
+    --tabs-text-color: rgb(0, 0, 0);
     --tabs-dark-color: #012345;
-    --tabs-lite-color: #345678;
+    --tabs-lite-color: #bdd7f2;
     --tabs-width: 120px;
     --tabs-height: 40px;
 }
 
 /* aspecto básico */
 
-.tab-container h2 {
-    margin: 0;
-}
-
-.tab-container p {
-    margin: 0;
-}
-
 .tab-container a {
     color: inherit;
     text-decoration: none;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
-    
 }
-
-/* esto es para posicionar las pestañas correctamente */
 
 .tab-container {
     position: relative;
@@ -198,7 +186,7 @@
     background-color: var(--tabs-lite-color);
     padding: 20px;
     border: var(--tabs-border-size) solid var(--tabs-border-color);
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     position: relative;
     z-index: 100;
 }
@@ -208,6 +196,8 @@
     border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-radius: 10px 10px 0 0;
     border-bottom: 0;
+    color: white;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .tab:target > a,
 .tab:last-of-type > a {
@@ -217,6 +207,157 @@
 .tab:target ~ .tab:last-of-type > a {
     background-color: var(--tabs-dark-color);
     z-index: 0;
+}
+
+.quienesSomos_title_section {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
+    padding-top: 40px;
+    color: var(--compPurple);
+}
+
+.destacarPalabraParrafo {
+    font-size: 120%;
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
+    color: var(--mainOrange);
+}
+
+/* CONTENIDO PESTAÑAS */
+
+.tab1_parrafo {
+    font-size: 1.2rem;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+}
+
+.tab1_columnas {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tab1_columnas p {
+    margin-left: 10px;
+}
+
+.tab1_title_columna {
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
+    font-size: 140%;
+    margin-bottom: 15px;
+    color: var(--compPurple);
+}
+
+.resaltarText {
+    color: var(--compOrange);
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.tab1_nuestrosValores {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.tab1_nuestrosValores .tab1_title_columna {
+    text-align: center;
+}
+
+.tab1_nuestrosValores-item {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-image: url(../img/fondo_tab1_Alvearium.png);
+    background-position: center center;
+    padding: 40px 0;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.valor-text {
+    text-align: center;
+    font-size: 0.74rem;
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
+    color: var(--mainOrange);
+}
+
+.title-section {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--compPurple);
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
+}
+
+.title-section-second_color {
+    color: var(--compOrange);
+}
+
+.team-direction-item , .team-operational-item{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name_equip {
+    font-size: 1.4rem;
+    color: var(--compPurple);
+    font-family: "Open Sans", sans-serif;
+}
+
+.profile_equip {
+    color: var(--compOrange);
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.team-operational{
+    margin-top: 35px;
+}
+.team-operational-item .item,
+.team-direction-item .item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-operational-item .item img,
+.team-direction-item .item img {
+    width: 250px;
+}
+
+.text-item-equip{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials {
+   
+    min-width: 40px;
+    min-height: 40px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    box-shadow: 0 0 5px 2px white;
+    transition: all 0.2s ease-in;
 }
 
 @media only screen and (min-width: 600px) {
@@ -231,7 +372,7 @@
     }
 
     .tabs {
-        margin: 0 auto;
+        margin: 40px auto 0 auto;
         width: 80%;
     }
 
@@ -239,7 +380,7 @@
         left: calc((var(--tabs-width) + 10px) * var(--tabs-position));
     }
 
-    .tab-container a{
+    .tab-container a {
         font-size: 1rem;
     }
 
@@ -247,8 +388,27 @@
         --tabs-width: 126px;
         --tabs-height: 42px;
     }
-}
 
+    .quienesSomos_title_section , .title-section {
+        font-size: 2.2rem;
+    }
+
+    .tab1_columnas {
+        flex-wrap: nowrap;
+    }
+
+    .tab-content {
+        padding: 40px;
+    }
+
+    .valor-text {
+        font-size: 1.2rem;
+    }
+
+    .title-valores {
+        font-size: 160% !important;
+    }
+}
 @media only screen and (min-width: 992px) {
     .hero-content {
         min-height: 300px;
@@ -295,7 +455,15 @@
         --tabs-height: 64px;
     }
 
-    .tab-container a{
+    .tab-container a {
         font-size: 1.8rem;
+    }
+
+    .valor-text {
+        font-size: 1.4rem;
+    }
+
+    .row {
+        gap: 35px;
     }
 }
