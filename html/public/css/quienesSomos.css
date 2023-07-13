@@ -8,7 +8,6 @@
     background-size: cover;
     position: relative;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
-    /* margin-top: 7rem; */
 }
 
 .hero-content {
@@ -58,7 +57,7 @@
     z-index: 2;
     position: relative;
 }
-.hero-content .socials {
+.socials {
     background-color: var(--compPurple);
     text-decoration: none;
     display: inline-block;
@@ -137,9 +136,9 @@
 :root {
     --tabs-border-color: #abcdef;
     --tabs-border-size: 3px;
-    --tabs-text-color: white;
+    --tabs-text-color: rgb(0, 0, 0);
     --tabs-dark-color: #012345;
-    --tabs-lite-color: #345678;
+    --tabs-lite-color: #bdd7f2;
     --tabs-width: 120px;
     --tabs-height: 40px;
 }
@@ -151,7 +150,6 @@
     text-decoration: none;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
-
 
 .tab-container {
     position: relative;
@@ -188,7 +186,7 @@
     background-color: var(--tabs-lite-color);
     padding: 20px;
     border: var(--tabs-border-size) solid var(--tabs-border-color);
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     position: relative;
     z-index: 100;
 }
@@ -198,7 +196,8 @@
     border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-radius: 10px 10px 0 0;
     border-bottom: 0;
-    color: var(--compBlue);
+    color: white;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .tab:target > a,
 .tab:last-of-type > a {
@@ -253,19 +252,17 @@
     color: var(--compOrange);
 }
 
-hr{
+hr {
     width: 60%;
     margin: 0 auto;
 }
 
-.tab1_nuestrosValores{
+.tab1_nuestrosValores {
     margin-top: 40px;
     margin-bottom: 25px;
-   
-    
 }
 
-.tab1_nuestrosValores .tab1_title_columna{
+.tab1_nuestrosValores .tab1_title_columna {
     text-align: center;
 }
 
@@ -274,27 +271,93 @@ hr{
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    gap: 50px; 
+    align-items: center;
+    gap: 50px;
     background-image: url(../img/fondo_tab1_Alvearium.png);
     background-position: center center;
     padding: 40px 0;
     background-size: cover;
+    border-radius: 3px;
 }
 
 .row {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px; 
-  }
+    gap: 12px;
+}
 
 .valor-text {
     text-align: center;
     font-size: 0.74rem;
-    /* color: black; */
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
     color: var(--mainOrange);
+}
+
+.title-section {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--compPurple);
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
+}
+
+.title-section-second_color {
+    color: var(--compOrange);
+}
+
+.team-direction-item , .team-operational-item{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name_equip {
+    font-size: 1.4rem;
+    color: var(--compPurple);
+    font-family: "Open Sans", sans-serif;
+}
+
+.profile_equip {
+    color: var(--compOrange);
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.team-operational{
+    margin-top: 35px;
+}
+.team-operational-item .item,
+.team-direction-item .item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-operational-item .item img,
+.team-direction-item .item img {
+    width: 250px;
+}
+
+.text-item-equip{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials {
+   
+    min-width: 40px;
+    min-height: 40px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    box-shadow: 0 0 5px 2px white;
+    transition: all 0.2s ease-in;
 }
 
 @media only screen and (min-width: 600px) {
@@ -309,7 +372,7 @@ hr{
     }
 
     .tabs {
-        margin: 40px auto;
+        margin: 40px auto 0 auto;
         width: 80%;
     }
 
@@ -326,7 +389,7 @@ hr{
         --tabs-height: 42px;
     }
 
-    .quienesSomos_title_section {
+    .quienesSomos_title_section , .title-section {
         font-size: 2.2rem;
     }
 
@@ -334,7 +397,7 @@ hr{
         flex-wrap: nowrap;
     }
 
-    .tab-content{
+    .tab-content {
         padding: 40px;
     }
 
@@ -342,7 +405,7 @@ hr{
         font-size: 1.2rem;
     }
 
-    .title-valores{
+    .title-valores {
         font-size: 160% !important;
     }
 }
@@ -400,7 +463,7 @@ hr{
         font-size: 1.4rem;
     }
 
-    .row{
+    .row {
         gap: 35px;
     }
 }
