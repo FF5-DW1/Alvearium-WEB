@@ -319,67 +319,75 @@
     </section>
 
     <!--Roadmap-->
+    <section class="roadmap_container">
 
-    <section class="road_container">
 
-        <div class="road_phase">
-            <div class="road_img_phase">
-                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
-                <p class="road_p">F.I</p>
-            </div>
+        <h2 class="road_title">Road Map</h2>
 
-            <h3>
-                2022-2023
-            </h3>
+
+        <div class="road_container">
+            
+            <ul class="road_phase">
+                <div class="road_img_phase">
+                    <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
+                    <p class="road_p">F.I</p>
+                    <h3>
+                        2022 2023
+                    </h3>
+                </div>
+
+            </ul>
+            <ul class="road_state">
+                <li class="road_img_state">
+                    <img class="road_img_state_img" src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
+                    <h3>
+                        Paisaje de la Luz
+                    </h3>
+                </li>
+            </ul>
+
+            <ul class="road_phase">
+                <li class="road_img_phase">
+                    <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
+                    <p class="road_p">F.II</p>
+                    <h3>
+                        2022 2023
+                    </h3>
+                </li>
+
+            </ul>
+            <ul class="road_state">
+                <li class="road_img_state">
+                    <img class="road_img_state_img" src="/img/roadmap/road_comercio.png" alt="Paisaje de la Luz">
+                    <h3>
+                        Madrid (Comercio, Ocio y Turismo)
+                    </h3>
+                </li>
+            </ul>
+
+            <ul class="road_phase">
+                <li class="road_img_phase">
+                    <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
+                    <p class="road_p">F.III</p>
+                    <h3>
+                        2022 2023
+                    </h3>
+                </li>
+
+            </ul>
+            <ul class="road_state">
+                <li class="road_img_state">
+                    <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png" alt="Paisaje de la Luz">
+                    <h3>
+                        Escala Co-Desarrollo ciudades TOP
+                    </h3>
+                </li>
+            </ul>
+
         </div>
-        <div class="road_state">
-            <div class="road_img_state">
-                <img src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
-            </div>
-            <h3>
-                Paisaje de la Luz
-            </h3>
-        </div>
-
-        <div class="road_phase">
-            <div class="road_img_phase">
-                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
-                <p class="road_p">F.I</p>
-            </div>
-
-            <h3>
-                2022-2023
-            </h3>
-        </div>
-        <div class="road_state">
-            <div class="road_img_state">
-                <img src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
-            </div>
-            <h3>
-                Paisaje de la Luz
-            </h3>
-        </div>
-
-        <div class="road_phase">
-            <div class="road_img_phase">
-                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
-                <p class="road_p">F.I</p>
-            </div>
-
-            <h3>
-                2022-2023
-            </h3>
-        </div>
-        <div class="road_state">
-            <div class="road_img_state">
-                <img src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
-            </div>
-            <h3>
-                Paisaje de la Luz
-            </h3>
-        </div>
-
     </section>
+
+    
 
     {{-- Partners --}}
 

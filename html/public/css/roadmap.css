@@ -1,23 +1,46 @@
+.roadmap_container{
+    background-image: url('/img/alvearium-alvea.jpg');
+    
+    
+
+}
+
+
+.road_title{
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem 0 1rem 0;
+}
 .road_container{
-    background-image: url("/img/roadmap/road_fondo.png");
     display: flex;
     flex-wrap: wrap;
     gap: 10%;
+    justify-content: center;
 }
+
 
 .road_phase{
     width: 30%;
-    margin-left:15%;
-
+    /* margin-left:15%; */
+    list-style: none;
 
 }
 
 .road_img_phase{
     position:relative;
-    font-family: sans-serif;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100%;
-
+    display: flex;
+    align-items: center;
+}
+.road_img_phase >h3{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 .road_img_phase_img{
     position:relative;
@@ -26,8 +49,8 @@
 }
 .road_p{
     position:absolute;
-    left: 125px;
-    top: 115px;
+    left: 118px;
+    top: 157px;
     width: 20px;
     height: 20px;
     color: white;
@@ -38,9 +61,26 @@
 .road_state{
     width: 30%;
     padding-bottom: 5%;
+    list-style: none;
 }
 
 .road_img_state{
     width: 330px;
     height: 330px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.road_img_state >h3{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+}
+.road_img_state_img{
+    position:relative;
+    width: 308px;
+    height: 308px;
+    
 }
