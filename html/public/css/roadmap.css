@@ -11,12 +11,12 @@
     color: white;
     text-align: center;
     font-size: 4rem;
-    padding: 1rem 0 1rem 0;
+    padding: 2rem 0 1rem 0;
 }
 .road_container{
     display: flex;
     flex-wrap: wrap;
-    gap: 10%;
+    gap: 20%;
     justify-content: center;
 }
 
@@ -38,24 +38,31 @@
 }
 .road_img_phase >h3{
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 .road_img_phase_img{
     position:relative;
-    width: 308px;
-    height: 308px;
+    width: 10rem;
+    height: 10rem;
+    margin-left: -2rem;
 }
 .road_p{
-    position:absolute;
-    left: 118px;
-    top: 157px;
+    position: absolute;
+    left: 8px;
+    top: 57px;
     width: 20px;
     height: 20px;
     color: white;
-    font-size: 50px;
-    z-index: 3;    
+    font-size: 40px;
+    z-index: 3;   
+}
+.fase1{
+    left: 20px;
+}
+.fase2{
+    left: 15px;
 }
 
 .road_state{
@@ -65,8 +72,8 @@
 }
 
 .road_img_state{
-    width: 330px;
-    height: 330px;
+    width: 10rem;
+    height: 10rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -74,13 +81,175 @@
 }
 .road_img_state >h3{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 .road_img_state_img{
     position:relative;
-    width: 308px;
-    height: 308px;
+    width: 10rem;
+    height: 10rem;
+    
+}
+@media screen and (min-width: 768px) {
+
+    
+    
+    
+    .road_title{
+        
+        text-align: center;
+        font-size: 4rem;
+        padding: 1rem 0 1rem 0;
+    }
+    .road_container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20%;
+        justify-content: center;
+    }
+    
+    
+    .road_phase{
+        width: 30%;
+        
+    
+    }
+    
+    .road_img_phase{
+        
+        width: 100%;
+        height: 100%;
+        
+    }
+    .road_img_phase >h3{
+        width: 15rem;
+        height: 15rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .road_img_phase_img{
+        
+        width: 308px;
+        height: 308px;
+    }
+    .road_p{
+        
+        left: 70px;
+        top: 103px;
+        width: 20px;
+        height: 20px;
+        color: white;
+        font-size: 50px;
+        
+    }
+    .fase1{
+        left:84px;
+    }
+    .fase2{
+        left:82px;
+    }
+    
+    .road_state{
+        width: 30%;
+        padding-bottom: 5%;
+        
+    }
+    
+    .road_img_state{
+        width: 15rem;
+        height: 15rem;
+        
+        
+    }
+    .road_img_state >h3{
+        
+        
+    }
+    
+    
+}
+
+@media screen and (min-width: 992px) {
+
+    .road_title{
+        
+        text-align: center;
+        font-size: 4rem;
+        padding: 1rem 0 1rem 0;
+    }
+    
+    
+    
+    .road_phase{
+        width: 30%;
+        
+    
+    }
+    
+    .road_img_phase{
+        
+        width: 100%;
+        height: 100%;
+        
+    }
+    .road_img_phase >h3{
+        width: 15rem;
+        height: 15rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        
+    }
+    .road_img_phase_img{
+        position:relative;
+        width: 308px;
+        height: 308px;
+        margin-left: -2rem;
+    }
+    .road_p{
+        
+        left: 75px;
+        top: 165px;
+        width: 20px;
+        height: 20px;
+        color: white;
+        font-size: 50px;
+        
+    }
+    .fase1{
+        left: 90px;
+        top:165px;
+    }
+    .fase2{
+        left: 87px;
+    }
+    
+    .road_state{
+        width: 30%;
+        padding-bottom: 5%;
+        
+    }
+    
+    .road_img_state{
+        
+        width: 100%;
+        height: 100%;
+        
+    }
+    .road_img_state >h3{
+        margin-top: -3rem; 
+        font-size: 2rem;
+        
+    }
+    .road_img_state_img{
+        position:relative;
+        width: 330px;
+        height: 330px;
+        
+    }
     
 }

@@ -377,7 +377,7 @@
             <ul class="road_phase">
                 <div class="road_img_phase">
                     <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
-                    <p class="road_p">F.I</p>
+                    <p class="road_p fase1">F.I</p>
                     <h3>
                         2022 2023
                     </h3>
@@ -396,7 +396,7 @@
             <ul class="road_phase">
                 <li class="road_img_phase">
                     <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
-                    <p class="road_p">F.II</p>
+                    <p class="road_p fase2">F.II</p>
                     <h3>
                         2022 2023
                     </h3>
