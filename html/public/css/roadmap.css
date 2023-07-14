@@ -12,7 +12,7 @@
 .road_container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20%;
+    gap: 15%;
     justify-content: center;
 }
 
