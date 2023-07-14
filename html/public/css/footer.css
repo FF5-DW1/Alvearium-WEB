@@ -1,0 +1,149 @@
+.footer_container{
+    
+    background-image: url('/img/footer/footer_fondo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+}
+
+.footer_contact{
+    
+    padding: 10% 5% 5% 10%;
+    
+}
+.footer_frase{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: "briller";
+    color: white;
+}
+.footer_boton{
+    width: 100%;
+    
+}
+.footer_boton .buttonWrapper,
+.footer_boton > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+.footer_boton .buttonWrapper a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--compPink);
+    border-radius: 5px;
+    border-color: var(--compPink);
+    width: 50%;
+}
+
+.footer_boton .buttonWrapper img {
+    height: 1.7rem;
+    vertical-align: middle;
+}
+
+.footer_boton .buttonWrapper a:last-child {
+    background-color: var(--compBlue);
+    border-color: var(--compBlue);
+    margin-left: 0.5rem;
+}
+
+
+.footer_boton .socials {
+    background-color: var(--compPurple);
+    text-decoration: none;
+    display: inline-block;
+    min-width: 45px;
+    min-height: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 45px;
+    box-shadow: 0 0 5px 2px white;
+    transition: all 0.2s ease-in;
+}
+
+.footer_boton .socials:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px 4px white;
+}
+
+.footer_boton .buttonWrapper a {
+    background-image: -webkit-linear-gradient(
+        45deg,
+        var(--compPurple) 50%,
+        transparent 50%
+    );
+    background-image: linear-gradient(
+        45deg,
+        var(--compPurple) 50%,
+        transparent 50%
+    );
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 0.3s ease-in, box-shadow 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.footer_boton .buttonWrapper a:hover {
+    background-position: 0;
+    box-shadow: 0 0 5px 2px white;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    
+    
+    .footer_contact{
+        display: flex;
+        justify-content: space-between;
+        padding: 10% 10% 10% 20%;
+        align-items: center;
+        
+    }
+    .footer_frase{
+        width: 50%;
+        height: 100%;
+        text-align:center;
+        font-size: 1.5rem;
+        font-family: "open sans bold", Arial, Helvetica, sans-serif;
+    }
+    .footer_boton{
+        width: 35%;
+        font-size: 1rem;
+        
+    }
+
+    .footer_boton .buttonWrapper a {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    
+    .footer_contact{
+        
+        padding: 10% 10% 10% 20%;
+    }
+    .footer_frase{
+        width: 60%;
+        height: 100%;
+        font-size: 2.2rem;
+        margin-left: -20%;
+    }
+    .footer_boton{
+        width: 35%;
+        margin-bottom: 20%;
+        
+    }
+}

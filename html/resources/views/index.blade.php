@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{ asset('css/roadmap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/partners.css') }}">
     <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 
 <body>
@@ -98,7 +99,7 @@
             <div class="aboutUsPerfil">
                 <div class="aboutInstitutions">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgInstitutions" src="{{ asset('img/instituciones1.png') }}" alt="Instituciones"
+                        <img class="ImgInstitutions" src="{{ asset('img/instituciones2.png') }}" alt="Instituciones"
                             width="615px" height="405px">
                         <p>Instituciones Públicas</p>
                     </a>
@@ -119,7 +120,7 @@
                 </div>
                 <div class="aboutComercial">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgComercial" src="{{ asset('img/comercios1.png') }}" alt="Comercial"
+                        <img class="ImgComercial" src="{{ asset('img/comercios2.png') }}" alt="Comercial"
                             width="615px" height="405px">
                         <p>Comercios</p>
                     </a>
@@ -132,7 +133,7 @@
                                 de adopción del ecommerce , aparecen 
                                 nuevas maneras de vender con 
                                 experiencias inmersivas, tanto en tienda 
-                                como online
+                                como online.
                                 <br>✓Tiendas <br>
                                 ✓Centros Comerciales
                             </p>
@@ -141,7 +142,7 @@
                 </div>
                 <div class="aboutOcio">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgOcio" src="{{ asset('img/ocio1.png') }}" alt="Ocio" width="615px"
+                        <img class="ImgOcio" src="{{ asset('img/ocio2.png') }}" alt="Ocio" width="615px"
                             height="405px">
                         <p id="">Ocio</p>
                     </a>
@@ -153,7 +154,7 @@
                                 disfrutar del ocio desde cualquier lugar. 
                                 Los métodos de socializar a través de 
                                 dispositivos se verán mejorados gracias 
-                                al contenido inmersivo
+                                al contenido inmersivo.
                                 <br>✓Eventos deportivos
                                 <br>✓Conciertos
                                 <br>✓Cines inmersivos
@@ -521,6 +522,39 @@
         </div>
 
     </section>
+
+    <!--footer-->
+
+    <footer class="footer_container">
+
+        <div class="footer_contact">
+            <div class="footer_frase">
+                ¿Quieres estar al día de todas las novedades, o colaborar en el proyecto? Contacta con nosotros y síguenos en redes
+            </div>
+            <div class="footer_boton">
+                <div class="buttonWrapper">
+                    <a href="#">Contacta con nosotros</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/company/alveariumvr" class="socials" target="_blank">
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://twitter.com/alvearium__" target="_blank" class="socials">
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://discord.com/invite/Kuc9H6Y5B4" target="_blank" class="socials">
+                <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://www.instagram.com/alvearium_/" target="_blank" class="socials">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Alvearium/100083367819508/" target="_blank" class="socials">
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+            </a>
+        </div>
+    </footer>
 
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class ="buttonUp"></a>
 
