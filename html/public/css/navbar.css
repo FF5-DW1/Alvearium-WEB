@@ -19,7 +19,6 @@
     margin: 3.5rem 0px 0rem 0rem;
 }
 .main-logo-movil {
-
     width: 17rem;
     height: 5rem;
     margin-top: 5rem;
@@ -148,7 +147,7 @@
     .main-logo-movil {
         display: none;
     }
-    
+
     .main-nav {
         position: static;
         margin-left: 0;
@@ -168,11 +167,11 @@
         margin-left: 3.2rem;
     }
     .link-item {
-            display: inline-block;
-            margin-top: 0;
-            margin-right: 22.5px;
-            font-size: 1rem;
-        }
+        display: inline-block;
+        margin-top: 0;
+        margin-right: 22.5px;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -186,26 +185,25 @@
         position: fixed;
         width: 100%;
         margin-top: -7rem;
-        z-index: 3;
-        
-}
-.main-nav{
-    background: none;
-    padding-bottom: 1rem;
-    margin-right: 3.5rem;
-}
-.main-logo {
-    width: 23rem;
-    height: 8rem;
-    margin-top: 0rem;
-    z-index: 5;
-}
-.main-logo-movil {
-    display: none;
-}
-.link-item {
-    font-size: 1.5rem;
-}
+        z-index: 4;
+    }
+    .main-nav {
+        background: none;
+        padding-bottom: 1rem;
+        margin-right: 3.5rem;
+    }
+    .main-logo {
+        width: 23rem;
+        height: 8rem;
+        margin-top: 0rem;
+        z-index: 5;
+    }
+    .main-logo-movil {
+        display: none;
+    }
+    .link-item {
+        font-size: 1.5rem;
+    }
 
     .nav-links {
         padding-top: 0px;

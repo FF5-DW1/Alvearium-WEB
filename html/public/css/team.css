@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .team-direction_slider {
@@ -51,7 +51,7 @@
     background-color: #fff;
     border-radius: 10px;
     transition: 0.5s;
-    left: calc(50% - 110px);
+    left:calc(50vw - 120px);
     top: 0;
     border: solid 1px;
     display: flex;
@@ -74,14 +74,14 @@
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
+    
 }
 #next {
-    left: unset;
-    right: 10%;
+    right:calc(50vw - 170px);
 }
 
 #prev {
-    left: 3%;
+    left: calc(50vw - 170px);
 }
 
 .team-direction_slider .name_equip {
@@ -108,24 +108,74 @@
     color: var(--compOrange);
 }
 
+.team-direction_slider .buttonWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+.team-direction_slider .buttonWrapper a {
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--compPink);
+    border-radius: 5px;
+    border-color: var(--compPink);
+    width: 50%;
+}
+
+.team-direction_slider .buttonWrapper a {
+    background-image: -webkit-linear-gradient(
+        45deg,
+        var(--compPurple) 50%,
+        transparent 50%
+    );
+    background-image: linear-gradient(
+        45deg,
+        var(--compPurple) 50%,
+        transparent 50%
+    );
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 0.3s ease-in, box-shadow 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.team-direction_slider .buttonWrapper a:hover {
+    background-position: 0;
+    box-shadow: 0 0 5px 2px white;
+}
+
 
 @media only screen and (min-width: 768px) {
     #prev {
-        left: 27%;
+        left: calc(50vw - 180px);
     }
 
     #next {
-        right: 30%;
+        right: calc(50vw - 180px);
+    }
+
+    .team-direction_slider .buttonWrapper a{
+        width: 30%;
     }
 }
 
 
 @media only screen and (min-width: 992px) {
     #prev {
-        left: 30%;
+        left: calc(50vw - 225px);
     }
 
     #next {
-        right: 31.3%;
+        right: calc(50vw - 225px);
+    }
+
+    .team-direction_slider .buttonWrapper a{
+        width: 18%;
     }
 }

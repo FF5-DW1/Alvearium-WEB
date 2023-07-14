@@ -20,6 +20,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/quienes-somos', function () {
-    return view('quienes-somos');
-});
+Route::view('/quienes-somos' , 'quienes-somos')->name('quienes-somos');

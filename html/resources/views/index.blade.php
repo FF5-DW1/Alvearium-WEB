@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/jpg" href="{{ asset('img/favicon-Alvearium.png') }}">
+    <link rel="icon" type="image/jpg" href="{{ asset('img/icons/favicon-Alvearium.png') }}">
     <title>Alvearium</title>
 
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
@@ -28,7 +28,7 @@
 
 
         <a href="#">
-            <img class="main-logo" src="{{asset('img/alvearium-logo.png')}}" alt="Logo">
+            <img class="main-logo" src="{{asset('img/alvearium-logo.png')}}" alt="Logo" >
         </a>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
@@ -314,13 +314,13 @@
             </div>
         </div>
 
-        <button class="button_aboutUs">Conocenos +</button>
+        <div class="buttonWrapper"> <a href="{{ route('quienes-somos') }}">Quiénes somos</a></div>
     </section>
 
     {{-- Portfolio --}}
 
     <section class="portfolio">
-        <h2 class="portfolio_title_section">PORTFOLIO</h2>
+        <h2 class="portfolio_title_section">Portfolio</h2>
         <div class="portfolio_container_item">
             <div class="portfolio_item">
                 <div class="portfolio_item_img">
@@ -440,7 +440,7 @@
 
     <section class="partners">
 
-        <h2 class="partners_title_section">PARTNERS ESTRATEGICOS</h2>
+        <h2 class="partners_title_section">Partners Estratégicos</h2>
 
         <div class="partners_container_item">
 
@@ -522,13 +522,16 @@
 
     </section>
 
+    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class ="buttonUp"></a>
+
     <script src="{{ asset('navbar.js') }}"></script>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
     <script src="{{ asset('lib/particles/particles.min.js') }}"></script>
     <script src="{{ asset('lib/particles/app.js') }}"></script>
     <script src="{{ asset('js/cards.js') }}"></script>
-
     <script src="{{ asset('js/modal.js') }}"></script>
+    <script src="{{ asset('js/buttonUp.js') }}"></script>
+
 </body>
 
 </html>

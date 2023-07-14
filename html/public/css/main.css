@@ -33,3 +33,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.buttonUp{
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width:55px;
+    transition: all 1s;
+}
