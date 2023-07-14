@@ -264,48 +264,39 @@
     <!-- News -->
     <section class="news">
         <h2>NOTICIAS</h2>
-        <div class="slider">
-            <input type="radio" name="toggle" id="btn-1" checked>
-            <input type="radio" name="toggle" id="btn-2">
-            <input type="radio" name="toggle" id="btn-3">
+        <div class="slideshow-container">
 
-            <div class="slider-controls">
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-                <label for="btn-3"></label>
+            <div class="mySlides fade">
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #1</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
+                    <a href="#">Leer más</a>
+                </div>
             </div>
 
-            <ul class="slides">
-                <li class="slide">
-                    <div class="slide-content">
-                        <p class="slide-image">
-                            <img src="/img/instituciones.png" alt="stuff" width="320" height="240">
-                        </p>
-                        <h2 class="slide-title">Slide #1</h2>
-                        <a href="#" class="slide-link">Learn more</a>
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="slide-content">
-                        <h2 class="slide-title">Slide #2</h2>
-                        <p class="slide-text">Nisi ratione magni ea quis animi incidunt velit voluptate dolorem enim possimus, nam provident excepturi ipsam nihil molestiae minus delectus!</p>
-                        <a href="#" class="slide-link">Amazing deal</a>
-                    </div>
-                    <p class="slide-image">
-                        <img src="https://placeimg.com/320/240/animals" alt="stuff" width="320" height="240">
-                    </p>
-                </li>
-                <li class="slide">
-                    <div class="slide-content">
-                        <h2 class="slide-title">Slide #3</h2>
-                        <p class="slide-text">Quisquam quod ut quasi, vero obcaecati laudantium asperiores corporis ad atque. Expedita fugit dicta maxime vel doloribus sequi, facilis dignissimos.</p>
-                        <a href="#" class="slide-link">Get started</a>
-                    </div>
-                    <p class="slide-image">
-                        <img src="https://placeimg.com/320/240/any" alt="stuff" width="320" height="240">
-                    </p>
-                </li>
-            </ul>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img_snow_wide.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img_mountains_wide.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
     <!-- News end -->
@@ -396,6 +387,38 @@
 
     </section>
 
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
     <script src="{{ asset('navbar.js') }}"></script>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
     <script src="lib/particles/particles.min.js"></script>
