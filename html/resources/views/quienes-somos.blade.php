@@ -304,9 +304,12 @@
         </div>
     </section>
 
+    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class ="buttonUp"></a>
+
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
     <script src="{{ asset('lib/particles/particles.min.js') }}"></script>
     <script src="{{ asset('lib/particles/app.js') }}"></script>
+    <script src="{{ asset('js/buttonUp.js') }}"></script>
 
 </body>
 
