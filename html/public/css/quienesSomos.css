@@ -476,8 +476,8 @@
     }
 
     .icon-return {
-        width: 80px;
-        padding-bottom: 40px;
+        width: 64px;
+        /* padding-bottom: 40px; */
         padding-left: 15px;
     }
 }
@@ -537,5 +537,10 @@
 
     .tab-container a {
         font-size: 1.8rem;
+    }
+
+    .icon-return {
+        width: 80px;
+        padding-left: 15px;
     }
 }
