@@ -8,7 +8,6 @@
     background-size: cover;
     position: relative;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
-    /* margin-top: 7rem; */
 }
 
 .hero-content {
@@ -58,7 +57,7 @@
     z-index: 2;
     position: relative;
 }
-.hero-content .socials {
+.socials {
     background-color: var(--compPurple);
     text-decoration: none;
     display: inline-block;
@@ -152,7 +151,6 @@
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 
-
 .tab-container {
     position: relative;
     padding-top: var(--tabs-height);
@@ -176,7 +174,7 @@
     top: 0;
     left: calc(
         var(--tabs-width) * var(--tabs-position)
-    ); /* posición de cada pestaña */
+    ); 
 }
 
 /* más aspecto */
@@ -188,7 +186,7 @@
     background-color: var(--tabs-lite-color);
     padding: 20px;
     border: var(--tabs-border-size) solid var(--tabs-border-color);
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     position: relative;
     z-index: 100;
 }
@@ -199,8 +197,7 @@
     border-radius: 10px 10px 0 0;
     border-bottom: 0;
     color: white;
-    -webkit-text-stroke:1px rgb(0, 0, 0);
-    
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .tab:target > a,
 .tab:last-of-type > a {
@@ -218,6 +215,7 @@
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
     padding-top: 40px;
     color: var(--compPurple);
+    margin-bottom: -54px;
 }
 
 .destacarPalabraParrafo {
@@ -255,17 +253,17 @@
     color: var(--compOrange);
 }
 
-hr{
+hr {
     width: 60%;
     margin: 0 auto;
 }
 
-.tab1_nuestrosValores{
+.tab1_nuestrosValores {
     margin-top: 40px;
     margin-bottom: 25px;
 }
 
-.tab1_nuestrosValores .tab1_title_columna{
+.tab1_nuestrosValores .tab1_title_columna {
     text-align: center;
 }
 
@@ -274,38 +272,46 @@ hr{
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    gap: 50px; 
+    align-items: center;
+    gap: 50px;
     background-image: url(../img/fondo_tab1_Alvearium.png);
     background-position: center center;
     padding: 40px 0;
     background-size: cover;
+    border-radius: 3px;
 }
 
 .row {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px; 
-  }
+    gap: 12px;
+}
 
 .valor-text {
     text-align: center;
     font-size: 0.74rem;
-    /* color: black; */
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
     color: var(--mainOrange);
 }
 
 .title-section {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--compPurple);
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
 }
 
 .title-section-second_color {
     color: var(--compOrange);
+}
+
+.team-direction-item,
+.team-operational-item {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .name_equip {
@@ -316,10 +322,58 @@ hr{
 
 .profile_equip {
     color: var(--compOrange);
-    font-size: 1.15rem;
-    margin-top: 5px;
+    font-size: 1.2rem;
     font-family: "Open Sans", sans-serif;
 }
+
+.team-operational {
+    margin-top: 40px;
+}
+.team-operational-item .item,
+.team-direction-item .item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-operational-item .item img,
+.team-direction-item .item img {
+    width: 250px;
+}
+
+.text-item-equip {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials {
+    min-width: 40px;
+    min-height: 40px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    box-shadow: 0 0 5px 2px white;
+    transition: all 0.2s ease-in;
+}
+
+.title_section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-return{
+    width: 40px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+
+}
+
 
 @media only screen and (min-width: 600px) {
     .hero-content > div {
@@ -333,7 +387,8 @@ hr{
     }
 
     .tabs {
-        margin: 40px auto;
+        margin: 40px auto 0 auto;
+        margin: 25px auto 0 auto;
         width: 80%;
     }
 
@@ -350,15 +405,22 @@ hr{
         --tabs-height: 42px;
     }
 
+    
+    .title-section {
+        font-size: 2.2rem;
+        
+    }
+
     .quienesSomos_title_section {
         font-size: 2.2rem;
+        margin-bottom: -94px;
     }
 
     .tab1_columnas {
         flex-wrap: nowrap;
     }
 
-    .tab-content{
+    .tab-content {
         padding: 40px;
     }
 
@@ -366,9 +428,17 @@ hr{
         font-size: 1.2rem;
     }
 
-    .title-valores{
+    .title-valores {
         font-size: 160% !important;
     }
+
+    .icon-return{
+        width: 80px;
+        padding-bottom: 40px;
+        padding-left: 15px;
+    }
+
+
 }
 @media only screen and (min-width: 992px) {
     .hero-content {
@@ -424,7 +494,7 @@ hr{
         font-size: 1.4rem;
     }
 
-    .row{
+    .row {
         gap: 35px;
     }
 }

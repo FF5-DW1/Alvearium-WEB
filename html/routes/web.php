@@ -16,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function () {
-    return view('index');
-});
 
-Route::get('/quienes-somos', function () {
-    return view('quienes-somos');
-});
+Route::view('/' , 'index')->name('home');
+Route::view('/quienes-somos' , 'quienes-somos')->name('quienes-somos');
