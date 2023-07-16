@@ -58,25 +58,123 @@
                         alt="Icono regresar pantalla principal" class="icon-return"></a>
                 <div class="tab-container">
                     <div id="tab3" class="tab">
-                        <a href="#tab3">HISTORIA</a>
+                        <a href="#tab3">Misión, Visión, Valores</a>
                         <div class="tab-content">
-                            <h2>NUESTRA HISTORIA:</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ipsum, dolores temporibus
-                                iusto pariatur odio totam? Inventore accusantium natus nostrum corrupti aspernatur
-                                obcaecati debitis. Aliquam fugit accusantium ipsa recusandae architecto.
-                                Placeat fuga vero aliquid, accusamus nemo deserunt eius, dolore minima rem quis, vitae
-                                earum iusto. Distinctio necessitatibus repudiandae voluptate consectetur, non modi odit
-                                laborum officia ipsum doloribus qui? Maxime, asperiores.
-                                Minima fugit exercitationem temporibus inventore reprehenderit suscipit provident
-                                consequuntur. Nobis ipsa eum reiciendis, fugit nihil earum hic. Sed, repellendus cum
-                                iste praesentium necessitatibus quo, corporis officiis ad ex consectetur laboriosam?
-                                Veniam consectetur dolorem reiciendis optio vero dolore recusandae eos, sapiente tempora
-                                ratione esse officia placeat unde similique eius dolor suscipit. Qui ad ut officia atque
-                                nihil voluptatum enim aliquam sit.</p>
+                            <div class="tab3_columnas">
+                                <div class="tab1_columnas-left">
+
+                                    <h2 class="tab3_title_columna">Nuestra <br> Misión</h2>
+
+                                    <p class="tab3_parrafo">Acercar a la población las tecnologías avanzadas y
+                                        descentralizadas, con el objetivo de <span class="bold">mejorar la
+                                            experiencia y la forma de relacionarnos entre nosotros y con nuestro
+                                            entorno.</span></p>
+
+                                </div>
+
+                                <div class="tab3_columnas-right">
+
+                                    <h2 class="tab3_title_columna">Nuestra <br> Visión</h2>
+
+                                    <p class="tab3_parrafo"><span class="bold">La comunidad de
+                                            Alvearium</span>,
+                                        a través del empleo de las tecnologías más disruptivas, <span
+                                            class="bold">liderará la humanización del metaverso</span>.
+                                        <br><br>
+                                        Los seres humanos podremos reproducir experiencias sensoriales más allá del
+                                        espacio-tiempo que nos permitirán mejorar nuestra forma de vivir y de
+                                        relacionarnos.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="tab3_nuestrosValores">
+
+                                <h2 class="tab3_title_columna">Nuestros Valores</h2>
+
+                                <div class="tab3_nuestrosValores-item">
+
+                                    <div class="item">
+                                        <img src="{{ asset('img/icon_values/excelencia_alvearium4.png') }}"
+                                            alt="Icono que acompaña al texto de cada valor">
+                                        <div class="text-item-value">
+                                            <h3 class="name_value">Excelencia</h3>
+                                            <h3 class="description_value">Empleo de las mejores prácticas buscando la
+                                                máxima calidad.</h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{{ asset('img/icon_values/resiliencia_alvearium.png') }}"
+                                            alt="Icono que acompaña al texto de cada valor">
+                                        <div class="text-item-value">
+                                            <h3 class="name_value">Resiliencia</h3>
+                                            <h3 class="description_value">Adaptación a los continuos cambios de este
+                                                mundo disruptivo.</h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{{ asset('img/icon_values/innovacion_alvearium.png') }}"
+                                            alt="Icono que acompaña al texto de cada valor">
+                                        <div class="text-item-value">
+                                            <h3 class="name_value">Innovación</h3>
+                                            <h3 class="description_value">Visión para impulsar nuevas ideas y aplicar la
+                                                mejora continua.</h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{{ asset('img/icon_values/motivacion_alvearium.png') }}"
+                                            alt="Icono que acompaña al texto de cada valor">
+                                        <div class="text-item-value">
+                                            <h3 class="name_value">Motivación</h3>
+                                            <h3 class="description_value">Actitud positiva para trabajar con
+                                                perseverancia y determinación.</h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{{ asset('img/icon_values/trabajo_equipo__alvearium4.png') }}"
+                                            alt="Icono que acompaña al texto de cada valor">
+                                        <div class="text-item-value">
+                                            <h3 class="name_value">Trabajo en equipo</h3>
+                                            <h3 class="description_value">Colaboración y cooperación para crear valor y
+                                                multiplicar la productividad.</h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{{ asset('img/icon_values/comunidad_alvearium.png') }}"
+                                            alt="Icono que acompaña al texto de cada valor">
+                                        <div class="text-item-value">
+                                            <h3 class="name_value">Comunidad</h3>
+                                            <h3 class="description_value">Fiel y colaborativa con foco en la
+                                                responsabilidad social.</h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{{ asset('img/icon_values/etica_alvearium.png') }}"
+                                            alt="Icono que acompaña al texto de cada valor">
+                                        <div class="text-item-value">
+                                            <h3 class="name_value">Ética</h3>
+                                            <h3 class="description_value">Transparencia, lealtad y honestidad como
+                                                factores de creación de valor.</h3>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="tab2" class="tab">
-                        <a href="#tab2">EQUIPO</a>
+                        <a href="#tab2">Equipo</a>
                         <div class="tab-content">
 
                             <div class="team-direction">
@@ -88,7 +186,7 @@
                                             alt="Imagen de perfil equipo de dirección Luis Manuel Fernández">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Luis Manuel Fernández</h3>
-                                            <h3 class="profile_equip"> CEO</h3>
+                                            <h3 class="profile_equip">Director Ejecutivo</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -101,7 +199,7 @@
                                             alt="Imagen de perfil equipo de dirección Pol Echarri">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Pol Echarri</h3>
-                                            <h3 class="profile_equip"> CTO (Talent) </h3>
+                                            <h3 class="profile_equip"> CTO (Talento) </h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -114,7 +212,7 @@
                                             alt="Imagen de perfil equipo de dirección José Miguel Fernández">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">José Miguel Fernández</h3>
-                                            <h3 class="profile_equip">CTO (Tech)</h3>
+                                            <h3 class="profile_equip">CTO (Tecnología)</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -128,7 +226,7 @@
                                             alt="Imagen de perfil equipo de dirección Alejandro Ansodi">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Alejandro Ansodi</h3>
-                                            <h3 class="profile_equip">CDO (Design)</h3>
+                                            <h3 class="profile_equip">CDO (Diseño)</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -154,7 +252,7 @@
                                             alt="Imagen de perfil equipo de dirección Oscar Escallada">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Oscar Escallada</h3>
-                                            <h3 class="profile_equip"> CXO (Experience)</h3>
+                                            <h3 class="profile_equip"> CXO (Experiencia)</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -167,7 +265,20 @@
                                             alt="Imagen de perfil equipo de dirección Diana Baldero">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Andrés Cosialls</h3>
-                                            <h3 class="profile_equip">Tech</h3>
+                                            <h3 class="profile_equip">Tecnología</h3>
+                                            <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
+                                                target="_blank">
+                                                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{{ asset('img/profile_pictures_direction/Dimitri _Lobato.png') }}"
+                                            alt="Imagen de perfil equipo operacional Dimitri Lobato">
+                                        <div class="text-item-equip">
+                                            <h3 class="name_equip">Dimitri Lobato</h3>
+                                            <h3 class="profile_equip">Innovación Blockchain</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -188,7 +299,7 @@
                                             alt="Imagen de perfil equipo operacional Alfonso Casanova">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Alfonso Casanova</h3>
-                                            <h3 class="profile_equip">Developer</h3>
+                                            <h3 class="profile_equip">Desarrollador Unity/Unreal</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -196,25 +307,13 @@
                                         </div>
 
                                     </div>
-                                    <div class="item">
-                                        <img src="{{ asset('img/profile_pictures_operational/Dimitri _Lobato.png') }}"
-                                            alt="Imagen de perfil equipo operacional Dimitri Lobato">
-                                        <div class="text-item-equip">
-                                            <h3 class="name_equip">Dimitri Lobato</h3>
-                                            <h3 class="profile_equip">Blockchain Innovation</h3>
-                                            <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
-                                                target="_blank">
-                                                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                                            </a>
-                                        </div>
 
-                                    </div>
                                     <div class="item">
                                         <img src="{{ asset('img/profile_pictures_operational/Gonzalo_Laborda.png') }}"
                                             alt="Imagen de perfil equipo operacional Gonzalo Laborda">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Gonzalo Laborda</h3>
-                                            <h3 class="profile_equip">Researche</h3>
+                                            <h3 class="profile_equip">Investigador</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -227,7 +326,7 @@
                                             alt="Imagen de perfil equipo operacional Inés Navarro">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Inés Navarro</h3>
-                                            <h3 class="profile_equip">Finance</h3>
+                                            <h3 class="profile_equip">Finanzas</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -240,7 +339,7 @@
                                             alt="Imagen de perfil equipo operacional Niko Iturregi">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Niko Iturregi</h3>
-                                            <h3 class="profile_equip">UI Designer</h3>
+                                            <h3 class="profile_equip">Diseñador de UI</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -254,7 +353,7 @@
                                             alt="Imagen de perfil equipo operacional Yerai Llamas">
                                         <div class="text-item-equip">
                                             <h3 class="name_equip">Yerai_Llamas</h3>
-                                            <h3 class="profile_equip">UI Designer</h3>
+                                            <h3 class="profile_equip">Diseñador de UI</h3>
                                             <a href="https://www.linkedin.com/company/alveariumvr" class="socials"
                                                 target="_blank">
                                                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -269,10 +368,10 @@
                         </div>
                     </div>
                     <div id="tab1" class="tab">
-                        <a href="#tab1">CONOCENOS</a>
+                        <a href="#tab1">Qué es Alvearium</a>
                         <div class="tab-content">
 
-                            <p class="tab1_parrafo"><span class="destacarPalabraParrafo">Alvearium</span> es una red
+                            <p class="tab1_parrafo"><span class="highlight-word-paragraph">Alvearium</span> es una red
                                 social descentralizada en Web3, con espacios virtuales inspirados en ciudades reales,
                                 donde los usuarios, gracias a tecnologías inmersivas, un ecosistema tokenizado y las
                                 recompensas por consumir contenido en la plataforma, creará un Metaverso que genere
@@ -285,61 +384,20 @@
                                 real</p>
 
                             <br><br>
-                            <hr>
-
-                            <div class="tab1_columnas">
-                                <div class="tab1_columnas-left">
-
-                                    <h2 class="tab1_title_columna">Nuestra Misión</h2>
-
-                                    <p class="tab1_parrafo">Acercar a la población las tecnologías avanzadas y
-                                        descentralizadas, con el objetivo de <span class="resaltarText">mejorar la
-                                            experiencia y la forma de relacionarnos entre nosotros y con nuestro
-                                            entorno.</span></p>
-
-                                </div>
-
-                                <div class="tab1_columnas-right">
-
-                                    <h2 class="tab1_title_columna">Nuestra Visión</h2>
-
-                                    <p class="tab1_parrafo"><span class="resaltarText">La comunidad de
-                                            Alvearium</span>,
-                                        a través del empleo de las tecnologías más disruptivas, <span
-                                            class="resaltarText">liderará la humanización del metaverso</span>.
-                                        <br><br>
-                                        Los seres humanos podremos reproducir experiencias sensoriales más allá del
-                                        espacio-tiempo que nos permitirán mejorar nuestra forma de vivir y de
-                                        relacionarnos.
-                                    </p>
-
-                                </div>
 
 
-                            </div>
+                            <img src="{{ asset('img/Gafas-realidad-virtual (small).png') }}"
+                                alt="imagen de silueta de gafas virtuales reflejando el acceso del mundo real al virtual"
+                                class="tab1_imagen_gafas">
 
-                            <div class="tab1_nuestrosValores">
+                            
+                            <h2 class="tab1_title_history">Historia</h2>
 
-                                <h2 class="tab1_title_columna title-valores">Nuestros Valores</h2>
+                            <p class="tab1_parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit beatae fugiat hic animi, qui sint quia accusantium iste! Porro delectus obcaecati provident atque. Id delectus ipsam doloribus at quo!
+                            Velit, sit. Asperiores veniam aut vitae rem. Iste officiis, suscipit distinctio perferendis officia mollitia? Pariatur ea quidem soluta numquam repellat, expedita facilis omnis necessitatibus aspernatur earum. Eligendi consectetur ullam vel.
+                            Error voluptate aliquam nobis inventore eos eius mollitia laudantium temporibus quae dicta! Sit, earum ea voluptatem aliquam maxime velit distinctio neque ab placeat! Facilis architecto, exercitationem ipsam omnis at ex.
+                            </p>
 
-                                <div class="tab1_nuestrosValores-item">
-
-                                    <div class="row">
-                                        <div class="valor-text">Excelencia</div>
-                                        <div class="valor-text">Resiliencia</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="valor-text">Innovación</div>
-                                        <div class="valor-text">Trabajo<br> en<br> equipo</div>
-                                        <div class="valor-text">Motivación</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="valor-text">Comunidad</div>
-                                        <div class="valor-text">Ética</div>
-                                    </div>
-
-                                </div>
-                            </div>
 
                         </div>
                     </div>

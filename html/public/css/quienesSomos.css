@@ -136,11 +136,11 @@
 :root {
     --tabs-border-color: #abcdef;
     --tabs-border-size: 3px;
-    --tabs-text-color: rgb(0, 0, 0);
-    --tabs-dark-color: #012345;
-    --tabs-lite-color: #bdd7f2;
-    --tabs-width: 120px;
-    --tabs-height: 40px;
+    --tabs-text-color: var(--compPurple);
+    --tabs-dark-color: #7300f672;
+    --tabs-lite-color: white;
+    --tabs-width: 114px;
+    --tabs-height: 85px;
 }
 
 /* aspecto básico */
@@ -156,6 +156,10 @@
     padding-top: var(--tabs-height);
 }
 
+.tab-container a {
+    font-size: 1.2rem;
+}
+
 #tab1 > a {
     --tabs-position: 0;
 }
@@ -168,13 +172,14 @@
 
 .tab > a {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: calc(var(--tabs-width));
     height: calc(var(--tabs-height) + var(--tabs-border-size));
     top: 0;
-    left: calc(
-        var(--tabs-width) * var(--tabs-position)
-    ); 
+    left: calc(var(--tabs-width) * var(--tabs-position));
 }
 
 /* más aspecto */
@@ -196,8 +201,6 @@
     border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-radius: 10px 10px 0 0;
     border-bottom: 0;
-    color: white;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .tab:target > a,
 .tab:last-of-type > a {
@@ -218,74 +221,59 @@
     margin-bottom: -54px;
 }
 
-.destacarPalabraParrafo {
-    font-size: 120%;
+.highlight-word-paragraph {
+    font-size: 1.6rem;
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
-    color: var(--mainOrange);
+    color: var(--compPurple);
 }
 
 /* CONTENIDO PESTAÑAS */
 
-.tab1_parrafo {
-    font-size: 1.2rem;
-    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+.tab3_parrafo {
+    font-size: 1.5rem;
+    font-family: "open sans", Arial, Helvetica, sans-serif;
+    color: var(--compPurple);
+    position: relative;
 }
 
-.tab1_columnas {
+.tab3_parrafo::before {
+    content: "";
+    border-left: 4px solid #f1e5fe;
+    height: 100%;
+    position: absolute;
+    margin-left: -20px;
+}
+
+.tab3_columnas {
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1348px;
     gap: 30px;
 }
 
-.tab1_columnas p {
-    margin-left: 10px;
+.tab3_columnas p {
+    margin-left: 18px;
 }
 
-.tab1_title_columna {
+.tab3_title_columna {
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
-    font-size: 140%;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 25px;
     color: var(--compPurple);
 }
 
-.resaltarText {
-    color: var(--compOrange);
+.bold {
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 
-hr {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.tab1_nuestrosValores {
-    margin-top: 40px;
+.tab3_nuestrosValores {
+    margin-top: 60px;
     margin-bottom: 25px;
 }
 
-.tab1_nuestrosValores .tab1_title_columna {
+.tab3_nuestrosValores .tab3_title_columna {
     text-align: center;
-}
-
-.tab1_nuestrosValores-item {
-    margin-top: 50px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    background-image: url(../img/fondo_tab1_Alvearium.png);
-    background-position: center center;
-    padding: 40px 0;
-    background-size: cover;
-    border-radius: 3px;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
 }
 
 .valor-text {
@@ -308,10 +296,14 @@ hr {
 
 .team-direction-item,
 .team-operational-item {
-    margin-top: 30px;
+    margin-top: 22px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.team-operational-item {
+    margin-bottom: 45px;
 }
 
 .name_equip {
@@ -327,7 +319,7 @@ hr {
 }
 
 .team-operational {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .team-operational-item .item,
 .team-direction-item .item {
@@ -367,13 +359,66 @@ hr {
     align-items: center;
 }
 
-.icon-return{
+.icon-return {
     width: 40px;
     padding-bottom: 20px;
     padding-left: 15px;
-
 }
 
+.tab3_nuestrosValores-item .item img {
+    width: 124px;
+}
+
+.tab3_nuestrosValores-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.tab3_nuestrosValores-item .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 286px;
+}
+
+.text-item-value {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.description_value {
+    overflow-wrap: break-word;
+    font-family: "open sans", Arial, Helvetica, sans-serif;
+}
+.name_value {
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
+    font-size: 1.6rem;
+}
+
+.tab1_parrafo {
+    font-size: 1.5rem;
+    font-family: "open sans", Arial, Helvetica, sans-serif;
+    color: var(--compPurple);
+}
+
+.tab1_imagen_gafas {
+    width: 80%;
+    max-width: 690px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tab1_title_history {
+    font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
+    font-size: 2rem;
+    margin: 25px 0;
+    color: var(--compPurple);
+}
 
 @media only screen and (min-width: 600px) {
     .hero-content > div {
@@ -397,18 +442,16 @@ hr {
     }
 
     .tab-container a {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     :root {
-        --tabs-width: 126px;
-        --tabs-height: 42px;
+        --tabs-width: 136px;
+        --tabs-height: 92px;
     }
 
-    
     .title-section {
         font-size: 2.2rem;
-        
     }
 
     .quienesSomos_title_section {
@@ -416,7 +459,7 @@ hr {
         margin-bottom: -94px;
     }
 
-    .tab1_columnas {
+    .tab3_columnas {
         flex-wrap: nowrap;
     }
 
@@ -432,13 +475,11 @@ hr {
         font-size: 160% !important;
     }
 
-    .icon-return{
+    .icon-return {
         width: 80px;
         padding-bottom: 40px;
         padding-left: 15px;
     }
-
-
 }
 @media only screen and (min-width: 992px) {
     .hero-content {
@@ -483,11 +524,7 @@ hr {
 
     :root {
         --tabs-width: 240px;
-        --tabs-height: 64px;
-    }
-
-    .tab-container a {
-        font-size: 1.8rem;
+        --tabs-height: 98px;
     }
 
     .valor-text {
@@ -496,5 +533,9 @@ hr {
 
     .row {
         gap: 35px;
+    }
+
+    .tab-container a {
+        font-size: 1.8rem;
     }
 }
