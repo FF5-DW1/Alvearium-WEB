@@ -117,6 +117,7 @@
     .phase_container{
         display: flex;
         justify-content: space-around;
+        
     }
     .road_phase {
         margin-left: 4.5rem;
@@ -177,6 +178,7 @@
     }
     .phase_container{
         margin-left: 8rem;
+        gap: 3rem;
     }
     .road_img_state {
         width: 100%;
@@ -187,7 +189,7 @@
         font-size: 1rem;
     }
     .road_img_state_img {
-        width: 10rem;
-        height: 10rem;
+        width: 15rem;
+        height: 15rem;
     }
 }
