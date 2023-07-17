@@ -128,6 +128,27 @@
     background-position: 0;
     box-shadow: 0 0 5px 2px white;
 }
+.footer_boton .buttonWrapper a:hover {
+    background-position: 0;
+    box-shadow: 0 0 5px 2px white;
+}
+.footer_boton  .buttonWrapper a {
+    background-image: -webkit-linear-gradient(
+        45deg,
+        var(--compPurple) 50%,
+        transparent 50%
+    );
+    background-image: linear-gradient(
+        45deg,
+        var(--compPurple) 50%,
+        transparent 50%
+    );
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 0.3s ease-in, box-shadow 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -179,3 +200,4 @@
     }
     
 }
+

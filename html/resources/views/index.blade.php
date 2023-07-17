@@ -594,7 +594,9 @@
             </div>
             <div class="footer_boton">
                 <div class="buttonWrapper">
-                    <a href="#">Contacta con nosotros</a>
+                    <a href="" class="abrirModal">Contacta con nosotros</a>
+                    
+                    
                 </div>
             </div>
         </div>
