@@ -14,7 +14,7 @@
 
 <body>
 <div>
-    <H1>¿Quieres estar al dia de todas las novedades, o colaborar en el proyecto?Contacta con nosotros y síguenos en redes</H1>
+    <h1>¿Quieres estar al día de todas las novedades, o colaborar en el proyecto? <br> Contacta con nosotros y síguenos en redes</h1>
 </div>
     <form action="" class="container">
         <div class="input-container">
@@ -36,5 +36,6 @@
         </div>        
       </form>
     </div>
+
 </body>
 </html>
