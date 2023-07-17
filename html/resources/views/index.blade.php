@@ -276,15 +276,21 @@
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img_snow_wide.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #2</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
+                    <a href="#">Leer más</a>
+                </div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img_mountains_wide.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #3</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera</p>
+                    <a href="#">Leer más</a>
+                </div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -298,6 +304,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+        <a href="#" class="button">Ver todo</a>
     </section>
     <!-- News end -->
 

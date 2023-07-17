@@ -19,6 +19,7 @@
     text-align: center;
     padding-bottom: 1.5rem;
     font-size: 2.2rem;
+    color: var(--compPurple);
 }
 
 .mySlides {
@@ -98,6 +99,11 @@
 }
 
 .text-content a {
+    float: right;
+}
+
+.text-content a,
+.news .button {
     color: white;
     text-decoration: none;
     text-align: center;
@@ -107,7 +113,6 @@
     background-color: var(--compPink);
     border-radius: 5px;
     border-color: var(--compPink);
-    float: right;
     margin-top: 0.5rem;
     background-image: -webkit-linear-gradient(
         45deg,
@@ -126,8 +131,24 @@
 }
 
 .text-content a:hover {
-    background-position: 0;
     box-shadow: 0 0 5px 2px white;
+}
+
+.text-content a:hover,
+.news .button:hover {
+    background-position: 0;
+}
+
+.news .button:hover {
+    box-shadow: 0 0 5px 2px rgb(124, 124, 124);
+}
+
+.news .button {
+    display: block;
+    margin: 1rem auto;
+    max-width: fit-content;
+    padding: 0.5rem 2.5rem;
+    font-family: "open sans";
 }
 
 /* The dots/bullets/indicators */
