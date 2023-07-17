@@ -82,6 +82,7 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
+    
 
     'locale' => 'en',
 
@@ -184,5 +185,6 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
+
 
 ];
