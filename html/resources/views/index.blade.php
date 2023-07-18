@@ -107,15 +107,17 @@
                     <div id="ventanaModal1" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
-                            <h2 class="about_text_1">Instituciones publicas</h2>
-                                <p class="about_text_2">Apoyan y promueven iniciativas que 
-                                ayudan a conservar el Patrimonio 
-                                Cultural, fomentan la dinamización social 
-                                y potencian la imagen de la ciudad para 
-                                atraer turismo e inversión<br>✓Ayuntamientos
-                                <br> ✓Asociaciones de conservación de 
-                                patrimonio
-                                </p>
+                            <div class="modal-text">
+                                <h2 class="about_text_1">Instituciones publicas</h2>
+                                    <p class="about_text_2">Apoyan y promueven iniciativas que 
+                                    ayudan a conservar el Patrimonio 
+                                    Cultural, fomentan la dinamización social 
+                                    y potencian la imagen de la ciudad para 
+                                    atraer turismo e inversión<br>✓Ayuntamientos
+                                    <br> ✓Asociaciones de conservación de 
+                                    patrimonio
+                                    </p>
+                            </div>        
                         </div>
                     </div>
                 </div>
@@ -128,16 +130,18 @@
                     <div id="ventanaModal2" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
-                            <h2 class="about_text_3">Comercios</h2>
-                            <p class="about_text_4">Experimentan nuevas formas y canales 
-                                de venta. Tras años de digitalización y 
-                                de adopción del ecommerce , aparecen 
-                                nuevas maneras de vender con 
-                                experiencias inmersivas, tanto en tienda 
-                                como online.
-                                <br>✓Tiendas <br>
-                                ✓Centros Comerciales
-                            </p>
+                            <div class="modal-text">
+                                <h2 class="about_text_3">Comercios</h2>
+                                <p class="about_text_4">Experimentan nuevas formas y canales 
+                                    de venta. Tras años de digitalización y 
+                                    de adopción del ecommerce , aparecen 
+                                    nuevas maneras de vender con 
+                                    experiencias inmersivas, tanto en tienda 
+                                    como online
+                                    <br>✓Tiendas <br>
+                                    ✓Centros Comerciales
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,16 +154,18 @@
                     <div id="ventanaModal3" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
-                            <h2 class="about_text_5">Ocio</h2>
-                            <p class="about_text_6">El Metaverso trae nuevas formas de 
-                                disfrutar del ocio desde cualquier lugar. 
-                                Los métodos de socializar a través de 
-                                dispositivos se verán mejorados gracias 
-                                al contenido inmersivo.
-                                <br>✓Eventos deportivos
-                                <br>✓Conciertos
-                                <br>✓Cines inmersivos
-                            </p>
+                            <div class="modal-text">
+                                <h2 class="about_text_5">Ocio</h2>
+                                <p class="about_text_6">El Metaverso trae nuevas formas de 
+                                    disfrutar del ocio desde cualquier lugar. 
+                                    Los métodos de socializar a través de 
+                                    dispositivos se verán mejorados gracias 
+                                    al contenido inmersivo
+                                    <br>✓Eventos deportivos
+                                    <br>✓Conciertos
+                                    <br>✓Cines inmersivos
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,16 +179,18 @@
                         <div id="ventanaModal4" class="modal">
                             <div class="contenido-modal">
                                 <span class="cerrar">&times;</span>
-                                <h2 class="about_text_7">Creadores</h2>
-                                <p class="about_text_8">Necesitan nuevas formas 
-                                    para mostrar su talento, posicionarse 
-                                    en el mercado, monetizar su trabajo.
-                                <br>✓Influencers
-                                <br>✓Artistas
-                                <br>✓Profesores Online
-                                <br>✓Divulgadores científicos
-                                <br>✓Deportistas
-                                </p>
+                                <div class="modal-text">
+                                    <h2 class="about_text_7">Creadores</h2>
+                                    <p class="about_text_8">Necesitan nuevas formas 
+                                        para mostrar su talento, posicionarse 
+                                        en el mercado, monetizar su trabajo.
+                                    <br>✓Influencers
+                                    <br>✓Artistas
+                                    <br>✓Profesores Online
+                                    <br>✓Divulgadores científicos
+                                    <br>✓Deportistas
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,16 +204,18 @@
                         <div id="ventanaModal5" class="modal">
                             <div class="contenido-modal">
                                 <span class="cerrar">&times;</span>
-                                <h2 class="about_text_9">Marcas</h2>
-                                <p class="about_text_10">Exploran nuevos canales de 
-                                    adquisición que les permitan mejorar el 
-                                    engagement con su marca. Además, buscan 
-                                    comunidades comprometidas con sus valores 
-                                    y están dispuestos a apostar por conseguir su 
-                                    misión con ellas.
-                                <br>✓ Grandes marcas entrando en el Metaverso.
-                                <br>✓ Personas reconocidas.
-                                </p>
+                                <div class="modal-text">    
+                                    <h2 class="about_text_9">Marcas</h2>
+                                    <p class="about_text_10">Exploran nuevos canales de 
+                                        adquisición que les permitan mejorar el 
+                                        engagement con su marca. Además, buscan 
+                                        comunidades comprometidas con sus valores 
+                                        y están dispuestos a apostar por conseguir su 
+                                        misión con ellas.
+                                    <br>✓ Grandes marcas entrando en el Metaverso.
+                                    <br>✓ Personas reconocidas.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,16 +228,18 @@
                         <div id="ventanaModal6" class="modal">
                             <div class="contenido-modal">
                                 <span class="cerrar">&times;</span>
-                                <h2 class="about_text_11">Usuarios</h2>
-                                <p class="about_text_12">Buscan experiencias inmersivas, 
-                                    de calidad. Además quieren 
-                                    beneficiarse de la generación de valor 
-                                    de su identidad y actividad digital y 
-                                    están comprometidos en generar 
-                                    impacto positivo en el mundo.
-                                <br>✓Usuarios de Redes sociales.
-                                <br>✓Comunidad Crypto
-                                </p>
+                                <div class="modal-text">
+                                    <h2 class="about_text_11">Usuarios</h2>
+                                    <p class="about_text_12">Buscan experiencias inmersivas, 
+                                        de calidad. Además quieren 
+                                        beneficiarse de la generación de valor 
+                                        de su identidad y actividad digital y 
+                                        están comprometidos en generar 
+                                        impacto positivo en el mundo.
+                                    <br>✓Usuarios de Redes sociales.
+                                    <br>✓Comunidad Crypto
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
