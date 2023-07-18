@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('css/partners.css') }}">
     <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
 </head>
 
 <body>
@@ -606,8 +607,29 @@
             </div>
             <div class="footer_boton">
                 <div class="buttonWrapper">
-                    <a href="" class="abrirModal">Contacta con nosotros</a>
-                    
+                    <a class="abrirModal">Contacta con nosotros</a>
+
+                    <div id="ventanaModal6" class="modal formModal">
+                        <span class="form_cerrar">&times;</span>
+                        <form action="" class="form_container">
+                            <div class="input-container">
+                                <div class="input-content">
+                                    <div class="input-dist">
+                                        <div class="input-type">
+                                            <input placeholder="Nombre" required="" type="text" class="input-is">
+                                            <input placeholder="Teléfono" required="" type="" class="input-is">
+                                            <input placeholder="E-mail" required="" type="text" class="input-is">
+                                            <textarea placeholder="Texto" required="" type="" class="input-is"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button>
+                                    Button
+                                </button>
+                            </div>
+                            
+                        </form>
+                    </div>
                     
                 </div>
             </div>

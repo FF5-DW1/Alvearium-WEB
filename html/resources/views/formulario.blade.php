@@ -8,30 +8,30 @@
     <title>Alvearium</title>
 
     <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
-   
+
 </head>
 
 
 
 <body>
-<form action="" class="form_container">
-  <div class="input-container">
-      <div class="input-content">
-          <div class="input-dist">
-              <div class="input-type">
-                   
-                        <input placeholder="Nombre" required="" type="text" class="input-is">  
+    <form action="" class="form_container">
+        <div class="input-container">
+            <div class="input-content">
+                <div class="input-dist">
+                    <div class="input-type">
+
+                        <input placeholder="Nombre" required="" type="text" class="input-is">
                         <input placeholder="Teléfono" required="" type="" class="input-is">
                         <input placeholder="E-mail" required="" type="text" class="input-is">
                         <textarea placeholder="Texto" required="" type="" class="input-is"></textarea>
-              </div>
-          </div>
-      </div>
-  </div>
-        <button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>
             Button
         </button>
-</form>
+    </form>
 
 </body>
 

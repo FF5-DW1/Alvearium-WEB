@@ -9,6 +9,7 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    background-image: url('/public/img/modal_fondo1.png');
     gap: 1em;
 }
 
@@ -287,3 +288,31 @@ button:active {
         inset 0 0 0.5em 0.25em var(--glow-color);
 }
 
+
+div.modal_form {
+    background-image: url('/public/img/modal_fondo1.png');
+    background-size: cover;
+}
+
+
+
+
+.form_cerrar {
+    position: absolute;
+    top: 200px;
+    left: 850px;
+    transform: rotate(90deg);
+    z-index: 3;
+    cursor: pointer;
+}
+.form_cerrar {
+    color: #ffffff;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.formModal {
+    background-image: url("/img/modal_fondo.png");
+    background-size: cover;
+}
