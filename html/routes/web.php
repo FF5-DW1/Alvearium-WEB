@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\LocaleCookieMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,5 +18,20 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view('/' , 'index')->name('home');
-Route::view('/quienes-somos' , 'quienes-somos')->name('quienes-somos');
+
+Route::get('/locale/{locale}' , function ($locale) {
+    
+    $allowed_locales = ['en','es'];
+    
+    if(! in_array($locale, $allowed_locales)) {
+        abort(400, "Invalid locale"); // Retorna error 400 si el locale no es permitido
+    }
+    return redirect()->back()->withCookie('locale' , $locale);
+});
+
+Route::middleware(LocaleCookieMiddleware::class)->group(function () {
+    
+    Route::view('/' , 'index')->name('home');
+    Route::view('/quienes-somos' , 'quienes-somos')->name('quienes-somos');
+    
+});

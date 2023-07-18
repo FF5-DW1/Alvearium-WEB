@@ -177,7 +177,11 @@
         left: 37px;
     }
     .phase_container{
+<<<<<<< HEAD
         margin-left: 6rem;
+=======
+        margin-left: 8rem;
+>>>>>>> 1117e3210a9cee7a30fc52fc742512405c4e28c8
         gap: 3rem;
     }
     .road_img_state {

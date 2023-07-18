@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -35,11 +35,14 @@
         </a>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
-                <a class="link-item" href="#">Visión</a>
-                <a class="link-item" href="#">Fundación</a>
-                <a class="link-item" href="#">Equipo & Partners</a>
-                <a class="link-item" href="#">Roadmap</a>
+                <a class="link-item" href="#aboutUsContainer">{{ __('Conócenos') }}</a>
+                <a class="link-item" href="#roadmap_container">{{ __('Roadmap') }}</a>
+                <a class="link-item" href="#portfolio">{{ __('Portfolio') }}</a>
+                <a class="link-item" href="#team">{{ __('') }}Equipo & Partners</a>
+                <a class="link-item" href="#news">{{ __('Noticias') }}</a>
             </div>
+            <a href="{{ asset('/locale/en') }}">EN</a>
+            <a href="{{ asset('/locale/es') }}">ES</a>
         </nav>
 
         <button id="button-menu" class="button-menu">
@@ -57,11 +60,11 @@
             <div id="particles-js"></div>
             <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
             <div>
-                <h1 class="hero-title_layer">Comienza una nueva experiencia</h1>
+                <h1 class="hero-title_layer">{{ __('Comienza una nueva experiencia') }}</h1>
                 <div class="buttonWrapper">
-                    <a href="https://discord.com/invite/Wmq2gzRRhf">Únete al Discord de <img
+                    <a href="https://discord.com/invite/Wmq2gzRRhf">{{ __('Únete al Discord de') }} <img
                             src="{{ asset('img/w3_white.png') }}" alt="Logo de LaunchW3"></a>
-                    <a href="#">Información Tokenomics</a>
+                    <a href="#">{{ __('Información Tokenomics') }}</a>
                 </div>
             </div>
             <div>
@@ -88,9 +91,9 @@
 
     <!-- Section Us -->
 
-    <section class="aboutUsContainer">
+    <section id="aboutUsContainer" class="aboutUsContainer">
         <div class="aboutUsTitulo">
-            <h2>Conoce más sobre Alvearium</h2>
+            <h2>{{ __('Conoce más sobre Alvearium') }}</h2>
         </div>
         <div class="aboutUsMedia">
             <div class="aboutUsVideo">
@@ -104,22 +107,22 @@
                     <a class="botonAbout abrirModal">
                         <img class="ImgInstitutions" src="{{ asset('img/instituciones2.png') }}" alt="Instituciones"
                             width="615px" height="405px">
-                        <p>Instituciones Públicas</p>
+                        <p>{{ __('Instituciones Públicas') }}</p>
                     </a>
                     <div id="ventanaModal1" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
+
                             <div class="modal-text">
-                                <h2 class="about_text_1">Instituciones publicas</h2>
-                                    <p class="about_text_2">Apoyan y promueven iniciativas que 
-                                    ayudan a conservar el Patrimonio 
-                                    Cultural, fomentan la dinamización social 
-                                    y potencian la imagen de la ciudad para 
-                                    atraer turismo e inversión<br>✓Ayuntamientos
-                                    <br> ✓Asociaciones de conservación de 
-                                    patrimonio
-                                    </p>
-                            </div>        
+                                <h2 class="about_text_1">{{ __('Instituciones Públicas') }}</h2>
+                                <p class="about_text_2">
+                                    {{ __('Apoyan y promueven iniciativas que ayudan a conservar el Patrimonio Cultural, fomentan la dinamización social y potencian la imagen de la ciudad para atraer turismo e inversión') }}
+                                    <br>
+                                    {{ __('✓ Ayuntamientos') }}
+                                    <br>
+                                    {{ __('✓ Asociaciones de conservación de patrimonio') }}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,21 +130,19 @@
                     <a class="botonAbout abrirModal">
                         <img class="ImgComercial" src="{{ asset('img/comercios2.png') }}" alt="Comercial"
                             width="615px" height="405px">
-                        <p>Comercios</p>
+                        <p>{{ __('Comercios') }}</p>
                     </a>
                     <div id="ventanaModal2" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
                             <div class="modal-text">
-                                <h2 class="about_text_3">Comercios</h2>
-                                <p class="about_text_4">Experimentan nuevas formas y canales 
-                                    de venta. Tras años de digitalización y 
-                                    de adopción del ecommerce , aparecen 
-                                    nuevas maneras de vender con 
-                                    experiencias inmersivas, tanto en tienda 
-                                    como online
-                                    <br>✓Tiendas <br>
-                                    ✓Centros Comerciales
+                                <h2 class="about_text_3">{{ __('Comercios') }}</h2>
+                                <p class="about_text_4">
+                                    {{ __('Experimentan nuevas formas y canales de venta. Tras años de digitalización y de adopción del ecommerce , aparecen nuevas maneras de vender con experiencias inmersivas, tanto en tienda como online') }}
+                                    <br>
+                                    {{ __('✓ Tiendas') }}
+                                    <br>
+                                    {{ __('✓ Centros Comerciales') }}
                                 </p>
                             </div>
                         </div>
@@ -151,21 +152,22 @@
                     <a class="botonAbout abrirModal">
                         <img class="ImgOcio" src="{{ asset('img/ocio2.png') }}" alt="Ocio" width="615px"
                             height="405px">
-                        <p id="">Ocio</p>
+                        <p id="">{{ __('Ocio') }}</p>
                     </a>
                     <div id="ventanaModal3" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
                             <div class="modal-text">
-                                <h2 class="about_text_5">Ocio</h2>
-                                <p class="about_text_6">El Metaverso trae nuevas formas de 
-                                    disfrutar del ocio desde cualquier lugar. 
-                                    Los métodos de socializar a través de 
-                                    dispositivos se verán mejorados gracias 
-                                    al contenido inmersivo
-                                    <br>✓Eventos deportivos
-                                    <br>✓Conciertos
-                                    <br>✓Cines inmersivos
+                                <h2 class="about_text_5">{{ __('Ocio') }}</h2>
+                                <p class="about_text_6">
+                                    {{ __('El Metaverso trae nuevas formas de disfrutar del ocio desde cualquier lugar. Los métodos de socializar a través de dispositivos se verán mejorados gracias al contenido inmersivo') }}
+                                    <br>
+                                    {{ __('✓ Eventos deportivos') }}
+                                    <br>
+                                    {{ __('✓ Conciertos') }}
+                                    <br>
+                                    {{ __('✓ Cines inmersivos') }}
+
                                 </p>
                             </div>
                         </div>
@@ -176,21 +178,26 @@
                         <a class="botonAbout abrirModal">
                             <img class="ImgCreate" src="{{ asset('img/creadores.png') }}" alt="Creadores"
                                 width="615px" height="405px">
-                            <p>Creadores</p>
+                            <p>{{ __('Creadores') }}</p>
                         </a>
                         <div id="ventanaModal4" class="modal">
                             <div class="contenido-modal">
                                 <span class="cerrar">&times;</span>
                                 <div class="modal-text">
-                                    <h2 class="about_text_7">Creadores</h2>
-                                    <p class="about_text_8">Necesitan nuevas formas 
-                                        para mostrar su talento, posicionarse 
-                                        en el mercado, monetizar su trabajo.
-                                    <br>✓Influencers
-                                    <br>✓Artistas
-                                    <br>✓Profesores Online
-                                    <br>✓Divulgadores científicos
-                                    <br>✓Deportistas
+                                    <h2 class="about_text_7">{{ __('Creadores') }}</h2>
+                                    <p class="about_text_8">
+                                        {{ __('Necesitan nuevas formas para mostrar su talento, posicionarse en el mercado, monetizar su trabajo') }}
+                                        <br>
+                                        {{ __('✓ Influencers') }}
+                                        <br>
+                                        {{ __('✓ Artistas') }}
+                                        <br>
+                                        {{ __('✓ Profesores Online') }}
+                                        <br>
+                                        {{ __('✓ Divulgadores científicos') }}
+                                        <br>
+                                        {{ __('✓ Deportistas') }}
+
                                     </p>
                                 </div>
                             </div>
@@ -201,57 +208,52 @@
                         <a class="botonAbout abrirModal">
                             <img class="ImgBrands" src="{{ asset('img/marcas.png') }}" alt="Marcas"
                                 width="615px" height="405px">
-                            <p>Marcas</p>
+                            <p>{{ __('Marcas') }}</p>
                         </a>
                         <div id="ventanaModal5" class="modal">
                             <div class="contenido-modal">
                                 <span class="cerrar">&times;</span>
-                                <div class="modal-text">    
-                                    <h2 class="about_text_9">Marcas</h2>
-                                    <p class="about_text_10">Exploran nuevos canales de 
-                                        adquisición que les permitan mejorar el 
-                                        engagement con su marca. Además, buscan 
-                                        comunidades comprometidas con sus valores 
-                                        y están dispuestos a apostar por conseguir su 
-                                        misión con ellas.
-                                    <br>✓ Grandes marcas entrando en el Metaverso.
-                                    <br>✓ Personas reconocidas.
+                                <div class="modal-text">
+                                    <h2 class="about_text_9">{{ __('Marcas') }}</h2>
+                                    <p class="about_text_10">
+                                        {{ __('Exploran nuevos canales de adquisición que les permitan mejorar el engagement con su marca. Además, buscan comunidades comprometidas con sus valores y están dispuestos a apostar por conseguir su misión con ellas') }}
+                                        <br>
+                                        {{ __('✓ Grandes marcas entrando en el Metaverso') }}
+                                        <br>
+                                        {{ __('✓ Personas reconocidas') }}
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="aboutUsers">
-                        <a class="botonAbout abrirModal">
-                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios"
-                                width="615px" height="405px">
-                            <p>Usuarios</p>
-                        </a>
-                        <div id="ventanaModal6" class="modal">
-                            <div class="contenido-modal">
-                                <span class="cerrar">&times;</span>
-                                <div class="modal-text">
-                                    <h2 class="about_text_11">Usuarios</h2>
-                                    <p class="about_text_12">Buscan experiencias inmersivas, 
-                                        de calidad. Además quieren 
-                                        beneficiarse de la generación de valor 
-                                        de su identidad y actividad digital y 
-                                        están comprometidos en generar 
-                                        impacto positivo en el mundo.
-                                    <br>✓Usuarios de Redes sociales.
-                                    <br>✓Comunidad Crypto
-                                    </p>
-                                </div>
+               
+                <div class="aboutUsers">
+                    <a class="botonAbout abrirModal">
+                        <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios" width="615px"
+                            height="405px">
+                        <p>{{ __('Usuarios') }}</p>
+                    </a>
+                    <div id="ventanaModal6" class="modal">
+                        <div class="contenido-modal">
+                            <span class="cerrar">&times;</span>
+                            <div class="modal-text">
+                                <h2 class="about_text_11">{{ __('Usuarios') }}</h2>
+                                <p class="about_text_12">
+                                    {{ __('Buscan experiencias inmersivas, de calidad. Además quieren beneficiarse de la generación de valor de su identidad y actividad digital y están comprometidos en generar impacto positivo en el mundo') }}
+                                    <br>
+                                    {{ __('✓ Usuarios de Redes sociales') }}
+                                    <br>
+                                    {{ __('✓ Comunidad Crypto') }}
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
-
-
-
         </div>
-        </div>
+
+
     </section>
 
     <!-- Frase -->
@@ -265,81 +267,83 @@
     <!--end Frase-->
 
     <!--Roadmap-->
-    <section class="roadmap_container">
+    <section id="roadmap_container" class="roadmap_container">
 
 
         <h2 class="road_title">Roadmap</h2>
 
 
         <div class="road_container">
-            
-                <div class="phase_container">
-                    <ul class="road_phase">
-                        <div class="road_img_phase">
-                            <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
-                            <p class="road_p fase1">F.I</p>
-                            <h3>
-                                2022 2023
-                            </h3>
-                        </div>
-                    </ul>
-                    
-                    <ul class="road_phase">
-                        <li class="road_img_phase">
-                            <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 2">
-                            <p class="road_p fase2">F.II</p>
-                            <h3>
-                                2022 2023
-                            </h3>
-                        </li>
-                    </ul>
-                    <ul class="road_phase">
-                            <li class="road_img_phase">
-                                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 3">
-                                <p class="road_p">F.III</p>
-                                <h3>
-                                    2022 2023
-                                </h3>
-                            </li>
-                    </ul>
-                </div>
 
-                <div class="state_container">
-                    <ul class="road_state">
-                        <li class="road_img_state">
-                            <img class="road_img_state_img" src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
-                            <h3>
-                                Paisaje de la Luz
-                            </h3>
-                        </li>
-                    </ul>
-                    
-                                </ul>
-                                <ul class="road_state">
+            <div class="phase_container">
+                <ul class="road_phase">
+                    <div class="road_img_phase">
+                        <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
+                        <p class="road_p fase1">F.I</p>
+                        <h3>
+                            2022 2023
+                        </h3>
+                    </div>
+                </ul>
+
+                <ul class="road_phase">
+                    <li class="road_img_phase">
+                        <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 2">
+                        <p class="road_p fase2">F.II</p>
+                        <h3>
+                            2022 2023
+                        </h3>
+                    </li>
+                </ul>
+                <ul class="road_phase">
+                    <li class="road_img_phase">
+                        <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 3">
+                        <p class="road_p">F.III</p>
+                        <h3>
+                            2022 2023
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="state_container">
+                <ul class="road_state">
+                    <li class="road_img_state">
+                        <img class="road_img_state_img" src="/img/roadmap/road_paisaje_luz.png"
+                            alt="Paisaje de la Luz">
+                        <h3>
+                            Paisaje de la Luz
+                        </h3>
+                    </li>
+                </ul>
+
+                </ul>
+                <ul class="road_state">
                     <li class="road_img_state">
                         <img class="road_img_state_img" src="/img/roadmap/road_comercio.png" alt="Paisaje de la Luz">
                         <h3>
                             Madrid (Comercio, Ocio y Turismo)
                         </h3>
                     </li>
-                                </ul>
-                    
-                                <ul class="road_state">
+                </ul>
+
+                <ul class="road_state">
                     <li class="road_img_state">
-                        <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png" alt="Paisaje de la Luz">
+                        <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png"
+                            alt="Paisaje de la Luz">
                         <h3>
                             Escala Co-Desarrollo ciudades TOP
                         </h3>
                     </li>
-                                </ul>
-                </div>
+                </ul>
+            </div>
 
         </div>
     </section>
 
-     {{-- Portfolio --}}
+    {{-- Portfolio --}}
 
-     <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2 class="portfolio_title_section">Portfolio</h2>
         <div class="portfolio_container_item">
             <div class="portfolio_item">
@@ -395,8 +399,9 @@
     </section>
 
     <!-- Team -->
-    <section class="team-direction_slider">
-        <h2 class="title-section">Equipo <span class="title-section-second_color">Dirección</span></h2>
+    <section class="team-direction_slider" id="team">
+        <h2 class="title-section">{{ __('Equipo ') }}<span
+                class="title-section-second_color">{{ __('Dirección') }}</span></h2>
         <div class="contenedor">
             <div class="slider">
                 <div class="item">
@@ -478,16 +483,15 @@
             </div>
         </div>
 
-        <div class="buttonWrapper"> <a href="{{ route('quienes-somos') }}">Quiénes somos</a></div>
+        <div class="buttonWrapper"> <a href="{{ route('quienes-somos') }}">{{ __('Quiénes somos') }}</a></div>
     </section>
 
-    
 
     {{-- Partners --}}
 
     <section class="partners">
 
-        <h2 class="partners_title_section">Partners Estratégicos</h2>
+        <h2 class="partners_title_section">{{ __('Partners Estratégicos') }}</h2>
 
         <div class="partners_container_item">
 
@@ -598,35 +602,51 @@
 
     </section>
 
+
     <!-- News -->
-    <section class="news">
-        <h2>NOTICIAS</h2>
+    <section class="news" id="news">
+        <h2>{{ __('Noticias') }}</h2>
         <div class="slideshow-container">
 
             <div class="mySlides fade">
                 <img src="https://picsum.photos/300/250" alt="Foto de noticia">
                 <div class="text-content">
                     <h3 class="title">Noticia #1</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
-                    <a href="#">Leer más</a>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui
+                        temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae
+                        ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste
+                        sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet
+                        deleniti. Esto es texto de más que no se vera jiji</p>
+                    <a href="#">{{ __('Leer más') }}</a>
                 </div>
             </div>
 
             <div class="mySlides fade">
-                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <img src="https://picsum.photos/300/251" alt="Foto de noticia">
                 <div class="text-content">
                     <h3 class="title">Noticia #2</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
-                    <a href="#">Leer más</a>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui
+                        temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae
+                        ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste
+                        sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet
+                        deleniti. Esto es texto de más que no se vera jiji</p>
+                    <a href="#">{{ __('Leer más') }}</a>
                 </div>
             </div>
 
             <div class="mySlides fade">
-                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <img src="https://picsum.photos/300/252" alt="Foto de noticia">
                 <div class="text-content">
                     <h3 class="title">Noticia #3</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera</p>
-                    <a href="#">Leer más</a>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui
+                        temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae
+                        ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste
+                        sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet
+                        deleniti. Esto es texto de más que no se vera</p>
+                    <a href="#">{{ __('Leer más') }}</a>
                 </div>
             </div>
 
@@ -641,7 +661,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-        <a href="#" class="button">Ver todo</a>
+        <a href="#" class="button">{{ __('Ver todo') }}</a>
     </section>
     <!-- News end -->
 
@@ -651,34 +671,14 @@
 
         <div class="footer_contact">
             <div class="footer_frase">
-                ¿Quieres estar al día de todas las novedades, o colaborar en el proyecto? Contacta con nosotros y síguenos en redes
+                {{ __('¿Quieres estar al día de todas las novedades, o colaborar en el proyecto?') }} <br>
+                {{ __('Contacta con nosotros y síguenos en redes') }}
             </div>
             <div class="footer_boton">
                 <div class="buttonWrapper">
-                    <a class="abrirModal">Contacta con nosotros</a>
+                    <a href="" class="abrirModal">{{ __('Contacta con nosotros') }}</a>
 
-                    <div id="ventanaModal6" class="modal formModal">
-                        <span class="form_cerrar">&times;</span>
-                        <form action="" class="form_container">
-                            <div class="input-container">
-                                <div class="input-content">
-                                    <div class="input-dist">
-                                        <div class="input-type">
-                                            <input placeholder="Nombre" required="" type="text" class="input-is">
-                                            <input placeholder="Teléfono" required="" type="" class="input-is">
-                                            <input placeholder="E-mail" required="" type="text" class="input-is">
-                                            <textarea placeholder="Texto" required="" type="" class="input-is"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button>
-                                    Button
-                                </button>
-                            </div>
-                            
-                        </form>
-                    </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -701,8 +701,8 @@
                 </a>
             </div>
             <div class="footer_privacidad">
-                <p><a href="#">Conoce nuestra política de privacidad</a></p>
-                <p><a href="#">Conoce nuestra receta de cookies 😊</a></p>
+                <p><a href="#">{{ __('Conoce nuestra política de privacidad') }}</a></p>
+                <p><a href="#">{{ __('Conoce nuestra receta de cookies 😊') }}</a></p>
             </div>
             <div class="footer_derechos">
                 Alvearium 2023 ®
@@ -710,40 +710,10 @@
         </div>
     </footer>
 
-    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class ="buttonUp"></a>
+    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
+            class="buttonUp"></a>
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+    <script></script>
     <script src="{{ asset('navbar.js') }}"></script>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
     <script src="{{ asset('lib/particles/particles.min.js') }}"></script>
@@ -751,6 +721,8 @@
     <script src="{{ asset('js/cards.js') }}"></script>
     <script src="{{ asset('js/modal.js') }}"></script>
     <script src="{{ asset('js/buttonUp.js') }}"></script>
+    <script src="{{ asset('js/news.js') }}"></script>
+    <script src="{{ asset('js/navbar.js') }}"></script>
 
 </body>
 

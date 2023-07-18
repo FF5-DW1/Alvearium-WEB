@@ -13,64 +13,52 @@
     background-color: rgba(0, 0, 0, 0.4); /* semi transparent background */
 }
 
-.about_text_1 {
-    font-display: flex;
+.about_text_1 , .about_text_2 , .about_text_3 , .about_text_4 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2{
     justify-content: center;
     width: 500px;
 }
 
 .about_text_2 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_3 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_4 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_5 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_6 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_7 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_8 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_9 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_10 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_11 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
 .about_text_12 {
-    font-display: flex;
     justify-content: center;
     width: 500px;
 }
@@ -105,13 +93,12 @@
     top: 200px;
     left: 936px;
     transform: rotate(90deg);
-}
-.cerrar {
     color: #000000;
     float: right;
     font-size: 40px;
     font-weight: bold;
 }
+
 
 .close:hover,
 .close:focus {

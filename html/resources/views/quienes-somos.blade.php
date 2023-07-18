@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
                 <div id="particles-js"></div>
                 <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
                 <div>
-                    <h1 class="hero-title_layer">Comienza una nueva experiencia</h1>
+                    <h1 class="hero-title_layer">{{ __('Comienza una nueva experiencia') }}</h1>
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/company/alveariumvr" class="socials" target="_blank">
@@ -46,39 +46,36 @@
 
         <div class="container_pestañas">
 
-            <h2 class="quienesSomos_title_section">Quiénes somos</h2>
+            <h2 class="quienesSomos_title_section">{{ __('Quiénes somos') }}</h2>
 
             <div class="tabs">
                 <a href="{{ route('home') }}"><img src="{{ asset('img/icons/icon-return-80-.png') }}"
                         alt="Icono regresar pantalla principal" class="icon-return"></a>
                 <div class="tab-container">
                     <div id="tab3" class="tab">
-                        <a href="#tab3">Misión, Visión, Valores</a>
+                        <a href="#tab3">{{ __('Misión, Visión, Valores') }}</a>
                         <div class="tab-content">
                             <div class="tab3_columnas">
                                 <div class="tab1_columnas-left">
 
-                                    <h2 class="tab3_title_columna">Nuestra <br> Misión</h2>
+                                    <h2 class="tab3_title_columna">{{ __('Nuestra ') }}<br> {{ __('Misión') }}</h2>
 
-                                    <p class="tab3_parrafo">Acercar a la población las tecnologías avanzadas y
-                                        descentralizadas, con el objetivo de <span class="bold">mejorar la
-                                            experiencia y la forma de relacionarnos entre nosotros y con nuestro
-                                            entorno.</span></p>
+                                    <p class="tab3_parrafo">{{ __('Acercar a la población las tecnologías avanzadas y descentralizadas, con el objetivo de ') }}
+                                    <span class="bold">
+                                        {{ __('mejorar la experiencia y la forma de relacionarnos entre nosotros y con nuestro entorno.') }}
+                                    </span>
+                                    </p>
 
                                 </div>
 
                                 <div class="tab3_columnas-right">
 
-                                    <h2 class="tab3_title_columna">Nuestra <br> Visión</h2>
+                                    <h2 class="tab3_title_columna">{{ __('Nuestra ') }}<br> {{ __('Visión') }}</h2>
 
-                                    <p class="tab3_parrafo"><span class="bold">La comunidad de
-                                            Alvearium</span>,
-                                        a través del empleo de las tecnologías más disruptivas, <span
-                                            class="bold">liderará la humanización del metaverso</span>.
+                                    <p class="tab3_parrafo"><span class="bold">{{ __('La comunidad de Alvearium ') }}</span>{{ __(',a través del empleo de las tecnologías más disruptivas, ') }}
+                                        <span class="bold">{{ __('liderará la humanización del metaverso.') }}</span>
                                         <br><br>
-                                        Los seres humanos podremos reproducir experiencias sensoriales más allá del
-                                        espacio-tiempo que nos permitirán mejorar nuestra forma de vivir y de
-                                        relacionarnos.
+                                        {{ __('Los seres humanos podremos reproducir experiencias sensoriales más allá del espacio-tiempo que nos permitirán mejorar nuestra forma de vivir y de relacionarnos.') }}
                                     </p>
 
                                 </div>
@@ -88,7 +85,7 @@
 
                             <div class="tab3_nuestrosValores">
 
-                                <h2 class="tab3_title_columna">Nuestros Valores</h2>
+                                <h2 class="tab3_title_columna">{{ __('Nuestros Valores') }}</h2>
 
                                 <div class="tab3_nuestrosValores-item">
 
@@ -96,9 +93,8 @@
                                         <img src="{{ asset('img/icon_values/excelencia_alvearium4.png') }}"
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
-                                            <h3 class="name_value">Excelencia</h3>
-                                            <h3 class="description_value">Empleo de las mejores prácticas buscando la
-                                                máxima calidad.</h3>
+                                            <h3 class="name_value">{{ __('Excelencia') }}</h3>
+                                            <h3 class="description_value">{{ __('Empleo de las mejores prácticas buscando la máxima calidad.') }}</h3>
                                         </div>
 
                                     </div>
@@ -106,9 +102,8 @@
                                         <img src="{{ asset('img/icon_values/resiliencia_alvearium.png') }}"
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
-                                            <h3 class="name_value">Resiliencia</h3>
-                                            <h3 class="description_value">Adaptación a los continuos cambios de este
-                                                mundo disruptivo.</h3>
+                                            <h3 class="name_value">{{ __('Resiliencia') }}</h3>
+                                            <h3 class="description_value">{{ __('Adaptación a los continuos cambios de este mundo disruptivo.') }}</h3>
                                         </div>
 
                                     </div>
@@ -116,9 +111,8 @@
                                         <img src="{{ asset('img/icon_values/innovacion_alvearium.png') }}"
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
-                                            <h3 class="name_value">Innovación</h3>
-                                            <h3 class="description_value">Visión para impulsar nuevas ideas y aplicar la
-                                                mejora continua.</h3>
+                                            <h3 class="name_value">{{ __('Innovación') }}</h3>
+                                            <h3 class="description_value">{{ __('Visión para impulsar nuevas ideas y aplicar la mejora continua.') }}</h3>
                                         </div>
 
                                     </div>
@@ -126,9 +120,8 @@
                                         <img src="{{ asset('img/icon_values/motivacion_alvearium.png') }}"
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
-                                            <h3 class="name_value">Motivación</h3>
-                                            <h3 class="description_value">Actitud positiva para trabajar con
-                                                perseverancia y determinación.</h3>
+                                            <h3 class="name_value">{{ __('Motivación') }}</h3>
+                                            <h3 class="description_value">{{ __('Actitud positiva para trabajar con perseverancia y determinación.') }}</h3>
                                         </div>
 
                                     </div>
@@ -136,9 +129,8 @@
                                         <img src="{{ asset('img/icon_values/trabajo_equipo__alvearium4.png') }}"
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
-                                            <h3 class="name_value">Trabajo en equipo</h3>
-                                            <h3 class="description_value">Colaboración y cooperación para crear valor y
-                                                multiplicar la productividad.</h3>
+                                            <h3 class="name_value">{{ __('Trabajo en equipo') }}</h3>
+                                            <h3 class="description_value">{{ __('Colaboración y cooperación para crear valor y multiplicar la productividad.') }}</h3>
                                         </div>
 
                                     </div>
@@ -146,9 +138,8 @@
                                         <img src="{{ asset('img/icon_values/comunidad_alvearium.png') }}"
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
-                                            <h3 class="name_value">Comunidad</h3>
-                                            <h3 class="description_value">Fiel y colaborativa con foco en la
-                                                responsabilidad social.</h3>
+                                            <h3 class="name_value">{{ __('Comunidad') }}</h3>
+                                            <h3 class="description_value">{{ __('Fiel y colaborativa con foco en la responsabilidad social.') }}</h3>
                                         </div>
 
                                     </div>
@@ -156,9 +147,8 @@
                                         <img src="{{ asset('img/icon_values/etica_alvearium.png') }}"
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
-                                            <h3 class="name_value">Ética</h3>
-                                            <h3 class="description_value">Transparencia, lealtad y honestidad como
-                                                factores de creación de valor.</h3>
+                                            <h3 class="name_value">{{ __('Ética') }}</h3>
+                                            <h3 class="description_value">{{ __('Transparencia, lealtad y honestidad como factores de creación de valor.') }}</h3>
                                         </div>
 
                                     </div>
@@ -169,12 +159,12 @@
                         </div>
                     </div>
                     <div id="tab2" class="tab">
-                        <a href="#tab2">Equipo</a>
+                        <a href="#tab2">{{ __('Equipo') }}</a>
                         <div class="tab-content">
 
                             <div class="team-direction">
-                                <h2 class="title-section">Equipo <span
-                                        class="title-section-second_color">Dirección</span></h2>
+                                <h2 class="title-section">{{ __('Equipo ') }}<span
+                                        class="title-section-second_color">{{ __('Dirección') }}</span></h2>
                                 <div class="team-direction-item">
                                     <div class="item">
                                         <img src="{{ asset('img/profile_pictures_direction/Luis_Manuel_Fernandez.png') }}"
@@ -286,8 +276,8 @@
                             </div>
 
                             <div class="team-operational">
-                                <h2 class="title-section">Equipo <span
-                                        class="title-section-second_color">Operacional</span></h2>
+                                <h2 class="title-section">{{ __('Equipo ') }}<span
+                                        class="title-section-second_color">{{ __('Operacional') }}</span></h2>
                                 <div class="team-operational-item">
                                     <div class="item">
                                         <img src="{{ asset('img/profile_pictures_operational/Alfonso_Casanova.png') }}"
@@ -363,20 +353,14 @@
                         </div>
                     </div>
                     <div id="tab1" class="tab">
-                        <a href="#tab1">Qué es Alvearium</a>
+                        <a href="#tab1">{{ __('Qué es Alvearium') }}</a>
                         <div class="tab-content">
 
-                            <p class="tab1_parrafo"><span class="highlight-word-paragraph">Alvearium</span> es una red
-                                social descentralizada en Web3, con espacios virtuales inspirados en ciudades reales,
-                                donde los usuarios, gracias a tecnologías inmersivas, un ecosistema tokenizado y las
-                                recompensas por consumir contenido en la plataforma, creará un Metaverso que genere
-                                impacto positivo en el mundo real</p>
+                            <p class="tab1_parrafo"><span class="highlight-word-paragraph">{{ __('Alvearium') }}</span>{{ __(' es una red social descentralizada en Web3, con espacios virtuales inspirados en ciudades reales, donde los usuarios, gracias a tecnologías inmersivas, un ecosistema tokenizado y las recompensas por consumir contenido en la plataforma, creará un Metaverso que genere impacto positivo en el mundo real') }}</p>
 
                             <br>
 
-                            <p class="tab1_parrafo">Se posiciona como la primera Plataforma Web3 que replica ciudades
-                                reales en el Metaverso con el propósito de generar impacto socio-económico en el mundo
-                                real</p>
+                            <p class="tab1_parrafo">{{ __('Se posiciona como la primera Plataforma Web3 que replica ciudades reales en el Metaverso con el propósito de generar impacto socio-económico en el mundo real') }}</p>
 
                             <br><br>
 
@@ -386,7 +370,7 @@
                                 class="tab1_imagen_gafas">
 
                             
-                            <h2 class="tab1_title_history">Historia</h2>
+                            <h2 class="tab1_title_history">{{ __('Historia') }}</h2>
 
                             <p class="tab1_parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit beatae fugiat hic animi, qui sint quia accusantium iste! Porro delectus obcaecati provident atque. Id delectus ipsam doloribus at quo!
                             Velit, sit. Asperiores veniam aut vitae rem. Iste officiis, suscipit distinctio perferendis officia mollitia? Pariatur ea quidem soluta numquam repellat, expedita facilis omnis necessitatibus aspernatur earum. Eligendi consectetur ullam vel.
