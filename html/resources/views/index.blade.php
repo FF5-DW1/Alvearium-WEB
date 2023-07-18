@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('css/partners.css') }}">
     <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/roadmap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 
 <body>
@@ -100,7 +101,7 @@
             <div class="aboutUsPerfil">
                 <div class="aboutInstitutions">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgInstitutions" src="{{ asset('img/instituciones1.png') }}" alt="Instituciones"
+                        <img class="ImgInstitutions" src="{{ asset('img/instituciones2.png') }}" alt="Instituciones"
                             width="615px" height="405px">
                         <p>Instituciones Públicas</p>
                     </a>
@@ -121,7 +122,7 @@
                 </div>
                 <div class="aboutComercial">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgComercial" src="{{ asset('img/comercios1.png') }}" alt="Comercial"
+                        <img class="ImgComercial" src="{{ asset('img/comercios2.png') }}" alt="Comercial"
                             width="615px" height="405px">
                         <p>Comercios</p>
                     </a>
@@ -134,7 +135,7 @@
                                 de adopción del ecommerce , aparecen 
                                 nuevas maneras de vender con 
                                 experiencias inmersivas, tanto en tienda 
-                                como online
+                                como online.
                                 <br>✓Tiendas <br>
                                 ✓Centros Comerciales
                             </p>
@@ -143,7 +144,7 @@
                 </div>
                 <div class="aboutOcio">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgOcio" src="{{ asset('img/ocio1.png') }}" alt="Ocio" width="615px"
+                        <img class="ImgOcio" src="{{ asset('img/ocio2.png') }}" alt="Ocio" width="615px"
                             height="405px">
                         <p id="">Ocio</p>
                     </a>
@@ -155,7 +156,7 @@
                                 disfrutar del ocio desde cualquier lugar. 
                                 Los métodos de socializar a través de 
                                 dispositivos se verán mejorados gracias 
-                                al contenido inmersivo
+                                al contenido inmersivo.
                                 <br>✓Eventos deportivos
                                 <br>✓Conciertos
                                 <br>✓Cines inmersivos
@@ -250,6 +251,136 @@
     </section>
     <!--end Frase-->
 
+    <!--Roadmap-->
+    <section class="roadmap_container">
+
+
+        <h2 class="road_title">Roadmap</h2>
+
+
+        <div class="road_container">
+            
+                <div class="phase_container">
+                    <ul class="road_phase">
+                        <div class="road_img_phase">
+                            <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
+                            <p class="road_p fase1">F.I</p>
+                            <h3>
+                                2022 2023
+                            </h3>
+                        </div>
+                    </ul>
+                    
+                    <ul class="road_phase">
+                        <li class="road_img_phase">
+                            <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 2">
+                            <p class="road_p fase2">F.II</p>
+                            <h3>
+                                2022 2023
+                            </h3>
+                        </li>
+                    </ul>
+                    <ul class="road_phase">
+                            <li class="road_img_phase">
+                                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 3">
+                                <p class="road_p">F.III</p>
+                                <h3>
+                                    2022 2023
+                                </h3>
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="state_container">
+                    <ul class="road_state">
+                        <li class="road_img_state">
+                            <img class="road_img_state_img" src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
+                            <h3>
+                                Paisaje de la Luz
+                            </h3>
+                        </li>
+                    </ul>
+                    
+                                </ul>
+                                <ul class="road_state">
+                    <li class="road_img_state">
+                        <img class="road_img_state_img" src="/img/roadmap/road_comercio.png" alt="Paisaje de la Luz">
+                        <h3>
+                            Madrid (Comercio, Ocio y Turismo)
+                        </h3>
+                    </li>
+                                </ul>
+                    
+                                <ul class="road_state">
+                    <li class="road_img_state">
+                        <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png" alt="Paisaje de la Luz">
+                        <h3>
+                            Escala Co-Desarrollo ciudades TOP
+                        </h3>
+                    </li>
+                                </ul>
+                </div>
+
+        </div>
+    </section>
+
+     {{-- Portfolio --}}
+
+     <section class="portfolio">
+        <h2 class="portfolio_title_section">Portfolio</h2>
+        <div class="portfolio_container_item">
+            <div class="portfolio_item">
+                <div class="portfolio_item_img">
+                    <img src="https://picsum.photos/301/200" alt="">
+                </div>
+                <div class="portfolio_item_title">
+                    <h3>Proyecto 1</h3>
+                </div>
+                <div class="portfolio_item_text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
+                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
+                        ipsam in. Expedita iure molestias doloribus. <br><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
+                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio_item">
+                <div class="portfolio_item_img">
+                    <img src="https://picsum.photos/300/200" alt="">
+                </div>
+                <div class="portfolio_item_title">
+                    <h3>Proyecto 1</h3>
+                </div>
+                <div class="portfolio_item_text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
+                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
+                        ipsam in. Expedita iure molestias doloribus. <br><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
+                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio_item">
+                <div class="portfolio_item_img">
+                    <img src="https://picsum.photos/299/200" alt="">
+                </div>
+                <div class="portfolio_item_title">
+                    <h3>Proyecto 1</h3>
+                </div>
+                <div class="portfolio_item_text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
+                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
+                        ipsam in. Expedita iure molestias doloribus. <br><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
+                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- Team -->
     <section class="team-direction_slider">
         <h2 class="title-section">Equipo <span class="title-section-second_color">Dirección</span></h2>
@@ -337,183 +468,7 @@
         <div class="buttonWrapper"> <a href="{{ route('quienes-somos') }}">Quiénes somos</a></div>
     </section>
 
-    {{-- Portfolio --}}
-
-    <section class="portfolio">
-        <h2 class="portfolio_title_section">Portfolio</h2>
-        <div class="portfolio_container_item">
-            <div class="portfolio_item">
-                <div class="portfolio_item_img">
-                    <img src="https://picsum.photos/301/200" alt="">
-                </div>
-                <div class="portfolio_item_title">
-                    <h3>Proyecto 1</h3>
-                </div>
-                <div class="portfolio_item_text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
-                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
-                        ipsam in. Expedita iure molestias doloribus. <br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
-                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
-                    </p>
-                </div>
-            </div>
-            <div class="portfolio_item">
-                <div class="portfolio_item_img">
-                    <img src="https://picsum.photos/300/200" alt="">
-                </div>
-                <div class="portfolio_item_title">
-                    <h3>Proyecto 1</h3>
-                </div>
-                <div class="portfolio_item_text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
-                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
-                        ipsam in. Expedita iure molestias doloribus. <br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
-                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
-                    </p>
-                </div>
-            </div>
-            <div class="portfolio_item">
-                <div class="portfolio_item_img">
-                    <img src="https://picsum.photos/299/200" alt="">
-                </div>
-                <div class="portfolio_item_title">
-                    <h3>Proyecto 1</h3>
-                </div>
-                <div class="portfolio_item_text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id exercitationem perferendis ab
-                        dolor impedit minus eligendi, illum voluptatem alias deserunt debitis nostrum reprehenderit
-                        ipsam in. Expedita iure molestias doloribus. <br><br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem voluptate et blanditiis,
-                        illum animi eius itaque eum debitis quis adipisci odio excepturi, quae fugiat facilis.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!--Roadmap-->
-    <section class="roadmap_container">
-
-
-        <h2 class="road_title">Roadmap</h2>
-
-
-        <div class="road_container">
-            
-                <div class="phase_container">
-                    <ul class="road_phase">
-                        <div class="road_img_phase">
-                            <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
-                            <p class="road_p fase1">F.I</p>
-                            <h3>
-                                2022 2023
-                            </h3>
-                        </div>
-                    </ul>
-                    
-                    <ul class="road_phase">
-                        <li class="road_img_phase">
-                            <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 2">
-                            <p class="road_p fase2">F.II</p>
-                            <h3>
-                                2022 2023
-                            </h3>
-                        </li>
-                    </ul>
-                    <ul class="road_phase">
-                            <li class="road_img_phase">
-                                <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 3">
-                                <p class="road_p">F.III</p>
-                                <h3>
-                                    2022 2023
-                                </h3>
-                            </li>
-                    </ul>
-                </div>
-
-                <div class="state_container">
-                    <ul class="road_state">
-                        <li class="road_img_state">
-                            <img class="road_img_state_img" src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
-                            <h3>
-                                Paisaje de la Luz
-                            </h3>
-                        </li>
-                    </ul>
-                    
-                                </ul>
-                                <ul class="road_state">
-                    <li class="road_img_state">
-                        <img class="road_img_state_img" src="/img/roadmap/road_comercio.png" alt="Paisaje de la Luz">
-                        <h3>
-                            Madrid (Comercio, Ocio y Turismo)
-                        </h3>
-                    </li>
-                                </ul>
-                    
-                                <ul class="road_state">
-                    <li class="road_img_state">
-                        <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png" alt="Paisaje de la Luz">
-                        <h3>
-                            Escala Co-Desarrollo ciudades TOP
-                        </h3>
-                    </li>
-                                </ul>
-                </div>
-
-        </div>
-    </section>
-
     
-    <!-- News -->
-    <section class="news">
-        <h2>NOTICIAS</h2>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
-                <div class="text-content">
-                    <h3 class="title">Noticia #1</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
-                    <a href="#">Leer más</a>
-                </div>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
-                <div class="text-content">
-                    <h3 class="title">Noticia #2</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
-                    <a href="#">Leer más</a>
-                </div>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
-                <div class="text-content">
-                    <h3 class="title">Noticia #3</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera</p>
-                    <a href="#">Leer más</a>
-                </div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <a href="#" class="button">Ver todo</a>
-    </section>
-    <!-- News end -->
 
     {{-- Partners --}}
 
@@ -629,6 +584,97 @@
         </div>
 
     </section>
+
+    <!-- News -->
+    <section class="news">
+        <h2>NOTICIAS</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #1</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #2</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #3</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <a href="#" class="button">Ver todo</a>
+    </section>
+    <!-- News end -->
+
+    <!--footer-->
+
+    <footer class="footer_container">
+
+        <div class="footer_contact">
+            <div class="footer_frase">
+                ¿Quieres estar al día de todas las novedades, o colaborar en el proyecto? Contacta con nosotros y síguenos en redes
+            </div>
+            <div class="footer_boton">
+                <div class="buttonWrapper">
+                    <a href="" class="abrirModal">Contacta con nosotros</a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer_final">
+            <div class="footer_social">
+                <a href="https://www.linkedin.com/company/alveariumvr" class="socials" target="_blank">
+                    <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://twitter.com/alvearium__" target="_blank" class="socials">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://discord.com/invite/Kuc9H6Y5B4" target="_blank" class="socials">
+                    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.instagram.com/alvearium_/" target="_blank" class="socials">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.facebook.com/people/Alvearium/100083367819508/" target="_blank" class="socials">
+                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <div class="footer_privacidad">
+                <p><a href="#">Conoce nuestra política de privacidad</a></p>
+                <p><a href="#">Conoce nuestra receta de cookies 😊</a></p>
+            </div>
+            <div class="footer_derechos">
+                Alvearium 2023 ®
+            </div>
+        </div>
+    </footer>
 
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class ="buttonUp"></a>
 

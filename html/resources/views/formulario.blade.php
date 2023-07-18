@@ -14,7 +14,7 @@
 
 
 <body>
-<form action="" class="container">
+<form action="" class="form_container">
   <div class="input-container">
       <div class="input-content">
           <div class="input-dist">

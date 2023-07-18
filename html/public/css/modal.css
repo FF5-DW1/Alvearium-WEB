@@ -14,102 +14,104 @@
 .about_text_1 {
     position: absolute;
     transform: rotate(-45deg);
-    left: 50px;
-    top: 145px;
-    color: white;
+    left: -5px;
+    top: 95px;
+    color: #330072;
 }
 .about_text_2 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
-    left: 40px;
-    top: 190px;
-    color: white;
+    left: 20px;
+    top: 125px;
+    color: #330072;
 }
 .about_text_3 {
     position: absolute;
     transform: rotate(-45deg);
-    left: 100px;
-    top: 145px;
-    color: white;
+    left: 50px;
+    top: 100px;
+    color: #330072;
 }
 .about_text_4 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
-    left: 70px;
-    top: 178px;
-    color: white;
+    left: 20px;
+    top: 125px;
+    color: #330072;
 }
 .about_text_5 {
     position: absolute;
     transform: rotate(-45deg);
-    left: 135px;
-    top: 145px;
-    color: white;
+    left: 90px;
+    top: 100px;
+    color: #330072;
 }
 .about_text_6 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
-    left: 70px;
-    top: 178px;
-    color: white;
+    left: 20px;
+    top: 125px;
+    color: #330072;
 }
 .about_text_7 {
     position: absolute;
     transform: rotate(-45deg);
-    left: 100px;
-    top: 145px;
-    color: white;
+    left: 50px;
+    top: 100px;
+    color: #330072;
 }
 .about_text_8 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
-    left: 70px;
-    top: 178px;
-    color: white;
+    left: 20px;
+    top: 125px;
+    color: #330072;
 }
 .about_text_9 {
     position: absolute;
     transform: rotate(-45deg);
-    left: 120px;
-    top: 145px;
-    color: white;
+    left: 70px;
+    top: 100px;
+    color: #330072;
 }
 .about_text_10 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
-    left: 70px;
-    top: 178px;
-    color: white;
+    left: 20px;
+    top: 110px;
+    color: #330072;
 }
 .about_text_11 {
     position: absolute;
     transform: rotate(-45deg);
-    left: 110px;
-    top: 145px;
-    color: white;
+    left: 50px;
+    top: 100px;
+    color: #330072;
 }
 .about_text_12 {
     position: absolute;
     text-align: center;
     transform: rotate(-45deg);
-    left: 70px;
-    top: 178px;
-    color: white;
+    left: 15px;
+    top: 120px;
+    color: #330072;
 }
 
 /* Ventana o caja modal */
 .contenido-modal {
     position: relative; /* Relativo con respecto al contenedor -modal- */
-    background-image: url("/img/modal_fondo.png");
+    background-image: url("/img/modal_fondo1.png");
+    background-size: cover;
     margin: auto; /* Centrada */
     padding: 20px;
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 20px;
     -webkit-animation-name: animarsuperior;
     -webkit-animation-duration: 0.5s;
     animation-name: animarsuperior;
@@ -121,6 +123,7 @@
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 
 /* Animación */
 @-webkit-keyframes animarsuperior {
@@ -148,8 +151,8 @@
 /* Botón cerrar */
 .cerrar {
     position: absolute;
-    top: 89px;
-    left: 95px;
+    top: 80px;
+    left: 80px;
     transform: rotate(45deg);
 }
 

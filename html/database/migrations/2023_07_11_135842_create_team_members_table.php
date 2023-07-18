@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('roll')->unique();
             $table->string('linkedin');
+            $table->string('image');
             $table->unsignedBigInteger('team_id'); // Crear columna para la clave foránea
             $table->foreign('team_id')->references('id')->on('teams'); // Definir la clave foránea
             $table->timestamps();
