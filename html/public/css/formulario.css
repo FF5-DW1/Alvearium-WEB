@@ -1,4 +1,4 @@
-.container {
+.form_container {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -286,3 +286,4 @@ button:active {
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 0.5em 0.25em var(--glow-color);
 }
+
