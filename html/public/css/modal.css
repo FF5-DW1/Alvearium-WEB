@@ -2,8 +2,8 @@
 .modal {
     display: none; /* initially hidden */
     position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
+    z-index: 3; 
+    padding-top: 120px; 
     padding-bottom: 100px; 
     left: 0;
     top: 0;
@@ -147,14 +147,14 @@ box-shadow: 16px 36px 46px 11px rgba(122,76,122,1);
 /* Botón cerrar */
 .cerrar {
     position: absolute;
-    top: 89px;
-    left: 95px;
-    transform: rotate(45deg);
+    top: 200px;
+    left: 709px;
+    transform: rotate(90deg);
 }
 .cerrar {
-    color: #aaaaaa;
+    color: #000000;
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -184,6 +184,7 @@ box-shadow: 16px 36px 46px 11px rgba(122,76,122,1);
     align-items: center; /* Centra el contenido a lo largo del eje transversal (vertically) */
     height: 100%; /* El contenedor toma toda la altura disponible del modal. */
     flex-direction: column;
+    gap: 2rem;
 }
 
 .modal-text >p {
