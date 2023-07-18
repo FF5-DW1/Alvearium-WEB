@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -37,6 +37,8 @@
                 <a class="link-item" href="#">Equipo & Partners</a>
                 <a class="link-item" href="#">Roadmap</a>
             </div>
+            <a href="{{ asset('/locale/en') }}">EN</a>
+            <a href="{{ asset('/locale/es') }}">ES</a>
         </nav>
 
         <button id="button-menu" class="button-menu">
@@ -54,11 +56,11 @@
             <div id="particles-js"></div>
             <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
             <div>
-                <h1 class="hero-title_layer">Comienza una nueva experiencia</h1>
+                <h1 class="hero-title_layer">{{ __('Comienza una nueva experiencia') }}</h1>
                 <div class="buttonWrapper">
-                    <a href="https://discord.com/invite/Wmq2gzRRhf">Únete al Discord de <img
+                    <a href="https://discord.com/invite/Wmq2gzRRhf">{{ __('Únete al Discord de') }} <img
                             src="{{ asset('img/w3_white.png') }}" alt="Logo de LaunchW3"></a>
-                    <a href="#">Información Tokenomics</a>
+                    <a href="#">{{ __('Información Tokenomics') }}</a>
                 </div>
             </div>
             <div>
@@ -87,7 +89,7 @@
 
     <section class="aboutUsContainer">
         <div class="aboutUsTitulo">
-            <h2>Conoce más sobre Alvearium</h2>
+            <h2>{{ __('Conoce más sobre Alvearium') }}</h2>
         </div>
         <div class="aboutUsMedia">
             <div class="aboutUsVideo">
@@ -101,20 +103,19 @@
                     <a class="botonAbout abrirModal">
                         <img class="ImgInstitutions" src="{{ asset('img/instituciones1.png') }}" alt="Instituciones"
                             width="615px" height="405px">
-                        <p>Instituciones Públicas</p>
+                        <p>{{ __('Instituciones Públicas') }}</p>
                     </a>
                     <div id="ventanaModal1" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
-                            <h2 class="about_text_1">Instituciones publicas</h2>
-                                <p class="about_text_2">Apoyan y promueven iniciativas que 
-                                ayudan a conservar el Patrimonio 
-                                Cultural, fomentan la dinamización social 
-                                y potencian la imagen de la ciudad para 
-                                atraer turismo e inversión<br>✓Ayuntamientos
-                                <br> ✓Asociaciones de conservación de 
-                                patrimonio
-                                </p>
+                            <h2 class="about_text_1">{{ __('Instituciones Públicas') }}</h2>
+                            <p class="about_text_2">
+                                {{ __('Apoyan y promueven iniciativas que ayudan a conservar el Patrimonio Cultural, fomentan la dinamización social y potencian la imagen de la ciudad para atraer turismo e inversión') }}
+                                <br>
+                                {{ __('✓ Ayuntamientos') }}
+                                <br>
+                                {{ __('✓ Asociaciones de conservación de patrimonio') }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -122,20 +123,18 @@
                     <a class="botonAbout abrirModal">
                         <img class="ImgComercial" src="{{ asset('img/comercios1.png') }}" alt="Comercial"
                             width="615px" height="405px">
-                        <p>Comercios</p>
+                        <p>{{ __('Comercios') }}</p>
                     </a>
                     <div id="ventanaModal2" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
-                            <h2 class="about_text_3">Comercios</h2>
-                            <p class="about_text_4">Experimentan nuevas formas y canales 
-                                de venta. Tras años de digitalización y 
-                                de adopción del ecommerce , aparecen 
-                                nuevas maneras de vender con 
-                                experiencias inmersivas, tanto en tienda 
-                                como online
-                                <br>✓Tiendas <br>
-                                ✓Centros Comerciales
+                            <h2 class="about_text_3">{{ __('Comercios') }}</h2>
+                            <p class="about_text_4">
+                                {{ __('Experimentan nuevas formas y canales de venta. Tras años de digitalización y de adopción del ecommerce , aparecen nuevas maneras de vender con experiencias inmersivas, tanto en tienda como online') }}
+                                <br>
+                                {{ __('✓ Tiendas') }}
+                                <br>
+                                {{ __('✓ Centros Comerciales') }}
                             </p>
                         </div>
                     </div>
@@ -144,20 +143,21 @@
                     <a class="botonAbout abrirModal">
                         <img class="ImgOcio" src="{{ asset('img/ocio1.png') }}" alt="Ocio" width="615px"
                             height="405px">
-                        <p id="">Ocio</p>
+                        <p id="">{{ __('Ocio') }}</p>
                     </a>
                     <div id="ventanaModal3" class="modal">
                         <div class="contenido-modal">
                             <span class="cerrar">&times;</span>
-                            <h2 class="about_text_5">Ocio</h2>
-                            <p class="about_text_6">El Metaverso trae nuevas formas de 
-                                disfrutar del ocio desde cualquier lugar. 
-                                Los métodos de socializar a través de 
-                                dispositivos se verán mejorados gracias 
-                                al contenido inmersivo
-                                <br>✓Eventos deportivos
-                                <br>✓Conciertos
-                                <br>✓Cines inmersivos
+                            <h2 class="about_text_5">{{ __('Ocio') }}</h2>
+                            <p class="about_text_6">
+                                {{ __('El Metaverso trae nuevas formas de disfrutar del ocio desde cualquier lugar. Los métodos de socializar a través de dispositivos se verán mejorados gracias al contenido inmersivo') }}
+                                <br>
+                                {{ __('✓ Eventos deportivos') }}
+                                <br>
+                                {{ __('✓ Conciertos') }}
+                                <br>
+                                {{ __('✓ Cines inmersivos') }}
+
                             </p>
                         </div>
                     </div>
@@ -167,20 +167,25 @@
                         <a class="botonAbout abrirModal">
                             <img class="ImgCreate" src="{{ asset('img/creadores.png') }}" alt="Creadores"
                                 width="615px" height="405px">
-                            <p>Creadores</p>
+                            <p>{{ __('Creadores') }}</p>
                         </a>
                         <div id="ventanaModal4" class="modal">
                             <div class="contenido-modal">
                                 <span class="cerrar">&times;</span>
-                                <h2 class="about_text_7">Creadores</h2>
-                                <p class="about_text_8">Necesitan nuevas formas 
-                                    para mostrar su talento, posicionarse 
-                                    en el mercado, monetizar su trabajo.
-                                <br>✓Influencers
-                                <br>✓Artistas
-                                <br>✓Profesores Online
-                                <br>✓Divulgadores científicos
-                                <br>✓Deportistas
+                                <h2 class="about_text_7">{{ __('Creadores') }}</h2>
+                                <p class="about_text_8">
+                                    {{ __('Necesitan nuevas formas para mostrar su talento, posicionarse en el mercado, monetizar su trabajo') }}
+                                    <br>
+                                    {{ __('✓ Influencers') }}
+                                    <br>
+                                    {{ __('✓ Artistas') }}
+                                    <br>
+                                    {{ __('✓ Profesores Online') }}
+                                    <br>
+                                    {{ __('✓ Divulgadores científicos') }}
+                                    <br>
+                                    {{ __('✓ Deportistas') }}
+
                                 </p>
                             </div>
                         </div>
@@ -190,20 +195,18 @@
                         <a class="botonAbout abrirModal">
                             <img class="ImgBrands" src="{{ asset('img/marcas.png') }}" alt="Marcas"
                                 width="615px" height="405px">
-                            <p>Marcas</p>
+                            <p>{{ __('Marcas') }}</p>
                         </a>
                         <div id="ventanaModal5" class="modal">
                             <div class="contenido-modal">
                                 <span class="cerrar">&times;</span>
-                                <h2 class="about_text_9">Marcas</h2>
-                                <p class="about_text_10">Exploran nuevos canales de 
-                                    adquisición que les permitan mejorar el 
-                                    engagement con su marca. Además, buscan 
-                                    comunidades comprometidas con sus valores 
-                                    y están dispuestos a apostar por conseguir su 
-                                    misión con ellas.
-                                <br>✓ Grandes marcas entrando en el Metaverso.
-                                <br>✓ Personas reconocidas.
+                                <h2 class="about_text_9">{{ __('Marcas') }}</h2>
+                                <p class="about_text_10">
+                                    {{ __('Exploran nuevos canales de adquisición que les permitan mejorar el engagement con su marca. Además, buscan comunidades comprometidas con sus valores y están dispuestos a apostar por conseguir su misión con ellas') }}
+                                    <br>
+                                    {{ __('✓ Grandes marcas entrando en el Metaverso') }}
+                                    <br>
+                                    {{ __('✓ Personas reconocidas') }}
                                 </p>
                             </div>
                         </div>
@@ -212,20 +215,18 @@
                         <a class="botonAbout abrirModal">
                             <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios"
                                 width="615px" height="405px">
-                            <p>Usuarios</p>
+                            <p>{{ __('Usuarios') }}</p>
                         </a>
                         <div id="ventanaModal6" class="modal">
                             <div class="contenido-modal">
                                 <span class="cerrar">&times;</span>
-                                <h2 class="about_text_11">Usuarios</h2>
-                                <p class="about_text_12">Buscan experiencias inmersivas, 
-                                    de calidad. Además quieren 
-                                    beneficiarse de la generación de valor 
-                                    de su identidad y actividad digital y 
-                                    están comprometidos en generar 
-                                    impacto positivo en el mundo.
-                                <br>✓Usuarios de Redes sociales.
-                                <br>✓Comunidad Crypto
+                                <h2 class="about_text_11">{{ __('Usuarios') }}</h2>
+                                <p class="about_text_12">
+                                    {{ __('Buscan experiencias inmersivas, de calidad. Además quieren beneficiarse de la generación de valor de su identidad y actividad digital y están comprometidos en generar impacto positivo en el mundo') }}
+                                    <br>
+                                    {{ __('✓ Usuarios de Redes sociales') }}
+                                    <br>
+                                    {{ __('✓ Comunidad Crypto') }}
                                 </p>
                             </div>
                         </div>
@@ -251,7 +252,7 @@
 
     <!-- Team -->
     <section class="team-direction_slider">
-        <h2 class="title-section">Equipo <span class="title-section-second_color">Dirección</span></h2>
+        <h2 class="title-section">{{ __('Equipo ') }}<span class="title-section-second_color">{{ __('Dirección') }}</span></h2>
         <div class="contenedor">
             <div class="slider">
                 <div class="item">
@@ -333,7 +334,7 @@
             </div>
         </div>
 
-        <div class="buttonWrapper"> <a href="{{ route('quienes-somos') }}">Quiénes somos</a></div>
+        <div class="buttonWrapper"> <a href="{{ route('quienes-somos') }}">{{ __('Quiénes somos') }}</a></div>
     </section>
 
     {{-- Portfolio --}}
@@ -401,7 +402,7 @@
 
 
         <div class="road_container">
-            
+
             <ul class="road_phase">
                 <div class="road_img_phase">
                     <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
@@ -452,7 +453,8 @@
             </ul>
             <ul class="road_state">
                 <li class="road_img_state">
-                    <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png" alt="Paisaje de la Luz">
+                    <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png"
+                        alt="Paisaje de la Luz">
                     <h3>
                         Escala Co-Desarrollo ciudades TOP
                     </h3>
@@ -462,13 +464,13 @@
         </div>
     </section>
 
-    
+
 
     {{-- Partners --}}
 
     <section class="partners">
 
-        <h2 class="partners_title_section">Partners Estratégicos</h2>
+        <h2 class="partners_title_section">{{ __('Partners Estratégicos') }}</h2>
 
         <div class="partners_container_item">
 
@@ -579,7 +581,8 @@
 
     </section>
 
-    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class ="buttonUp"></a>
+    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
+            class="buttonUp"></a>
 
     <script src="{{ asset('navbar.js') }}"></script>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
