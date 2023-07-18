@@ -295,8 +295,8 @@
 
 .footer_contact .form_cerrar {
     position: absolute;
-    top: 200px;
-    left: 850px;
+    top: 100px;
+    left: 335px;
     transform: rotate(90deg);
     z-index: 3;
     cursor: pointer;
@@ -311,4 +311,40 @@
 .footer_contact .formModal {
     background-image: url("/img/modal_fondo.png");
     background-size: cover;
+}
+
+
+.form_cerrar {
+    color: #ffffff;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.formModal {
+    background-image: url("/img/modal_fondo.png");
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer_contact .form_cerrar {
+    top: 150px;
+    left: 535px;
+    }
+    .footer_contact .input-is {
+        color: #fff;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .footer_contact .form_cerrar {
+    top: 200px;
+    left: 900px;
+    }
+    .footer_contact .input-is {
+        color: #fff;
+        font-size: 1.5rem;
+    }
 }

@@ -35,8 +35,8 @@
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
-    width: 700px;
-    height: 600px;
+    width: 25rem;
+    height: 25rem;
     clip-path: polygon(
         50% 0%,
         90% 20%,
@@ -56,8 +56,8 @@
 /* Botón cerrar */
 .cerrar {
     position: absolute;
-    top: 200px;
-    left: 936px;
+    top: 115px;
+    left: 203px;
     transform: rotate(90deg);
     color: #000000;
     float: right;
@@ -83,7 +83,7 @@
 }
 
 .modal-text > p {
-    width: 80%; /* Ajusta el ancho del texto a un 80% del contenedor. */
+    width: 50%; /* Ajusta el ancho del texto a un 80% del contenedor. */
     word-wrap: break-word; /* Hace que el texto se ajuste al ancho del contenedor. */
 }
 
@@ -109,5 +109,45 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .contenido-modal {
+        
+        width: 700px;
+        height: 600px;
+    }
+    .modal-text > p {
+        width: 80%; 
+        word-wrap: break-word; 
+    }
+    .cerrar {
+        position: absolute;
+        top: 200px;
+        left: 375px;
+        
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .cerrar {
+        position: absolute;
+        top: 200px;
+        left: 500px;
+        
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .cerrar {
+        top: 200px;
+        left: 710px;
+        
     }
 }
