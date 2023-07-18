@@ -1,12 +1,12 @@
 
 // Ventanas modales
-var modals = document.querySelectorAll(".modal");
+var modals = document.querySelectorAll(".modal, div.formModal");
 
 // Botones que abren las ventanas modales
 var botones = document.querySelectorAll(".abrirModal");
 
 // Hace referencia a los elementos <span> que tienen la X que cierra las ventanas modales
-var spans = document.querySelectorAll(".cerrar");
+var spans = document.querySelectorAll(".cerrar, span.form_cerrar");
 
 // Asignar eventos a cada botón para abrir las ventanas modales
 botones.forEach(function (boton, index) {
