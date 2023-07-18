@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/team.css') }}">
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/roadmap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/news.css') }}">
     <link rel="stylesheet" href="{{ asset('css/partners.css') }}">
     <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/roadmap.css') }}">
 </head>
 
 <body>
@@ -467,6 +468,52 @@
     </section>
 
     
+    <!-- News -->
+    <section class="news">
+        <h2>NOTICIAS</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #1</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #2</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera jiji</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://picsum.photos/300/250" alt="Foto de noticia">
+                <div class="text-content">
+                    <h3 class="title">Noticia #3</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet deleniti. Esto es texto de más que no se vera</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <a href="#" class="button">Ver todo</a>
+    </section>
+    <!-- News end -->
 
     {{-- Partners --}}
 
@@ -585,6 +632,38 @@
 
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class ="buttonUp"></a>
 
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
     <script src="{{ asset('navbar.js') }}"></script>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
     <script src="{{ asset('lib/particles/particles.min.js') }}"></script>
