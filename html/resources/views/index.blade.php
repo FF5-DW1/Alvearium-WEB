@@ -226,30 +226,30 @@
                             </div>
                         </div>
                     </div>
-               
-                <div class="aboutUsers">
-                    <a class="botonAbout abrirModal">
-                        <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios" width="615px"
-                            height="405px">
-                        <p>{{ __('Usuarios') }}</p>
-                    </a>
-                    <div id="ventanaModal6" class="modal">
-                        <div class="contenido-modal">
-                            <span class="cerrar">&times;</span>
-                            <div class="modal-text">
-                                <h2 class="about_text_11">{{ __('Usuarios') }}</h2>
-                                <p class="about_text_12">
-                                    {{ __('Buscan experiencias inmersivas, de calidad. Además quieren beneficiarse de la generación de valor de su identidad y actividad digital y están comprometidos en generar impacto positivo en el mundo') }}
-                                    <br>
-                                    {{ __('✓ Usuarios de Redes sociales') }}
-                                    <br>
-                                    {{ __('✓ Comunidad Crypto') }}
-                                </p>
+
+                    <div class="aboutUsers">
+                        <a class="botonAbout abrirModal">
+                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios" width="615px"
+                                height="405px">
+                            <p>{{ __('Usuarios') }}</p>
+                        </a>
+                        <div id="ventanaModal6" class="modal">
+                            <div class="contenido-modal">
+                                <span class="cerrar">&times;</span>
+                                <div class="modal-text">
+                                    <h2 class="about_text_11">{{ __('Usuarios') }}</h2>
+                                    <p class="about_text_12">
+                                        {{ __('Buscan experiencias inmersivas, de calidad. Además quieren beneficiarse de la generación de valor de su identidad y actividad digital y están comprometidos en generar impacto positivo en el mundo') }}
+                                        <br>
+                                        {{ __('✓ Usuarios de Redes sociales') }}
+                                        <br>
+                                        {{ __('✓ Comunidad Crypto') }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
 
