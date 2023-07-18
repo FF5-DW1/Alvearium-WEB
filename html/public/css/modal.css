@@ -13,51 +13,17 @@
     background-color: rgba(0, 0, 0, 0.4); /* semi transparent background */
 }
 
-.about_text_1 , .about_text_2 , .about_text_3 , .about_text_4 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2 , .about_text_2{
-    justify-content: center;
-    width: 500px;
-}
-
-.about_text_2 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_3 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_4 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_5 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_6 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_7 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_8 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_9 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_10 {
-    justify-content: center;
-    width: 500px;
-}
-.about_text_11 {
-    justify-content: center;
-    width: 500px;
-}
+.about_text_1,
+.about_text_2,
+.about_text_3,
+.about_text_4,
+.about_text_5,
+.about_text_6,
+.about_text_7,
+.about_text_8,
+.about_text_9,
+.about_text_10,
+.about_text_11,
 .about_text_12 {
     justify-content: center;
     width: 500px;
@@ -98,7 +64,6 @@
     font-size: 40px;
     font-weight: bold;
 }
-
 
 .close:hover,
 .close:focus {
