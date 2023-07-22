@@ -127,7 +127,6 @@
     margin-left: calc(70vw - 64px);
     border: 1px solid;
     border-radius: 5px;
-    font-size: 1.1rem;
 }
 
 .cambioIdioma .options {
@@ -146,9 +145,6 @@
     display: block;
 }
 
-.cambioIdioma a {
-    text-decoration: none;
-}
 
 .breakWord {
     width: min-content;
