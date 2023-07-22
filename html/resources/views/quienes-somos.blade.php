@@ -40,6 +40,27 @@
                         class="socials">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
                     </a>
+
+                    <div class="cambioIdioma">
+                        <div class="current">
+                            @if (app()->getLocale() == 'en')
+                                <span><img src="{{ asset('img/icons/en.png') }}" class="shadowLocale" alt="Bandera lenguaje español"></span>
+                            @else
+                                <span><img src="{{ asset('img/icons/es.png') }}" class="shadowLocale" alt="Bandera lenguaje inglés"></span>
+                            @endif
+                        </div>
+                        <div class="options">
+                            @if (app()->getLocale() == 'en')
+                                <a class="locale" href="{{ asset('/locale/es') }}"><img
+                                        src="{{ asset('img/icons/es.png') }}" class="shadowLocale"
+                                        alt="Bandera lenguaje español"></a>
+                            @else
+                                <a class="locale" href="{{ asset('/locale/en') }}"><img
+                                        src="{{ asset('img/icons/en.png') }}" class="shadowLocale"
+                                        alt="Bandera lenguaje inglés"></a>
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

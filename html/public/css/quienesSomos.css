@@ -48,7 +48,7 @@
 }
 
 .hero-content > div {
-    width: 80%;
+    width: 88%;
 }
 
 .hero-content > div:last-of-type {
@@ -56,20 +56,8 @@
     justify-content: space-between;
     z-index: 2;
     position: relative;
-}
-.socials {
-    background-color: var(--compPurple);
-    text-decoration: none;
-    display: inline-block;
-    min-width: 45px;
-    min-height: 45px;
-    height: 45px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 22px;
-    line-height: 45px;
-    box-shadow: 0 0 5px 2px white;
-    transition: all 0.2s ease-in;
+    gap:4px;
+    /* margin-left: calc(100vw - 30px); */
 }
 
 .hero-content .socials:hover {
@@ -90,6 +78,7 @@
     line-height: 45px;
     box-shadow: 0 0 5px 2px white;
     transition: all 0.2s ease-in;
+    margin-left: 4px;
 }
 
 .hero-content .socials:hover {
@@ -421,6 +410,39 @@
     color: var(--compPurple);
 }
 
+
+.cambioIdioma {
+    position: relative;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: -10px;
+    border: 2px solid white ;
+    border-radius: 5px;
+    display: inline-block;
+    height: 35px;
+    
+}
+
+.cambioIdioma .options {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: -5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.cambioIdioma:hover .options {
+    display: block;
+}
+
+.shadowLocale {
+    box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.62);
+}
+
+
+
 @media only screen and (min-width: 600px) {
     .hero-content > div {
         width: 70%;
@@ -503,7 +525,7 @@
         width: 100%;
     }
 
-    .hero-content img {
+    .hero-content > img {
         object-fit: cover;
         width: 315px;
         height: 315px;
