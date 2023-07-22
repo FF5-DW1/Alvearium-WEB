@@ -35,21 +35,43 @@
         </a>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
-                <a class="link-item" href="#aboutUsContainer">{{ __('Conócenos') }}</a>
+                <a class="link-item noBreak" href="#aboutUsContainer">{{ __('Conócenos') }}</a>
                 <a class="link-item" href="#roadmap_container">{{ __('Roadmap') }}</a>
                 <a class="link-item" href="#portfolio">{{ __('Portfolio') }}</a>
-                <a class="link-item" href="#team">{{ __('') }}Equipo & Partners</a>
+                <a class="link-item breakWord" href="#team">{!! __('Equipo&nbsp;&amp Partners') !!}</a>
                 <a class="link-item" href="#news">{{ __('Noticias') }}</a>
+
+                <div class="cambioIdioma">
+                    <div class="current">
+                        @if (app()->getLocale() == 'en')
+                            <span><img src="{{ asset('img/icons/en.png') }}" alt="Bandera lenguaje español"></span>
+                        @else
+                            <span><img src="{{ asset('img/icons/es.png') }}" alt="Bandera lenguaje inglés"></span>
+                        @endif
+                    </div>
+                    <div class="options">
+                        @if (app()->getLocale() == 'en')
+                            <a class="locale" href="{{ asset('/locale/es') }}"><img
+                                    src="{{ asset('img/icons/es.png') }}" class="shadowLocale"
+                                    alt="Bandera lenguaje español"></a>
+                        @else
+                            <a class="locale" href="{{ asset('/locale/en') }}"><img
+                                    src="{{ asset('img/icons/en.png') }}" class="shadowLocale"
+                                    alt="Bandera lenguaje inglés"></a>
+                        @endif
+                    </div>
+                </div>
             </div>
-            <a href="{{ asset('/locale/en') }}">EN</a>
-            <a href="{{ asset('/locale/es') }}">ES</a>
+
         </nav>
+
 
         <button id="button-menu" class="button-menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
+
 
     </header>
     <!-- nav bar end-->
@@ -226,32 +248,32 @@
                             </div>
                         </div>
                     </div>
-               
-                <div class="aboutUsers">
-                    <a class="botonAbout abrirModal">
-                        <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios" width="615px"
-                            height="405px">
-                        <p>{{ __('Usuarios') }}</p>
-                    </a>
-                    <div id="ventanaModal6" class="modal">
-                        <div class="contenido-modal">
-                            <span class="cerrar">&times;</span>
-                            <div class="modal-text">
-                                <h2 class="about_text_11">{{ __('Usuarios') }}</h2>
-                                <p class="about_text_12">
-                                    {{ __('Buscan experiencias inmersivas, de calidad. Además quieren beneficiarse de la generación de valor de su identidad y actividad digital y están comprometidos en generar impacto positivo en el mundo') }}
-                                    <br>
-                                    {{ __('✓ Usuarios de Redes sociales') }}
-                                    <br>
-                                    {{ __('✓ Comunidad Crypto') }}
-                                </p>
+
+                    <div class="aboutUsers">
+                        <a class="botonAbout abrirModal">
+                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios"
+                                width="615px" height="405px">
+                            <p>{{ __('Usuarios') }}</p>
+                        </a>
+                        <div id="ventanaModal6" class="modal">
+                            <div class="contenido-modal">
+                                <span class="cerrar">&times;</span>
+                                <div class="modal-text">
+                                    <h2 class="about_text_11">{{ __('Usuarios') }}</h2>
+                                    <p class="about_text_12">
+                                        {{ __('Buscan experiencias inmersivas, de calidad. Además quieren beneficiarse de la generación de valor de su identidad y actividad digital y están comprometidos en generar impacto positivo en el mundo') }}
+                                        <br>
+                                        {{ __('✓ Usuarios de Redes sociales') }}
+                                        <br>
+                                        {{ __('✓ Comunidad Crypto') }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                
             </div>
-        </div>
 
 
     </section>
@@ -265,6 +287,7 @@
 
     </section>
     <!--end Frase-->
+    {{-- <div class="section_transicion"></div> --}}
 
     <!--Roadmap-->
     <section id="roadmap_container" class="roadmap_container">
@@ -340,7 +363,7 @@
 
         </div>
     </section>
-
+    {{-- <div class="section_transicion"></div> --}}
     {{-- Portfolio --}}
 
     <section class="portfolio" id="portfolio">
@@ -565,7 +588,8 @@
                     alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_5-1" src="{{ asset('img/partnersEstrategicos/5-1_MagicFennec_Vector.svg') }}"
+                <img class="partner_img_5-1"
+                    src="{{ asset('img/partnersEstrategicos/5-1_MagicFennec_Vector.svg') }}"
                     alt="logotipo de partner">
             </div>
             <div class="partners_item">
