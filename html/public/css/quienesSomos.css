@@ -393,6 +393,7 @@
     font-size: 1.5rem;
     font-family: "open sans", Arial, Helvetica, sans-serif;
     color: var(--compPurple);
+    margin-bottom: 10px;
 }
 
 .tab1_imagen_gafas {

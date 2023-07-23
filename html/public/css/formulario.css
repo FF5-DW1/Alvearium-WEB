@@ -357,9 +357,10 @@
 }
 
 .footer_contact .formModal {
-    padding-top:30vh;
+    padding-top:16vh;
     background-image: url("/img/modal_fondo.png");
     background-size: cover;
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -375,7 +376,7 @@
 
 @media only screen and (min-width: 992px) {
     .footer_contact .form_cerrar {
-        top: 36vh;
+        top: 28vh;
         left: 50%;
     }
     .footer_contact .input-is {
@@ -386,7 +387,7 @@
 
 @media only screen and (min-width: 1440px) {
     .footer_contact .form_cerrar {
-        top: 41vh;
+        top: 32vh;
         left: 50%;
     }
    
