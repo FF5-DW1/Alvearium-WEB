@@ -704,23 +704,23 @@
 
                     <div id="ventanaModal6" class="modal formModal">
                         <span class="form_cerrar">&times;</span>
-                        <form action="" class="form_container">
+                        <form action="" method="POST" class="form_container">
                             <div class="input-container">
                                 <div class="input-content">
                                     <div class="input-dist">
                                         <div class="input-type">
-                                            <input placeholder="Nombre" required="" type="text"
+                                            <input name="name" placeholder="{{ __('Nombre') }}" required type="text" aria-label="Pon tu nombre" 
                                                 class="input-is">
-                                            <input placeholder="Teléfono" required="" type=""
+                                            <input name="tel" placeholder="{{ __('Teléfono') }}" required type="tel" aria-label="Pon tu teléfono"
                                                 class="input-is">
-                                            <input placeholder="E-mail" required="" type="text"
+                                            <input name="email" placeholder="{{ __('E-mail') }}" required type="email" aria-label="Pon tu email" 
                                                 class="input-is">
-                                            <textarea placeholder="Texto" required="" type="" class="input-is"></textarea>
+                                            <textarea name="text" placeholder="{{ __('Texto') }}" required aria-label="Pon tu comentario" class="input-is"></textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <button>
-                                    Button
+                                <button type="submit">
+                                    {{ __('ENVIAR') }}
                                 </button>
                             </div>
 

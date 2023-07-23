@@ -182,6 +182,7 @@
     color: hsla(192, 100%, 88%, 0.806);
 }
 
+
 @keyframes backglitch {
     0% {
         box-shadow: inset 0px 20px 20px 30px #212121;
@@ -343,35 +344,28 @@
 
 .footer_contact .form_cerrar {
     position: absolute;
-    top: 100px;
-    left: 335px;
-    transform: rotate(90deg);
+    top: 28vh;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
     z-index: 5;
     cursor: pointer;
-}
-.footer_contact .form_cerrar {
     color: #ffffff;
     float: right;
     font-size: 40px;
     font-weight: bold;
+    
 }
 
 .footer_contact .formModal {
+    padding-top:30vh;
     background-image: url("/img/modal_fondo.png");
     background-size: cover;
 }
 
-.form_cerrar {
-    color: #ffffff;
-    float: right;
-    font-size: 40px;
-    font-weight: bold;
-}
-
 @media only screen and (min-width: 768px) {
     .footer_contact .form_cerrar {
-        top: 150px;
-        left: 535px;
+        top: 32vh;
+        left: 50%;
     }
     .footer_contact .input-is {
         color: #fff;
@@ -381,11 +375,19 @@
 
 @media only screen and (min-width: 992px) {
     .footer_contact .form_cerrar {
-        top: 200px;
-        left: 900px;
+        top: 36vh;
+        left: 50%;
     }
     .footer_contact .input-is {
         color: #fff;
         font-size: 1.5rem;
     }
+}
+
+@media only screen and (min-width: 1440px) {
+    .footer_contact .form_cerrar {
+        top: 41vh;
+        left: 50%;
+    }
+   
 }
