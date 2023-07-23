@@ -17,7 +17,6 @@
 
 .road_phase {
     width: 30%;
-    /* margin-left:15%; */
     list-style: none;
 }
 
@@ -49,7 +48,7 @@
     height: 20px;
     color: white;
     font-size: 40px;
-    z-index: 3;
+    z-index: 2;
 }
 .fase1 {
     left: 20px;
@@ -83,17 +82,16 @@
     height: 10rem;
 }
 @media screen and (min-width: 768px) {
-    .road_container{
+    .road_container {
         display: block;
     }
     .road_title {
         padding: 1rem 0 1rem 0;
     }
-    .road_img_phase{
+    .road_img_phase {
         display: block;
     }
     .road_img_phase > h3 {
-        
         font-size: 1rem;
         display: flex;
         align-items: center;
@@ -114,10 +112,9 @@
     .fase2 {
         left: 18px;
     }
-    .phase_container{
+    .phase_container {
         display: flex;
         justify-content: space-around;
-        
     }
     .road_phase {
         margin-left: 4.5rem;
@@ -127,7 +124,7 @@
         width: 11rem;
         height: 15rem;
     }
-    .state_container{
+    .state_container {
         display: flex;
     }
     .road_state {
@@ -143,11 +140,11 @@
 }
 
 @media screen and (min-width: 992px) {
-    .road_container{
+    .road_container {
         flex-wrap: nowrap;
         gap: 0;
     }
-    
+
     .road_title {
         padding: 1rem 0 1rem 0;
     }
@@ -176,12 +173,8 @@
     .fase2 {
         left: 37px;
     }
-    .phase_container{
-<<<<<<< HEAD
+    .phase_container {
         margin-left: 6rem;
-=======
-        margin-left: 8rem;
->>>>>>> 1117e3210a9cee7a30fc52fc742512405c4e28c8
         gap: 3rem;
     }
     .road_img_state {

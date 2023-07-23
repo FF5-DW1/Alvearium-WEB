@@ -251,8 +251,8 @@
 
                     <div class="aboutUsers">
                         <a class="botonAbout abrirModal">
-                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios" width="615px"
-                                height="405px">
+                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios"
+                                width="615px" height="405px">
                             <p>{{ __('Usuarios') }}</p>
                         </a>
                         <div id="ventanaModal6" class="modal">
@@ -709,9 +709,12 @@
                                 <div class="input-content">
                                     <div class="input-dist">
                                         <div class="input-type">
-                                            <input placeholder="Nombre" required="" type="text" class="input-is">
-                                            <input placeholder="Teléfono" required="" type="" class="input-is">
-                                            <input placeholder="E-mail" required="" type="text" class="input-is">
+                                            <input placeholder="Nombre" required="" type="text"
+                                                class="input-is">
+                                            <input placeholder="Teléfono" required="" type=""
+                                                class="input-is">
+                                            <input placeholder="E-mail" required="" type="text"
+                                                class="input-is">
                                             <textarea placeholder="Texto" required="" type="" class="input-is"></textarea>
                                         </div>
                                     </div>
@@ -720,7 +723,7 @@
                                     Button
                                 </button>
                             </div>
-                            
+
                         </form>
                     </div>
 
@@ -759,16 +762,14 @@
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
             class="buttonUp"></a>
 
-    <script></script>
-    <script src="{{ asset('navbar.js') }}"></script>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/navbar.js') }}"></script>
     <script src="{{ asset('lib/particles/particles.min.js') }}"></script>
     <script src="{{ asset('lib/particles/app.js') }}"></script>
     <script src="{{ asset('js/cards.js') }}"></script>
     <script src="{{ asset('js/modal.js') }}"></script>
     <script src="{{ asset('js/buttonUp.js') }}"></script>
     <script src="{{ asset('js/news.js') }}"></script>
-    <script src="{{ asset('js/navbar.js') }}"></script>
 
 </body>
 
