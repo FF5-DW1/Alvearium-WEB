@@ -11,6 +11,7 @@
     flex-direction: column;
     background-image: url("img/modal_fondo1.png");
     gap: 1em;
+    margin-top: 22%;
 }
 
 .footer_contact .input-container {
@@ -64,8 +65,8 @@
 .footer_contact .input-content::after {
     content: "";
     position: absolute;
-    width: 150%;
-    height: 150%;
+    width: 130%;
+    height: 140%;
     box-shadow: inset 0px 0px 20px 20px #212121;
     background: repeating-linear-gradient(
             to bottom,
@@ -181,7 +182,6 @@
 .footer_contact .input-is::placeholder {
     color: hsla(192, 100%, 88%, 0.806);
 }
-
 
 @keyframes backglitch {
     0% {
@@ -344,8 +344,8 @@
 
 .footer_contact .form_cerrar {
     position: absolute;
-    top: 28vh;
-    left: 50%;
+    top: 27%;
+    left: 80%;
     transform: translateX(-50%) rotate(90deg);
     z-index: 5;
     cursor: pointer;
@@ -353,11 +353,10 @@
     float: right;
     font-size: 40px;
     font-weight: bold;
-    
 }
 
 .footer_contact .formModal {
-    padding-top:16vh;
+    padding-top: 16vh;
     background-image: url("/img/modal_fondo.png");
     background-size: cover;
     overflow: hidden;
@@ -365,8 +364,15 @@
 
 @media only screen and (min-width: 768px) {
     .footer_contact .form_cerrar {
-        top: 32vh;
-        left: 50%;
+        top: 24%;
+        left: 70%;
+    }
+    .footer_contact .form_container {
+        margin-top: 5%;
+    }
+    .footer_contact .input-content::after {
+        width: 130%;
+        height: 136%;
     }
     .footer_contact .input-is {
         color: #fff;
@@ -376,19 +382,34 @@
 
 @media only screen and (min-width: 992px) {
     .footer_contact .form_cerrar {
-        top: 28vh;
-        left: 50%;
+        top: 26%;
+        left: 65%;
     }
     .footer_contact .input-is {
         color: #fff;
         font-size: 1.5rem;
     }
+    .footer_contact .form_container {
+        margin-top: 0%;
+    }
+    .footer_contact .input-content::after {
+        width: 120%;
+        height: 123%;
+    }
+    
 }
 
 @media only screen and (min-width: 1440px) {
     .footer_contact .form_cerrar {
-        top: 32vh;
-        left: 50%;
+        top: 23%;
+        left: 62%;
     }
-   
-}
+    .footer_contact .form_container {
+        margin-top: -2%;
+        }
+        .footer_contact .input-content::after {
+            width: 135%;
+            height: 135%;
+        }
+        
+    }
