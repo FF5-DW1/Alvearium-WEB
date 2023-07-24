@@ -304,7 +304,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-        <a href="#" class="button">Ver todo</a>
+        <a href="{{ route('news') }}" class="button">Ver todo</a>
     </section>
     <!-- News end -->
 
