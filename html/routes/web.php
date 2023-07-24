@@ -35,9 +35,3 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::view('/quienes-somos', 'quienes-somos')->name('quienes-somos');
     Route::view('/news', 'news')->name('news');
 });
-
-Route::middleware(LocaleCookieMiddleware::class)->group(function () {
-
-    Route::view('/', 'index')->name('home');
-    Route::view('/quienes-somos', 'quienes-somos')->name('quienes-somos');
-});
