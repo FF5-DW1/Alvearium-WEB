@@ -1,14 +1,260 @@
-main {
-    padding: 2rem;
+/* HERO */
+
+.hero {
+    width: 100%;
+    background: url(../img/fondo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 
-h1 {
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    z-index: 2;
+}
+
+.hero-title_layer {
+    z-index: 3;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.hero-content h1 {
     text-align: center;
+    color: white;
+    margin-bottom: 1rem;
     font-family: "briller bold";
+}
+
+.hero-content .hidden {
+    display: none;
+    position: absolute;
+    align-self: flex-start;
+    top: 0;
+}
+
+.hero-content > div {
+    width: 88%;
+}
+
+.hero-content > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    gap: 4px;
+    /* margin-left: calc(100vw - 30px); */
+}
+
+.hero-content .socials:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px 4px white;
+}
+
+.hero-content .socials {
+    background-color: var(--compPurple);
+    text-decoration: none;
+    display: inline-block;
+    min-width: 45px;
+    min-height: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 45px;
+    box-shadow: 0 0 5px 2px white;
+    transition: all 0.2s ease-in;
+    margin-left: 4px;
+}
+
+.hero-content .socials:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px 4px white;
+}
+
+/* ------------------------------------ CHANGE LANG ----------------------------------------- */
+
+.cambioIdioma {
+    position: relative;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: -10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    height: 35px;
+}
+
+.cambioIdioma .options {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: -5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.cambioIdioma:hover .options {
+    display: block;
+}
+
+.shadowLocale {
+    box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.62);
+}
+
+/* ------------------------------- NEWS CONTENT ------------------------------------- */
+
+main {
+    padding: 2rem;
+    font-family: "open sans";
+}
+
+.homeIconAndTitle {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: "briller bold" !important;
 }
 
 .img {
     height: 30vh;
     width: 100%;
-    background-color: aquamarine;
+}
+
+.img,
+.moreNewsImg {
+    background: linear-gradient(aquamarine, lightblue);
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
+}
+
+body > hr {
+    height: 3px;
+    border: none;
+    background: linear-gradient(
+        90deg,
+        var(--compViolet),
+        var(--compPink),
+        var(--compOrange),
+        var(--compPink),
+        var(--compViolet)
+    );
+}
+
+body > hr,
+body > h3 {
+    margin: 0 2rem;
+}
+
+body > h3 {
+    font-family: "briller";
+}
+
+.moreNewsImg {
+    width: 35%;
+    height: 100%;
+    float: right;
+}
+
+.icon-return {
+    width: 30px;
+    position: absolute;
+    left: 0;
+}
+
+.newsItem {
+    height: 8rem;
+    padding: 1rem 2rem;
+    font-family: "open sans";
+}
+
+.newsItem p {
+    font-size: smaller;
+}
+
+.titleAndDate {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section hr {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .hero-content > div {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-content > div {
+        width: 50%;
+    }
+
+    .icon-return {
+        width: 64px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .hero-content {
+        min-height: 300px;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+    }
+
+    .hero-content > div:nth-of-type(2) {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+        text-align: right;
+        width: 100%;
+    }
+
+    .hero-content > img {
+        object-fit: cover;
+        width: 315px;
+        height: 315px;
+    }
+
+    .hero-content .hidden {
+        display: block;
+        opacity: 0.5;
+    }
+
+    .hero-content > div:last-of-type {
+        width: fit-content;
+        gap: 1rem;
+    }
+
+    .icon-return {
+        width: 80px;
+        padding-left: 15px;
+    }
 }
