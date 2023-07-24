@@ -69,7 +69,7 @@
     "Conócenos":"About Us",
     "Roadmap":"Roadmap",
     "Portfolio":"Portfolio",
-    "Equipo & Partners":"Team & Partners",
+    "Equipo&nbsp;&amp Partners":"Team & Partners",
     "Noticias":"News",
     "Leer más":"Read more",
     "Ver todo":"See all",
@@ -77,8 +77,11 @@
     "Contacta con nosotros y síguenos en redes":"Contact us and follow us in networks",
     "Contacta con nosotros":"Contact us",
     "Conoce nuestra política de privacidad":"Learn about our privacy policy",
-    "Conoce nuestra receta de cookies 😊":"Read our cookies recipe 😊"
-
+    "Conoce nuestra receta de cookies 😊":"Read our cookies recipe 😊",
+    "Nombre":"Name",
+    "Teléfono":"Phone",
+    "Texto":"Text",
+    "ENVIAR":"SEND"
 }
 
 

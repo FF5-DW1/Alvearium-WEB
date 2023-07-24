@@ -1,6 +1,5 @@
-.footer_container{
-    
-    background-image: url('/img/footer/footer_fondo.png');
+.footer_container {
+    background-image: url("/img/footer/footer_fondo_x4.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,23 +7,22 @@
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 
-.footer_contact{
+.footer_contact {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding: 10%;
     gap: 1rem;
     text-align: center;
-    
 }
-.footer_frase{
+.footer_frase {
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
     font-family: "briller";
     color: white;
 }
-.footer_boton{
+.footer_boton {
     width: 100%;
     margin-left: 7rem;
 }
@@ -59,18 +57,18 @@
     margin-left: 0.5rem;
 }
 
-.footer_final{
+.footer_final {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
 }
-.footer_privacidad{
+.footer_privacidad {
     margin-top: 2rem;
 }
 
-.footer_privacidad >p >a {
+.footer_privacidad > p > a {
     font-family: "briller";
     font-size: 11px;
     color: white;
@@ -78,9 +76,8 @@
     text-decoration: none;
     text-decoration-line: none;
     text-decoration-color: white;
-    
 }
-.footer_derechos{
+.footer_derechos {
     font-family: "briller";
     font-size: 1rem;
     color: white;
@@ -99,7 +96,6 @@
     line-height: 45px;
     box-shadow: 0 0 5px 2px white;
     transition: all 0.2s ease-in;
-    
 }
 
 .footer_social .socials:hover {
@@ -132,7 +128,7 @@
     background-position: 0;
     box-shadow: 0 0 5px 2px white;
 }
-.footer_boton  .buttonWrapper a {
+.footer_boton .buttonWrapper a {
     background-image: -webkit-linear-gradient(
         45deg,
         var(--compPurple) 50%,
@@ -149,26 +145,19 @@
     transition: all 0.3s ease-in;
 }
 
-
-
 @media only screen and (min-width: 768px) {
-
-    
-    
-    .footer_contact{
-        
+    .footer_contact {
         gap: 1rem;
         align-items: center;
-        
     }
-    .footer_frase{
+    .footer_frase {
         width: 50%;
         height: 100%;
-        text-align:center;
+        text-align: center;
         font-size: 1.5rem;
         font-family: "open sans bold", Arial, Helvetica, sans-serif;
     }
-    .footer_boton{
+    .footer_boton {
         width: 35%;
         font-size: 1rem;
         margin-left: 0;
@@ -180,24 +169,17 @@
 }
 
 @media only screen and (min-width: 992px) {
-
-    
-    .footer_contact{
+    .footer_contact {
         gap: 0;
         justify-content: space-around;
     }
-    .footer_frase{
+    .footer_frase {
         width: 60%;
         height: 100%;
         font-size: 2.2rem;
-        
     }
-    .footer_boton{
+    .footer_boton {
         width: 35%;
         margin-right: 5%;
-        
-        
     }
-    
 }
-

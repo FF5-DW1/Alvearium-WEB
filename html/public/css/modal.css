@@ -9,7 +9,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4); /* semi transparent background */
 }
 
@@ -57,8 +57,8 @@
 .cerrar {
     position: absolute;
     top: 115px;
-    left: 203px;
-    transform: rotate(90deg);
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
     color: #000000;
     float: right;
     font-size: 40px;
@@ -112,42 +112,33 @@
     }
 }
 
-
 @media only screen and (min-width: 768px) {
-
     .contenido-modal {
-        
         width: 700px;
         height: 600px;
     }
     .modal-text > p {
-        width: 80%; 
-        word-wrap: break-word; 
+        width: 80%;
+        word-wrap: break-word;
     }
     .cerrar {
         position: absolute;
         top: 200px;
-        left: 375px;
-        
+        left: 50%;
     }
-
 }
 
 @media only screen and (min-width: 992px) {
-
     .cerrar {
         position: absolute;
         top: 200px;
-        left: 500px;
-        
+        left: 50%;
     }
 }
 
 @media only screen and (min-width: 1440px) {
-
     .cerrar {
         top: 200px;
-        left: 710px;
-        
+        left: 50%;
     }
 }

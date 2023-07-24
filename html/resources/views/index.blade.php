@@ -35,21 +35,43 @@
         </a>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
-                <a class="link-item" href="#aboutUsContainer">{{ __('Conócenos') }}</a>
+                <a class="link-item noBreak" href="#aboutUsContainer">{{ __('Conócenos') }}</a>
                 <a class="link-item" href="#roadmap_container">{{ __('Roadmap') }}</a>
                 <a class="link-item" href="#portfolio">{{ __('Portfolio') }}</a>
-                <a class="link-item" href="#team">{{ __('') }}Equipo & Partners</a>
+                <a class="link-item breakWord" href="#team">{!! __('Equipo&nbsp;&amp Partners') !!}</a>
                 <a class="link-item" href="#news">{{ __('Noticias') }}</a>
+
+                <div class="cambioIdioma">
+                    <div class="current">
+                        @if (app()->getLocale() == 'en')
+                            <span><img src="{{ asset('img/icons/en.png') }}" alt="Bandera lenguaje español"></span>
+                        @else
+                            <span><img src="{{ asset('img/icons/es.png') }}" alt="Bandera lenguaje inglés"></span>
+                        @endif
+                    </div>
+                    <div class="options">
+                        @if (app()->getLocale() == 'en')
+                            <a class="locale" href="{{ asset('/locale/es') }}"><img
+                                    src="{{ asset('img/icons/es.png') }}" class="shadowLocale"
+                                    alt="Bandera lenguaje español"></a>
+                        @else
+                            <a class="locale" href="{{ asset('/locale/en') }}"><img
+                                    src="{{ asset('img/icons/en.png') }}" class="shadowLocale"
+                                    alt="Bandera lenguaje inglés"></a>
+                        @endif
+                    </div>
+                </div>
             </div>
-            <a href="{{ asset('/locale/en') }}">EN</a>
-            <a href="{{ asset('/locale/es') }}">ES</a>
+
         </nav>
+
 
         <button id="button-menu" class="button-menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
+
 
     </header>
     <!-- nav bar end-->
@@ -229,8 +251,8 @@
 
                     <div class="aboutUsers">
                         <a class="botonAbout abrirModal">
-                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios" width="615px"
-                                height="405px">
+                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios"
+                                width="615px" height="405px">
                             <p>{{ __('Usuarios') }}</p>
                         </a>
                         <div id="ventanaModal6" class="modal">
@@ -265,6 +287,7 @@
 
     </section>
     <!--end Frase-->
+    {{-- <div class="section_transicion"></div> --}}
 
     <!--Roadmap-->
     <section id="roadmap_container" class="roadmap_container">
@@ -340,7 +363,7 @@
 
         </div>
     </section>
-
+    {{-- <div class="section_transicion"></div> --}}
     {{-- Portfolio --}}
 
     <section class="portfolio" id="portfolio">
@@ -565,7 +588,8 @@
                     alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_5-1" src="{{ asset('img/partnersEstrategicos/5-1_MagicFennec_Vector.svg') }}"
+                <img class="partner_img_5-1"
+                    src="{{ asset('img/partnersEstrategicos/5-1_MagicFennec_Vector.svg') }}"
                     alt="logotipo de partner">
             </div>
             <div class="partners_item">
@@ -680,23 +704,26 @@
 
                     <div id="ventanaModal6" class="modal formModal">
                         <span class="form_cerrar">&times;</span>
-                        <form action="" class="form_container">
+                        <form action="" method="POST" class="form_container">
                             <div class="input-container">
                                 <div class="input-content">
                                     <div class="input-dist">
                                         <div class="input-type">
-                                            <input placeholder="Nombre" required="" type="text" class="input-is">
-                                            <input placeholder="Teléfono" required="" type="" class="input-is">
-                                            <input placeholder="E-mail" required="" type="text" class="input-is">
-                                            <textarea placeholder="Texto" required="" type="" class="input-is"></textarea>
+                                            <input name="name" placeholder="{{ __('Nombre') }}" required type="text" aria-label="Pon tu nombre" 
+                                                class="input-is">
+                                            <input name="tel" placeholder="{{ __('Teléfono') }}" required type="tel" aria-label="Pon tu teléfono"
+                                                class="input-is">
+                                            <input name="email" placeholder="{{ __('E-mail') }}" required type="email" aria-label="Pon tu email" 
+                                                class="input-is">
+                                            <textarea name="text" placeholder="{{ __('Texto') }}" required aria-label="Pon tu comentario" class="input-is"></textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="form_button">
-                                    Button
+                                <button type="submit">
+                                    {{ __('ENVIAR') }}
                                 </button>
                             </div>
-                            
+
                         </form>
                     </div>
 
@@ -735,16 +762,14 @@
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
             class="buttonUp"></a>
 
-    <script></script>
-    <script src="{{ asset('navbar.js') }}"></script>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/navbar.js') }}"></script>
     <script src="{{ asset('lib/particles/particles.min.js') }}"></script>
     <script src="{{ asset('lib/particles/app.js') }}"></script>
     <script src="{{ asset('js/cards.js') }}"></script>
     <script src="{{ asset('js/modal.js') }}"></script>
     <script src="{{ asset('js/buttonUp.js') }}"></script>
     <script src="{{ asset('js/news.js') }}"></script>
-    <script src="{{ asset('js/navbar.js') }}"></script>
 
 </body>
 

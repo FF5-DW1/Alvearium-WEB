@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/jpg" href="{{ asset('img/favicon-Alvearium.png') }}">
+    <link rel="icon" type="image/jpg" href="{{ asset('img/icons/favicon-Alvearium.png') }}">
     <title>Alvearium</title>
 
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/quienesSomos.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 
 
 </head>
@@ -40,6 +43,29 @@
                         class="socials">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
                     </a>
+
+                    <div class="cambioIdioma">
+                        <div class="current">
+                            @if (app()->getLocale() == 'en')
+                                <span><img src="{{ asset('img/icons/en.png') }}" class="shadowLocale"
+                                        alt="Bandera lenguaje español"></span>
+                            @else
+                                <span><img src="{{ asset('img/icons/es.png') }}" class="shadowLocale"
+                                        alt="Bandera lenguaje inglés"></span>
+                            @endif
+                        </div>
+                        <div class="options">
+                            @if (app()->getLocale() == 'en')
+                                <a class="locale" href="{{ asset('/locale/es') }}"><img
+                                        src="{{ asset('img/icons/es.png') }}" class="shadowLocale"
+                                        alt="Bandera lenguaje español"></a>
+                            @else
+                                <a class="locale" href="{{ asset('/locale/en') }}"><img
+                                        src="{{ asset('img/icons/en.png') }}" class="shadowLocale"
+                                        alt="Bandera lenguaje inglés"></a>
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,10 +86,11 @@
 
                                     <h2 class="tab3_title_columna">{{ __('Nuestra ') }}<br> {{ __('Misión') }}</h2>
 
-                                    <p class="tab3_parrafo">{{ __('Acercar a la población las tecnologías avanzadas y descentralizadas, con el objetivo de ') }}
-                                    <span class="bold">
-                                        {{ __('mejorar la experiencia y la forma de relacionarnos entre nosotros y con nuestro entorno.') }}
-                                    </span>
+                                    <p class="tab3_parrafo">
+                                        {{ __('Acercar a la población las tecnologías avanzadas y descentralizadas, con el objetivo de ') }}
+                                        <span class="bold">
+                                            {{ __('mejorar la experiencia y la forma de relacionarnos entre nosotros y con nuestro entorno.') }}
+                                        </span>
                                     </p>
 
                                 </div>
@@ -72,7 +99,8 @@
 
                                     <h2 class="tab3_title_columna">{{ __('Nuestra ') }}<br> {{ __('Visión') }}</h2>
 
-                                    <p class="tab3_parrafo"><span class="bold">{{ __('La comunidad de Alvearium ') }}</span>{{ __(',a través del empleo de las tecnologías más disruptivas, ') }}
+                                    <p class="tab3_parrafo"><span
+                                            class="bold">{{ __('La comunidad de Alvearium ') }}</span>{{ __(',a través del empleo de las tecnologías más disruptivas, ') }}
                                         <span class="bold">{{ __('liderará la humanización del metaverso.') }}</span>
                                         <br><br>
                                         {{ __('Los seres humanos podremos reproducir experiencias sensoriales más allá del espacio-tiempo que nos permitirán mejorar nuestra forma de vivir y de relacionarnos.') }}
@@ -94,7 +122,9 @@
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
                                             <h3 class="name_value">{{ __('Excelencia') }}</h3>
-                                            <h3 class="description_value">{{ __('Empleo de las mejores prácticas buscando la máxima calidad.') }}</h3>
+                                            <h3 class="description_value">
+                                                {{ __('Empleo de las mejores prácticas buscando la máxima calidad.') }}
+                                            </h3>
                                         </div>
 
                                     </div>
@@ -103,7 +133,9 @@
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
                                             <h3 class="name_value">{{ __('Resiliencia') }}</h3>
-                                            <h3 class="description_value">{{ __('Adaptación a los continuos cambios de este mundo disruptivo.') }}</h3>
+                                            <h3 class="description_value">
+                                                {{ __('Adaptación a los continuos cambios de este mundo disruptivo.') }}
+                                            </h3>
                                         </div>
 
                                     </div>
@@ -112,7 +144,9 @@
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
                                             <h3 class="name_value">{{ __('Innovación') }}</h3>
-                                            <h3 class="description_value">{{ __('Visión para impulsar nuevas ideas y aplicar la mejora continua.') }}</h3>
+                                            <h3 class="description_value">
+                                                {{ __('Visión para impulsar nuevas ideas y aplicar la mejora continua.') }}
+                                            </h3>
                                         </div>
 
                                     </div>
@@ -121,7 +155,9 @@
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
                                             <h3 class="name_value">{{ __('Motivación') }}</h3>
-                                            <h3 class="description_value">{{ __('Actitud positiva para trabajar con perseverancia y determinación.') }}</h3>
+                                            <h3 class="description_value">
+                                                {{ __('Actitud positiva para trabajar con perseverancia y determinación.') }}
+                                            </h3>
                                         </div>
 
                                     </div>
@@ -130,7 +166,9 @@
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
                                             <h3 class="name_value">{{ __('Trabajo en equipo') }}</h3>
-                                            <h3 class="description_value">{{ __('Colaboración y cooperación para crear valor y multiplicar la productividad.') }}</h3>
+                                            <h3 class="description_value">
+                                                {{ __('Colaboración y cooperación para crear valor y multiplicar la productividad.') }}
+                                            </h3>
                                         </div>
 
                                     </div>
@@ -139,7 +177,9 @@
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
                                             <h3 class="name_value">{{ __('Comunidad') }}</h3>
-                                            <h3 class="description_value">{{ __('Fiel y colaborativa con foco en la responsabilidad social.') }}</h3>
+                                            <h3 class="description_value">
+                                                {{ __('Fiel y colaborativa con foco en la responsabilidad social.') }}
+                                            </h3>
                                         </div>
 
                                     </div>
@@ -148,7 +188,9 @@
                                             alt="Icono que acompaña al texto de cada valor">
                                         <div class="text-item-value">
                                             <h3 class="name_value">{{ __('Ética') }}</h3>
-                                            <h3 class="description_value">{{ __('Transparencia, lealtad y honestidad como factores de creación de valor.') }}</h3>
+                                            <h3 class="description_value">
+                                                {{ __('Transparencia, lealtad y honestidad como factores de creación de valor.') }}
+                                            </h3>
                                         </div>
 
                                     </div>
@@ -356,11 +398,15 @@
                         <a href="#tab1">{{ __('Qué es Alvearium') }}</a>
                         <div class="tab-content">
 
-                            <p class="tab1_parrafo"><span class="highlight-word-paragraph">{{ __('Alvearium') }}</span>{{ __(' es una red social descentralizada en Web3, con espacios virtuales inspirados en ciudades reales, donde los usuarios, gracias a tecnologías inmersivas, un ecosistema tokenizado y las recompensas por consumir contenido en la plataforma, creará un Metaverso que genere impacto positivo en el mundo real') }}</p>
+                            <p class="tab1_parrafo"><span
+                                    class="highlight-word-paragraph">{{ __('Alvearium') }}</span>{{ __(' es una red social descentralizada en Web3, con espacios virtuales inspirados en ciudades reales, donde los usuarios, gracias a tecnologías inmersivas, un ecosistema tokenizado y las recompensas por consumir contenido en la plataforma, creará un Metaverso que genere impacto positivo en el mundo real') }}
+                            </p>
 
                             <br>
 
-                            <p class="tab1_parrafo">{{ __('Se posiciona como la primera Plataforma Web3 que replica ciudades reales en el Metaverso con el propósito de generar impacto socio-económico en el mundo real') }}</p>
+                            <p class="tab1_parrafo">
+                                {{ __('Se posiciona como la primera Plataforma Web3 que replica ciudades reales en el Metaverso con el propósito de generar impacto socio-económico en el mundo real') }}
+                            </p>
 
                             <br><br>
 
@@ -369,12 +415,18 @@
                                 alt="imagen de silueta de gafas virtuales reflejando el acceso del mundo real al virtual"
                                 class="tab1_imagen_gafas">
 
-                            
+
                             <h2 class="tab1_title_history">{{ __('Historia') }}</h2>
 
-                            <p class="tab1_parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit beatae fugiat hic animi, qui sint quia accusantium iste! Porro delectus obcaecati provident atque. Id delectus ipsam doloribus at quo!
-                            Velit, sit. Asperiores veniam aut vitae rem. Iste officiis, suscipit distinctio perferendis officia mollitia? Pariatur ea quidem soluta numquam repellat, expedita facilis omnis necessitatibus aspernatur earum. Eligendi consectetur ullam vel.
-                            Error voluptate aliquam nobis inventore eos eius mollitia laudantium temporibus quae dicta! Sit, earum ea voluptatem aliquam maxime velit distinctio neque ab placeat! Facilis architecto, exercitationem ipsam omnis at ex.
+                            <p class="tab1_parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Doloremque reprehenderit beatae fugiat hic animi, qui sint quia accusantium iste! Porro
+                                delectus obcaecati provident atque. Id delectus ipsam doloribus at quo!
+                                Velit, sit. Asperiores veniam aut vitae rem. Iste officiis, suscipit distinctio
+                                perferendis officia mollitia? Pariatur ea quidem soluta numquam repellat, expedita
+                                facilis omnis necessitatibus aspernatur earum. Eligendi consectetur ullam vel.
+                                Error voluptate aliquam nobis inventore eos eius mollitia laudantium temporibus quae
+                                dicta! Sit, earum ea voluptatem aliquam maxime velit distinctio neque ab placeat!
+                                Facilis architecto, exercitationem ipsam omnis at ex.
                             </p>
 
 
@@ -385,12 +437,85 @@
         </div>
     </section>
 
-    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class ="buttonUp"></a>
+    <!--footer-->
+
+    <footer class="footer_container">
+
+        <div class="footer_contact">
+            <div class="footer_frase">
+                {{ __('¿Quieres estar al día de todas las novedades, o colaborar en el proyecto?') }} <br>
+                {{ __('Contacta con nosotros y síguenos en redes') }}
+            </div>
+            <div class="footer_boton">
+                <div class="buttonWrapper">
+                    <a class="abrirModal">{{ __('Contacta con nosotros') }}</a>
+
+                    <div id="ventanaModal6" class="modal formModal">
+                        <span class="form_cerrar">&times;</span>
+                        <form action="" method="POST" class="form_container">
+                            <div class="input-container">
+                                <div class="input-content">
+                                    <div class="input-dist">
+                                        <div class="input-type">
+                                            <input name="name" placeholder="{{ __('Nombre') }}" required
+                                                type="text" aria-label="Pon tu nombre" class="input-is">
+                                            <input name="tel" placeholder="{{ __('Teléfono') }}" required
+                                                type="tel" aria-label="Pon tu teléfono" class="input-is">
+                                            <input name="email" placeholder="{{ __('E-mail') }}" required
+                                                type="email" aria-label="Pon tu email" class="input-is">
+                                            <textarea name="text" placeholder="{{ __('Texto') }}" required aria-label="Pon tu comentario"
+                                                class="input-is"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit">
+                                    {{ __('ENVIAR') }}
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_final">
+            <div class="footer_social">
+                <a href="https://www.linkedin.com/company/alveariumvr" class="socials" target="_blank">
+                    <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://twitter.com/alvearium__" target="_blank" class="socials">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://discord.com/invite/Kuc9H6Y5B4" target="_blank" class="socials">
+                    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.instagram.com/alvearium_/" target="_blank" class="socials">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.facebook.com/people/Alvearium/100083367819508/" target="_blank" class="socials">
+                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <div class="footer_privacidad">
+                <p><a href="#">{{ __('Conoce nuestra política de privacidad') }}</a></p>
+                <p><a href="#">{{ __('Conoce nuestra receta de cookies 😊') }}</a></p>
+            </div>
+            <div class="footer_derechos">
+                Alvearium 2023 ®
+            </div>
+        </div>
+    </footer>
+
+    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
+            class="buttonUp"></a>
 
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
     <script src="{{ asset('lib/particles/particles.min.js') }}"></script>
     <script src="{{ asset('lib/particles/app.js') }}"></script>
     <script src="{{ asset('js/buttonUp.js') }}"></script>
+    <script src="{{ asset('js/modal.js') }}"></script>
 
 </body>
 
