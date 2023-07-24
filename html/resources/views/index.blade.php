@@ -692,7 +692,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button>
+                                <button class="form_button">
                                     Button
                                 </button>
                             </div>
