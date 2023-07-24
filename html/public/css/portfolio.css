@@ -1,10 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.portfolio{
+.portfolio {
     width: 100%;
     background: url(../img/fondo.png);
     background-position: center center;
@@ -12,75 +6,69 @@
     background-size: cover;
 }
 
-.portfolio_container_item{
+.portfolio_container_item {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
-.portfolio_item{
-    width:350px;
+.portfolio_item {
+    width: 350px;
     height: 570px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    background-color:  #4f1fb7c8;
+    background-color: #4f1fb7c8;
     margin: 30px 0 0 0;
     padding: 15px;
-    gap:10px;
-    align-items: center; 
-    color:white; 
-
+    gap: 10px;
+    align-items: center;
+    color: white;
 }
 
-.portfolio_item_title{
+.portfolio_item_title {
     font-size: 1.5rem;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
     width: 100%;
 }
 
-.portfolio_item_title h3{
+.portfolio_item_title h3 {
     text-align: left;
     font-family: "open sans bold", Arial, Helvetica, sans-serif;
 }
 
 .portfolio_title_section {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     text-align: center;
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
     padding-top: 30px;
-    color:white;
+    color: white;
     margin-bottom: 15px;
 }
 
-.portfolio_item_img{
+.portfolio_item_img {
     width: 100%;
 }
 
-.portfolio_item_img img{
+.portfolio_item_img img {
     border-radius: 5px;
     object-fit: contain;
     width: 100%;
-    
 }
 
-.portfolio_item_text{
+.portfolio_item_text {
     margin-bottom: 15px;
 }
 
-.portfolio_item p{
+.portfolio_item p {
     font-size: 1rem;
     text-align: justify;
     font-family: "open sans", Arial, Helvetica, sans-serif;
     margin-left: 5px;
-    
-
 }
 
 .portfolio_container_item .portfolio_item:last-child {
     margin-bottom: 50px;
-   
 }
 
 @media only screen and (min-width: 600px) {
@@ -88,9 +76,9 @@
         gap: 30px;
     }
 
-    .portfolio_item{ 
+    .portfolio_item {
         margin-top: 10px;
-    } 
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -98,26 +86,23 @@
         gap: 30px;
     }
 
-    .portfolio_item{ 
+    .portfolio_item {
         margin-top: 10px;
-    } 
+    }
+
+    .portfolio_title_section {
+        font-size: 2.2rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-
-    .portfolio_container_item{
+    .portfolio_container_item {
         gap: 30px;
     }
-
 }
 
 @media only screen and (min-width: 1200px) {
-    .portfolio_container_item{
+    .portfolio_container_item {
         gap: 30px;
     }
-
-
 }
-
-
-

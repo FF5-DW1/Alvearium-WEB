@@ -1,28 +1,3 @@
-@font-face {
-    font-family: "briller";
-    src: url(../fonts/briller/Briller-Light.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "briller bold";
-    src: url(../fonts/briller/Briller-Bold.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "open sans";
-    src: url(../fonts/open_sans/OpenSans-Regular.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "open sans bold";
-    src: url(../fonts/open_sans/OpenSans-Bold.ttf) format("truetype");
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .aboutUsContainer {
     background: linear-gradient(to right, #330072, pink);
     font-family: "open sans";
@@ -37,6 +12,7 @@
 
 .aboutUsTitulo h2 {
     font-size: 2.2rem;
+    font-family: "briller bold";
 }
 
 .aboutUsMedia {
@@ -45,10 +21,10 @@
     gap: 3rem;
     justify-content: center;
 }
-.aboutUsMedia p{
-font-size: 1.1rem;
-color: #330072;
-font-weight: bold;
+.aboutUsMedia p {
+    font-size: 1.1rem;
+    color: #330072;
+    font-weight: bold;
 }
 
 .aboutUsVideo iframe {
@@ -62,7 +38,7 @@ font-weight: bold;
     padding: 10px;
     justify-content: center;
 }
-.perfiles{
+.perfiles {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -123,11 +99,11 @@ font-weight: bold;
     width: 100%;
     height: 100%;
 }
-.ImgCreate{
+.ImgCreate {
     width: 100%;
     height: 100%;
 }
-.ImgBrands{
+.ImgBrands {
     width: 100%;
     height: 100%;
 }
@@ -138,8 +114,6 @@ font-weight: bold;
 
 /* --------------------------------------------------@media query tablet ----------------------------------------*/
 @media screen and (min-width: 768px) {
-    
-
     .aboutUsTitulo {
         display: flex;
         justify-content: center;
@@ -160,9 +134,9 @@ font-weight: bold;
         width: 40rem;
         justify-content: center;
         align-content: space-evenly;
-        margin-bottom: 4rem
+        margin-bottom: 4rem;
     }
-    .perfiles{
+    .perfiles {
         gap: 1rem;
         width: 40rem;
         justify-content: center;
@@ -177,27 +151,22 @@ font-weight: bold;
         text-align: center;
     }
 
-
-    
     .aboutComercial {
         width: 40%;
         margin: 1rem;
         text-align: center;
     }
-    
-    
+
     .aboutOcio {
         width: 40%;
         margin: 1rem;
         text-align: center;
     }
-    
-    
+
     .perfiles {
         display: flex;
-        
     }
-    
+
     .aboutCreate {
         width: 40%;
         margin: 1rem;
@@ -206,23 +175,21 @@ font-weight: bold;
     .ImgInstitutions {
         width: 100%;
         height: 100%;
-        
     }
     .ImgComercial {
         width: 100%;
         height: 100%;
     }
-    
+
     .ImgOcio {
         width: 100%;
         height: 100%;
-        
     }
-    .ImgCreate{
+    .ImgCreate {
         width: 100%;
         height: 100%;
     }
-    .ImgBrands{
+    .ImgBrands {
         width: 100%;
         height: 100%;
     }
@@ -231,7 +198,7 @@ font-weight: bold;
         height: 100%;
     }
 
-    .aboutBrands{
+    .aboutBrands {
         width: 40%;
         margin: 1rem;
         text-align: center;
@@ -245,14 +212,13 @@ font-weight: bold;
 
 /* ------------------------------------------------------------@media query escritorio------------------------------------------ */
 @media screen and (min-width: 992px) {
-
     /* --------------------------------------------------@media query section video y carrusel ----------------------------------------*/
     .aboutUsVideo {
         width: 40rem;
         height: 25rem;
         margin-top: 1rem;
     }
-    
+
     .aboutUsPerfil {
         display: flex;
         flex-wrap: wrap;
@@ -264,13 +230,12 @@ font-weight: bold;
         margin-top: 3rem;
     }
 
-    .aboutInstitutions{
+    .aboutInstitutions {
         width: 16.6%;
         margin: 1rem;
         text-align: center;
-        
     }
-    .aboutComercial{
+    .aboutComercial {
         width: 16.6%;
         margin: 1rem;
         text-align: center;
@@ -291,12 +256,12 @@ font-weight: bold;
         justify-content: space-around;
     }
 
-    .aboutCreate{
+    .aboutCreate {
         width: 16.6%;
         margin: 1rem;
         text-align: center;
     }
-    .aboutBrands{
+    .aboutBrands {
         width: 16.6%;
         margin: 1rem;
         text-align: center;

@@ -1,0 +1,192 @@
+.roadmap_container {
+    background-image: url("/img/alvearium-alvea.jpg");
+}
+
+.road_title {
+    font-family: "briller bold", Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 2rem 0 1rem 0;
+}
+.road_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.road_phase {
+    width: 30%;
+    list-style: none;
+}
+
+.road_img_phase {
+    position: relative;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.road_img_phase > h3 {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+}
+.road_img_phase_img {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin-left: -2rem;
+}
+.road_p {
+    position: absolute;
+    left: 8px;
+    top: 57px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 40px;
+    z-index: 2;
+}
+.fase1 {
+    left: 20px;
+}
+.fase2 {
+    left: 15px;
+}
+
+.road_state {
+    width: 30%;
+    padding-bottom: 5%;
+    list-style: none;
+}
+
+.road_img_state {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.road_img_state > h3 {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "open sans bold", Arial, Helvetica, sans-serif;
+}
+.road_img_state_img {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+@media screen and (min-width: 768px) {
+    .road_container {
+        display: block;
+    }
+    .road_title {
+        padding: 1rem 0 1rem 0;
+    }
+    .road_img_phase {
+        display: block;
+    }
+    .road_img_phase > h3 {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .road_img_phase_img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .road_p {
+        left: 10px;
+        top: 53px;
+
+        font-size: 37px;
+    }
+    .fase1 {
+        left: 22px;
+    }
+    .fase2 {
+        left: 18px;
+    }
+    .phase_container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .road_phase {
+        margin-left: 4.5rem;
+        list-style: none;
+    }
+    .road_img_state {
+        width: 11rem;
+        height: 15rem;
+    }
+    .state_container {
+        display: flex;
+    }
+    .road_state {
+        margin-left: 1.8rem;
+        padding-bottom: 5%;
+        list-style: none;
+    }
+    .road_img_state_img {
+        position: relative;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .road_container {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .road_title {
+        padding: 1rem 0 1rem 0;
+    }
+
+    .road_img_phase > h3 {
+        width: 15rem;
+        height: 5rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .road_img_phase_img {
+        width: 10rem;
+        height: 10rem;
+        margin-left: 0rem;
+    }
+    .road_p {
+        left: 27px;
+        top: 40px;
+        font-size: 50px;
+    }
+    .fase1 {
+        left: 47px;
+        top: 40px;
+    }
+    .fase2 {
+        left: 37px;
+    }
+    .phase_container {
+        margin-left: 6rem;
+        gap: 3rem;
+    }
+    .road_img_state {
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+    }
+    .road_img_state > h3 {
+        font-size: 2rem;
+    }
+    .road_img_state_img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
