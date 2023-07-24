@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="hero">
+    <section class="hero" style="margin-top: 0;">
         <div class="hero-content">
             <div id="particles-js"></div>
             <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
@@ -37,12 +37,15 @@
             </div>
         </div>
     </section>
-    <h1>Noticias</h1>
+
     <main>
+        <h1>Noticias</h1>
+        <div class="img"></div>
         <h2>Título de noticia</h2>
-        <img src="" alt="Imagen de noticia">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur error eius enim at? Vero fuga delectus nesciunt placeat voluptas tenetur veritatis laboriosam accusantium earum, exercitationem magni magnam quae quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et quod minus ipsa natus ea perferendis officia architecto blanditiis voluptas neque provident, distinctio veritatis ullam explicabo quasi nisi tenetur? Sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dicta libero! Error, explicabo minus veniam molestias alias laudantium asperiores doloremque maiores qui nam. Numquam ratione natus amet commodi vero recusandae?</p>
+        <!-- <img src="" alt="Imagen de noticia"> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur error eius enim at? Vero fuga delectus nesciunt placeat voluptas tenetur veritatis laboriosam accusantium earum, exercitationem magni magnam quae quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et quod minus ipsa natus ea perferendis officia architecto blanditiis voluptas neque provident, distinctio veritatis ullam explicabo quasi nisi tenetur? Sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dicta libero! Error, explicabo minus veniam molestias alias laudantium asperiores doloremque maiores qui nam. Numquam ratione natus amet commodi vero recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorum! Quod modi, temporibus corporis itaque aperiam recusandae molestias commodi fugiat omnis repudiandae cupiditate adipisci ea possimus quisquam eaque autem. Impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum reprehenderit unde quae corrupti possimus doloremque rem quos iure exercitationem reiciendis, laudantium adipisci at dignissimos eius mollitia pariatur nesciunt aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus sapiente minus sed optio rem possimus est esse atque libero nesciunt eligendi vitae totam nihil ea explicabo consequatur velit cupiditate?</p>
     </main>
+    <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+main {
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: "briller bold";
+}
+
+.img {
+    height: 30vh;
+    width: 100%;
+    background-color: aquamarine;
+}
