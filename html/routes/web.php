@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Middleware\LocaleCookieMiddleware;
 use Illuminate\Support\Facades\Route;
 
@@ -35,3 +36,5 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::view('/quienes-somos' , 'quienes-somos')->name('quienes-somos');
     
 });
+
+Route::post('contact' ,[ContactController::class, 'store'])->name('contactForm.store');

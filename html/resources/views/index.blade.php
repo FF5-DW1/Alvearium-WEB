@@ -704,18 +704,39 @@
 
                     <div id="ventanaModal6" class="modal formModal">
                         <span class="form_cerrar">&times;</span>
-                        <form action="" method="POST" class="form_container">
+                        <form action="{{route('contactForm.store')}}" method="POST" class="form_container">
+
+                            @if (session('info'))
+
+                                <p>{{session('info')}}</p>
+                                
+                            @endif
+
+                            @csrf
+
                             <div class="input-container">
                                 <div class="input-content">
                                     <div class="input-dist">
                                         <div class="input-type">
                                             <input name="name" placeholder="{{ __('Nombre') }}" required type="text" aria-label="Pon tu nombre" 
                                                 class="input-is">
+                                                @error('name')
+                                                    <p><strong>{{$message}}</strong></p>
+                                                @enderror
                                             <input name="tel" placeholder="{{ __('Teléfono') }}" required type="tel" aria-label="Pon tu teléfono"
                                                 class="input-is">
+                                                @error('tel')
+                                                    <p><strong>{{$message}}</strong></p>
+                                                @enderror
                                             <input name="email" placeholder="{{ __('E-mail') }}" required type="email" aria-label="Pon tu email" 
                                                 class="input-is">
-                                            <textarea name="text" placeholder="{{ __('Texto') }}" required aria-label="Pon tu comentario" class="input-is"></textarea>
+                                                @error('email')
+                                                    <p><strong>{{$message}}</strong></p>
+                                                @enderror
+                                            <textarea name="message" placeholder="{{ __('Texto') }}" required aria-label="Pon tu comentario" class="input-is"></textarea>
+                                                @error('message')
+                                                    <p><strong>{{$message}}</strong></p>
+                                                @enderror
                                         </div>
                                     </div>
                                 </div>
