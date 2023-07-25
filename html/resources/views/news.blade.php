@@ -65,7 +65,7 @@
         <h2>Título de noticia</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur error eius enim at? Vero fuga delectus nesciunt placeat voluptas tenetur veritatis laboriosam accusantium earum, exercitationem magni magnam quae quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et quod minus ipsa natus ea perferendis officia architecto blanditiis voluptas neque provident, distinctio veritatis ullam explicabo quasi nisi tenetur? Sunt?</p>
     </main>
-    <h3>Más noticias</h3>
+    <h3>{{ __('Más noticias') }}</h3>
     <hr>
     <section>
         <div class="newsItem">
