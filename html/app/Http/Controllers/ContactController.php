@@ -12,7 +12,7 @@ class ContactController extends Controller
 
         $request->validate([
             'name' =>'required|min:2',
-            'tel' =>'required|numeric|min:8|max:14',
+            'tel' =>'required|regex:/^(?:(?:\+?[0-9]{2,4})?[ ]?[6789][0-9 ]{8,13})$/',
             'email' => 'required|email',
             'message' =>'required|min:10'
 
@@ -21,7 +21,7 @@ class ContactController extends Controller
         $correo = new ContactMailable($request->all());
         Mail::to('dlopezg4@gmail.com')->send($correo);
 
-        return redirect()->route('home')->with('info','Mensaje enviado');
+        return redirect()->route('home')->with('info',__('messages.sent'));
     }
 
     

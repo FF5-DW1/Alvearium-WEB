@@ -20,21 +20,21 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/locale/{locale}' , function ($locale) {
-    
-    $allowed_locales = ['en','es'];
-    
-    if(! in_array($locale, $allowed_locales)) {
+Route::get('/locale/{locale}', function ($locale) {
+
+    $allowed_locales = ['en', 'es'];
+
+    if (!in_array($locale, $allowed_locales)) {
         abort(400, "Invalid locale"); // Retorna error 400 si el locale no es permitido
     }
-    return redirect()->back()->withCookie('locale' , $locale);
+    return redirect()->back()->withCookie('locale', $locale);
 });
 
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
-    
-    Route::view('/' , 'index')->name('home');
-    Route::view('/quienes-somos' , 'quienes-somos')->name('quienes-somos');
-    
+
+    Route::view('/', 'index')->name('home');
+    Route::view('/quienes-somos', 'quienes-somos')->name('quienes-somos');
+    Route::view('/news', 'news')->name('news');
+    Route::post('contact' ,[ContactController::class, 'store'])->name('contactForm.store');
 });
 
-Route::post('contact' ,[ContactController::class, 'store'])->name('contactForm.store');
