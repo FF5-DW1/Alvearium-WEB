@@ -15,14 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('last_name');
-            $table->string('role')->unique();
-            $table->string('linkedin');
-            $table->string('image');
+            $table->string('job_role');
+            $table->string('linkedin')->nullable();
+            $table->string('image_path')->nullable();
             $table->unsignedBigInteger('team_id'); // Crear columna para la clave foránea
             $table->foreign('team_id')->references('id')->on('teams'); // Definir la clave foránea
             $table->timestamps();
         });
-        
     }
 
     /**

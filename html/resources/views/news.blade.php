@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -61,46 +61,46 @@
             </a>
             <h1>{{ __('Noticias') }}</h1>
         </div>
-        <div class="img"></div>
+        <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium">
         <h2>Título de noticia</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur error eius enim at? Vero fuga delectus nesciunt placeat voluptas tenetur veritatis laboriosam accusantium earum, exercitationem magni magnam quae quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et quod minus ipsa natus ea perferendis officia architecto blanditiis voluptas neque provident, distinctio veritatis ullam explicabo quasi nisi tenetur? Sunt?</p>
     </main>
     <h3>{{ __('Más noticias') }}</h3>
     <hr>
-    <section>
+    <section id="moreNews">
         <div class="newsItem">
-            <div class="moreNewsImg"></div>
+            <div class="frame">
+                <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium" class="moreNewsImg">
+            </div>
             <div class="titleAndDate">
-                <h3>Título de otra noticia más largo como ejemplo y tal y eso</h3>
+                <h3>Título de otra noticia más largo como ejemplo y tal y eso y eso y tal y largo y mas largo ououiiuuioyu sdadasdasd</h3>
                 <p>23 ene. 2023</p>
             </div>
         </div>
         <hr>
         <div class="newsItem">
-            <div class="moreNewsImg"></div>
+            <div class="frame">
+                <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium" class="moreNewsImg">
+            </div>
             <div class="titleAndDate">
-                <h3>Título de otra noticia más largo</h3>
+                <h3>Título de otra noticia más largo como ejemplo y tal y eso y eso y tal y largo y mas largo ououiiuuioyu sdadasdasd</h3>
                 <p>23 ene. 2023</p>
             </div>
         </div>
         <hr>
         <div class="newsItem">
-            <div class="moreNewsImg"></div>
+            <div class="frame">
+                <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium" class="moreNewsImg">
+            </div>
             <div class="titleAndDate">
-                <h3>Título de otra noticia más largo</h3>
+                <h3>Título de otra noticia más largo como ejemplo y tal y eso y eso y tal y largo y mas largo ououiiuuioyu sdadasdasd</h3>
                 <p>23 ene. 2023</p>
             </div>
         </div>
         <hr>
-        <div class="newsItem">
-            <div class="moreNewsImg"></div>
-            <div class="titleAndDate">
-                <h3>Título de otra noticia más largo</h3>
-                <p>23 ene. 2023</p>
-            </div>
-        </div>
     </section>
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/newsExt.js') }}"></script>
 </body>
 
 </html>

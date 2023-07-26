@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('roadmap_nodes', function (Blueprint $table) {
             $table->id();
             $table->string('phase');
-            $table->string('short_title');
-            $table->string('image');
-            $table->string('related_activities');
-            $table->string('status');
+            $table->string('year_interval');
+            $table->string('image_path')->nullable();
+            $table->string('title');
             $table->timestamps();
         });
     }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Middleware\LocaleCookieMiddleware;
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,4 +38,6 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::view('/news', 'news')->name('news');
     Route::post('contact' ,[ContactController::class, 'store'])->name('contactForm.store');
 });
+
+
 
