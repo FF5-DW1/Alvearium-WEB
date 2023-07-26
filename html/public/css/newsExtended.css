@@ -131,16 +131,19 @@ main {
     font-family: "briller bold" !important;
 }
 
-.img {
-    height: 30vh;
+img {
     width: 100%;
 }
 
-.img,
+img,
 .moreNewsImg {
-    background: linear-gradient(aquamarine, lightblue);
     border-radius: 5px;
     margin-bottom: 0.7rem;
+}
+
+.moreNewsImg {
+    min-width: 40%;
+    max-width: 40%;
 }
 
 body > hr {
@@ -211,7 +214,8 @@ section hr {
     }
 
     .icon-return {
-        width: 64px;
+        height: 95%;
+        width: 60px;
         padding-left: 15px;
     }
 }

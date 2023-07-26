@@ -61,7 +61,7 @@
             </a>
             <h1>{{ __('Noticias') }}</h1>
         </div>
-        <div class="img"></div>
+        <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium">
         <h2>Título de noticia</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur error eius enim at? Vero fuga delectus nesciunt placeat voluptas tenetur veritatis laboriosam accusantium earum, exercitationem magni magnam quae quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et quod minus ipsa natus ea perferendis officia architecto blanditiis voluptas neque provident, distinctio veritatis ullam explicabo quasi nisi tenetur? Sunt?</p>
     </main>
@@ -69,7 +69,7 @@
     <hr>
     <section>
         <div class="newsItem">
-            <div class="moreNewsImg"></div>
+            <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium" class="moreNewsImg">
             <div class="titleAndDate">
                 <h3>Título de otra noticia más largo como ejemplo y tal y eso</h3>
                 <p>23 ene. 2023</p>
