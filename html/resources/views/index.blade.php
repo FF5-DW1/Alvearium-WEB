@@ -44,20 +44,16 @@
                 <div class="cambioIdioma">
                     <div class="current">
                         @if (app()->getLocale() == 'en')
-                            <span><img src="{{ asset('img/icons/en.png') }}" alt="Bandera lenguaje español"></span>
+                        <span><img src="{{ asset('img/icons/en.png') }}" alt="Bandera lenguaje español"></span>
                         @else
-                            <span><img src="{{ asset('img/icons/es.png') }}" alt="Bandera lenguaje inglés"></span>
+                        <span><img src="{{ asset('img/icons/es.png') }}" alt="Bandera lenguaje inglés"></span>
                         @endif
                     </div>
                     <div class="options">
                         @if (app()->getLocale() == 'en')
-                            <a class="locale" href="{{ asset('/locale/es') }}"><img
-                                    src="{{ asset('img/icons/es.png') }}" class="shadowLocale"
-                                    alt="Bandera lenguaje español"></a>
+                        <a class="locale" href="{{ asset('/locale/es') }}"><img src="{{ asset('img/icons/es.png') }}" class="shadowLocale" alt="Bandera lenguaje español"></a>
                         @else
-                            <a class="locale" href="{{ asset('/locale/en') }}"><img
-                                    src="{{ asset('img/icons/en.png') }}" class="shadowLocale"
-                                    alt="Bandera lenguaje inglés"></a>
+                        <a class="locale" href="{{ asset('/locale/en') }}"><img src="{{ asset('img/icons/en.png') }}" class="shadowLocale" alt="Bandera lenguaje inglés"></a>
                         @endif
                     </div>
                 </div>
@@ -84,8 +80,7 @@
             <div>
                 <h1 class="hero-title_layer">{{ __('Comienza una nueva experiencia') }}</h1>
                 <div class="buttonWrapper">
-                    <a href="https://discord.com/invite/Wmq2gzRRhf">{{ __('Únete al Discord de') }} <img
-                            src="{{ asset('img/w3_white.png') }}" alt="Logo de LaunchW3"></a>
+                    <a href="https://discord.com/invite/Wmq2gzRRhf">{{ __('Únete al Discord de') }} <img src="{{ asset('img/w3_white.png') }}" alt="Logo de LaunchW3"></a>
                     <a href="#">{{ __('Información Tokenomics') }}</a>
                 </div>
             </div>
@@ -119,16 +114,12 @@
         </div>
         <div class="aboutUsMedia">
             <div class="aboutUsVideo">
-                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/usOFzrD8a2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="aboutUsPerfil">
                 <div class="aboutInstitutions">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgInstitutions" src="{{ asset('img/instituciones2.png') }}" alt="Instituciones"
-                            width="615px" height="405px">
+                        <img class="ImgInstitutions" src="{{ asset('img/instituciones2.png') }}" alt="Instituciones" width="615px" height="405px">
                         <p>{{ __('Instituciones Públicas') }}</p>
                     </a>
                     <div id="ventanaModal1" class="modal">
@@ -150,8 +141,7 @@
                 </div>
                 <div class="aboutComercial">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgComercial" src="{{ asset('img/comercios2.png') }}" alt="Comercial"
-                            width="615px" height="405px">
+                        <img class="ImgComercial" src="{{ asset('img/comercios2.png') }}" alt="Comercial" width="615px" height="405px">
                         <p>{{ __('Comercios') }}</p>
                     </a>
                     <div id="ventanaModal2" class="modal">
@@ -172,8 +162,7 @@
                 </div>
                 <div class="aboutOcio">
                     <a class="botonAbout abrirModal">
-                        <img class="ImgOcio" src="{{ asset('img/ocio2.png') }}" alt="Ocio" width="615px"
-                            height="405px">
+                        <img class="ImgOcio" src="{{ asset('img/ocio2.png') }}" alt="Ocio" width="615px" height="405px">
                         <p id="">{{ __('Ocio') }}</p>
                     </a>
                     <div id="ventanaModal3" class="modal">
@@ -198,8 +187,7 @@
                 <div class="perfiles">
                     <div class="aboutCreate">
                         <a class="botonAbout abrirModal">
-                            <img class="ImgCreate" src="{{ asset('img/creadores.png') }}" alt="Creadores"
-                                width="615px" height="405px">
+                            <img class="ImgCreate" src="{{ asset('img/creadores.png') }}" alt="Creadores" width="615px" height="405px">
                             <p>{{ __('Creadores') }}</p>
                         </a>
                         <div id="ventanaModal4" class="modal">
@@ -228,8 +216,7 @@
 
                     <div class="aboutBrands">
                         <a class="botonAbout abrirModal">
-                            <img class="ImgBrands" src="{{ asset('img/marcas.png') }}" alt="Marcas"
-                                width="615px" height="405px">
+                            <img class="ImgBrands" src="{{ asset('img/marcas.png') }}" alt="Marcas" width="615px" height="405px">
                             <p>{{ __('Marcas') }}</p>
                         </a>
                         <div id="ventanaModal5" class="modal">
@@ -251,8 +238,7 @@
 
                     <div class="aboutUsers">
                         <a class="botonAbout abrirModal">
-                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios"
-                                width="615px" height="405px">
+                            <img class="ImgUsers" src="{{ asset('img/usuarios.png') }}" alt="Usuarios" width="615px" height="405px">
                             <p>{{ __('Usuarios') }}</p>
                         </a>
                         <div id="ventanaModal6" class="modal">
@@ -332,8 +318,7 @@
             <div class="state_container">
                 <ul class="road_state">
                     <li class="road_img_state">
-                        <img class="road_img_state_img" src="/img/roadmap/road_paisaje_luz.png"
-                            alt="Paisaje de la Luz">
+                        <img class="road_img_state_img" src="/img/roadmap/road_paisaje_luz.png" alt="Paisaje de la Luz">
                         <h3>
                             Paisaje de la Luz
                         </h3>
@@ -352,8 +337,7 @@
 
                 <ul class="road_state">
                     <li class="road_img_state">
-                        <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png"
-                            alt="Paisaje de la Luz">
+                        <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png" alt="Paisaje de la Luz">
                         <h3>
                             Escalar ciudades
                         </h3>
@@ -423,13 +407,11 @@
 
     <!-- Team -->
     <section class="team-direction_slider" id="team">
-        <h2 class="title-section">{{ __('Equipo ') }}<span
-                class="title-section-second_color">{{ __('Dirección') }}</span></h2>
+        <h2 class="title-section">{{ __('Equipo ') }}<span class="title-section-second_color">{{ __('Dirección') }}</span></h2>
         <div class="contenedor">
             <div class="slider">
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Alejandro_Ansodi.png') }}"
-                        alt="Imagen de perfil equipo de dirección Alejandro Ansodi">
+                    <img src="{{ asset('img/profile_pictures_direction/Alejandro_Ansodi.png') }}" alt="Imagen de perfil equipo de dirección Alejandro Ansodi">
                     <div>
                         <h3 class="name_equip">Alejandro Ansodi</h3>
                         <h3 class="profile_equip">CDO (Diseño)</h3>
@@ -437,8 +419,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Andres_Cosialls.png') }}"
-                        alt="Imagen de perfil equipo de dirección Andrés Cosialls">
+                    <img src="{{ asset('img/profile_pictures_direction/Andres_Cosialls.png') }}" alt="Imagen de perfil equipo de dirección Andrés Cosialls">
                     <div>
                         <h3 class="name_equip">Andrés Cosialls</h3>
                         <h3 class="profile_equip">Tecnología</h3>
@@ -446,8 +427,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Pol_Echarri.png') }}"
-                        alt="Imagen de perfil equipo de dirección Pol Echarri">
+                    <img src="{{ asset('img/profile_pictures_direction/Pol_Echarri.png') }}" alt="Imagen de perfil equipo de dirección Pol Echarri">
                     <div>
                         <h3 class="name_equip">Pol Echarri</h3>
                         <h3 class="profile_equip"> CTO (Talento) </h3>
@@ -455,8 +435,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Luis_Manuel_Fernandez.png') }}"
-                        alt="Imagen de perfil equipo de dirección Luis Manuel Fernández">
+                    <img src="{{ asset('img/profile_pictures_direction/Luis_Manuel_Fernandez.png') }}" alt="Imagen de perfil equipo de dirección Luis Manuel Fernández">
                     <div>
                         <h3 class="name_equip">Luis Manuel Fernández</h3>
                         <h3 class="profile_equip"> Director Ejecutivo</h3>
@@ -464,8 +443,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Jose_M_Fernandez.png') }}"
-                        alt="Imagen de perfil equipo de dirección José Miguel Fernández">
+                    <img src="{{ asset('img/profile_pictures_direction/Jose_M_Fernandez.png') }}" alt="Imagen de perfil equipo de dirección José Miguel Fernández">
                     <div>
                         <h3 class="name_equip">José Miguel Fernández</h3>
                         <h3 class="profile_equip">CTO (Tecnología)</h3>
@@ -474,8 +452,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Luis_Martin.png') }}"
-                        alt="Imagen de perfil equipo de dirección Luis Martín">
+                    <img src="{{ asset('img/profile_pictures_direction/Luis_Martin.png') }}" alt="Imagen de perfil equipo de dirección Luis Martín">
                     <div>
                         <h3 class="name_equip">Luis Martín</h3>
                         <h3 class="profile_equip">CMO (Marketing)</h3>
@@ -483,8 +460,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Oscar_Escallada.png') }}"
-                        alt="Imagen de perfil equipo de dirección Oscar Escallada">
+                    <img src="{{ asset('img/profile_pictures_direction/Oscar_Escallada.png') }}" alt="Imagen de perfil equipo de dirección Oscar Escallada">
                     <div>
                         <h3 class="name_equip">Oscar Escallada</h3>
                         <h3 class="profile_equip"> CXO (Experiencia)</h3>
@@ -492,8 +468,7 @@
 
                 </div>
                 <div class="item">
-                    <img src="{{ asset('img/profile_pictures_direction/Dimitri _Lobato.png') }}"
-                        alt="Imagen de perfil equipo operacional Dimitri Lobato">
+                    <img src="{{ asset('img/profile_pictures_direction/Dimitri _Lobato.png') }}" alt="Imagen de perfil equipo operacional Dimitri Lobato">
                     <div>
                         <h3 class="name_equip"> Dimitri Lobato</h3>
                         <h3 class="profile_equip">Innovación Blockchain</h3>
@@ -519,108 +494,78 @@
         <div class="partners_container_item">
 
             <div class="partners_item">
-                <img class="partner_img_1-1" src="{{ asset('img/partnersEstrategicos/1-1_PDL_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_1-1" src="{{ asset('img/partnersEstrategicos/1-1_PDL_Vector.svg') }}" alt="logotipo de partner">
             </div>
 
             <div class="partners_item">
-                <img class="partner_img_1-2"
-                    src="{{ asset('img/partnersEstrategicos/1-2_AyuntamientoMadrid_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_1-2" src="{{ asset('img/partnersEstrategicos/1-2_AyuntamientoMadrid_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_1-3" src="{{ asset('img/partnersEstrategicos/1-3_CC_vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_1-3" src="{{ asset('img/partnersEstrategicos/1-3_CC_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_1-4"
-                    src="{{ asset('img/partnersEstrategicos/1-4_Beaz_Bizkaia_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_1-4" src="{{ asset('img/partnersEstrategicos/1-4_Beaz_Bizkaia_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_2-1" src="{{ asset('img/partnersEstrategicos/2-1_CaixaDayOne_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_2-1" src="{{ asset('img/partnersEstrategicos/2-1_CaixaDayOne_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_2-2"
-                    src="{{ asset('img/partnersEstrategicos/2-2_PoliciaNacional_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_2-2" src="{{ asset('img/partnersEstrategicos/2-2_PoliciaNacional_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_2-3" src="{{ asset('img/partnersEstrategicos/2-3_BBVA_vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_2-3" src="{{ asset('img/partnersEstrategicos/2-3_BBVA_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_2-4" src="{{ asset('img/partnersEstrategicos/2-4_IBM_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_2-4" src="{{ asset('img/partnersEstrategicos/2-4_IBM_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_3-1" src="{{ asset('img/partnersEstrategicos/3-1_GrupoOneway_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_3-1" src="{{ asset('img/partnersEstrategicos/3-1_GrupoOneway_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_3-2" src="{{ asset('img/partnersEstrategicos/3-2_UberEats_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_3-2" src="{{ asset('img/partnersEstrategicos/3-2_UberEats_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_3-3" src="{{ asset('img/partnersEstrategicos/3-3_Auren_vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_3-3" src="{{ asset('img/partnersEstrategicos/3-3_Auren_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_3-4"
-                    src="{{ asset('img/partnersEstrategicos/3-4_MetaversoPro_vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_3-4" src="{{ asset('img/partnersEstrategicos/3-4_MetaversoPro_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_4-1" src="{{ asset('img/partnersEstrategicos/4-1_UTHub_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_4-1" src="{{ asset('img/partnersEstrategicos/4-1_UTHub_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_4-2" src="{{ asset('img/partnersEstrategicos/4-2_MIG_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_4-2" src="{{ asset('img/partnersEstrategicos/4-2_MIG_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_4-3" src="{{ asset('img/partnersEstrategicos/4-3_MU_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_4-3" src="{{ asset('img/partnersEstrategicos/4-3_MU_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_4-4" src="{{ asset('img/partnersEstrategicos/4-4_Butic_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_4-4" src="{{ asset('img/partnersEstrategicos/4-4_Butic_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_5-1"
-                    src="{{ asset('img/partnersEstrategicos/5-1_MagicFennec_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_5-1" src="{{ asset('img/partnersEstrategicos/5-1_MagicFennec_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_5-2"
-                    src="{{ asset('img/partnersEstrategicos/5-2_VRARAsociation_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_5-2" src="{{ asset('img/partnersEstrategicos/5-2_VRARAsociation_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_5-3" src="{{ asset('img/partnersEstrategicos/5-3_Integra_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_5-3" src="{{ asset('img/partnersEstrategicos/5-3_Integra_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_5-4" src="{{ asset('img/partnersEstrategicos/5-4_Deusens_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_5-4" src="{{ asset('img/partnersEstrategicos/5-4_Deusens_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_6-1" src="{{ asset('img/partnersEstrategicos/6-1_LaunchW3_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_6-1" src="{{ asset('img/partnersEstrategicos/6-1_LaunchW3_Vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_6-2" src="{{ asset('img/partnersEstrategicos/6-2_Owo_vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_6-2" src="{{ asset('img/partnersEstrategicos/6-2_Owo_vector.svg') }}" alt="logotipo de partner">
             </div>
             <div class="partners_item">
-                <img class="partner_img_6-3" src="{{ asset('img/partnersEstrategicos/6-3_Comgo_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_6-3" src="{{ asset('img/partnersEstrategicos/6-3_Comgo_Vector.svg') }}" alt="logotipo de partner">
             </div>
 
             <div class="partners_item">
-                <img class="partner_img_6-4" src="{{ asset('img/partnersEstrategicos/6-4_RozzetAI_Vector.svg') }}"
-                    alt="logotipo de partner">
+                <img class="partner_img_6-4" src="{{ asset('img/partnersEstrategicos/6-4_RozzetAI_Vector.svg') }}" alt="logotipo de partner">
             </div>
         </div>
 
@@ -685,7 +630,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-        <a href="#" class="button">{{ __('Ver todo') }}</a>
+        <a href="{{ route('news') }}" class="button">{{ __('Ver todo') }}</a>
     </section>
     <!-- News end -->
 
@@ -709,12 +654,9 @@
                                 <div class="input-content">
                                     <div class="input-dist">
                                         <div class="input-type">
-                                            <input name="name" placeholder="{{ __('Nombre') }}" required type="text" aria-label="Pon tu nombre" 
-                                                class="input-is">
-                                            <input name="tel" placeholder="{{ __('Teléfono') }}" required type="tel" aria-label="Pon tu teléfono"
-                                                class="input-is">
-                                            <input name="email" placeholder="{{ __('E-mail') }}" required type="email" aria-label="Pon tu email" 
-                                                class="input-is">
+                                            <input name="name" placeholder="{{ __('Nombre') }}" required type="text" aria-label="Pon tu nombre" class="input-is">
+                                            <input name="tel" placeholder="{{ __('Teléfono') }}" required type="tel" aria-label="Pon tu teléfono" class="input-is">
+                                            <input name="email" placeholder="{{ __('E-mail') }}" required type="email" aria-label="Pon tu email" class="input-is">
                                             <textarea name="text" placeholder="{{ __('Texto') }}" required aria-label="Pon tu comentario" class="input-is"></textarea>
                                         </div>
                                     </div>
@@ -759,8 +701,7 @@
         </div>
     </footer>
 
-    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
-            class="buttonUp"></a>
+    <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página" class="buttonUp"></a>
 
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>

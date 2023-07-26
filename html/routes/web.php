@@ -15,17 +15,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/locale/{locale}' , function ($locale) {
     
     $allowed_locales = ['en','es'];
     
     if(! in_array($locale, $allowed_locales)) {
+=======
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+Route::get('/locale/{locale}', function ($locale) {
+
+    $allowed_locales = ['en', 'es'];
+
+    if (!in_array($locale, $allowed_locales)) {
+>>>>>>> b2206440ea0b15ec9e10eb6e9d67e33cade2377b
         abort(400, "Invalid locale"); // Retorna error 400 si el locale no es permitido
     }
-    return redirect()->back()->withCookie('locale' , $locale);
+    return redirect()->back()->withCookie('locale', $locale);
 });
 
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
+<<<<<<< HEAD
     
     Route::view('/' , 'index')->name('home');
     Route::view('/quienes-somos' , 'quienes-somos')->name('quienes-somos');
@@ -49,3 +63,10 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+=======
+
+    Route::view('/', 'index')->name('home');
+    Route::view('/quienes-somos', 'quienes-somos')->name('quienes-somos');
+    Route::view('/news', 'news')->name('news');
+});
+>>>>>>> b2206440ea0b15ec9e10eb6e9d67e33cade2377b
