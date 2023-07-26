@@ -1,8 +1,7 @@
 .roadmap_container {
-    /* background: linear-gradient(to right, #330072, pink); */
-    background-image: url('/img/roadmap/road_fondo3.png');
-    background-size: cover;
+    background: linear-gradient(to right, #9f6ae0, rgb(255, 204, 212));
 }
+    
 
 .road_title {
     font-family: "briller bold", Arial, Helvetica, sans-serif;
