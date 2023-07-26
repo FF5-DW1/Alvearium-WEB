@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,6 @@
 
 
 <body>
-<<<<<<< HEAD
     <form action="" class="form_container">
         <div class="input-container">
             <div class="input-content">
@@ -22,15 +21,6 @@
                     <div class="input-type">
 
                         <input placeholder="Nombre" required="" type="text" class="input-is">
-=======
-<form action="" class="form_container">
-  <div class="input-container">
-      <div class="input-content">
-          <div class="input-dist">
-              <div class="input-type">
-                   
-                        <input placeholder="Nombre" required="" type="text" class="input-is">  
->>>>>>> 1117e3210a9cee7a30fc52fc742512405c4e28c8
                         <input placeholder="Teléfono" required="" type="" class="input-is">
                         <input placeholder="E-mail" required="" type="text" class="input-is">
                         <textarea placeholder="Texto" required="" type="" class="input-is"></textarea>
