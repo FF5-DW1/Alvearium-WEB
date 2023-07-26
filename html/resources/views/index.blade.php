@@ -304,7 +304,7 @@
                         <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
                         <p class="road_p fase1">F.I</p>
                         <h3>
-                            2022 2023
+                            2022 - 2023
                         </h3>
                     </div>
                 </ul>
@@ -314,7 +314,7 @@
                         <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 2">
                         <p class="road_p fase2">F.II</p>
                         <h3>
-                            2022 2023
+                            2023 - 2024
                         </h3>
                     </li>
                 </ul>
@@ -323,7 +323,7 @@
                         <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 3">
                         <p class="road_p">F.III</p>
                         <h3>
-                            2022 2023
+                            2023 - 2030
                         </h3>
                     </li>
                 </ul>
@@ -345,7 +345,7 @@
                     <li class="road_img_state">
                         <img class="road_img_state_img" src="/img/roadmap/road_comercio.png" alt="Paisaje de la Luz">
                         <h3>
-                            Madrid (Comercio, Ocio y Turismo)
+                            Madrid <br> (Comercio, Ocio y Turismo)
                         </h3>
                     </li>
                 </ul>
@@ -355,7 +355,7 @@
                         <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png"
                             alt="Paisaje de la Luz">
                         <h3>
-                            Escala Co-Desarrollo ciudades TOP
+                            Escalar ciudades
                         </h3>
                     </li>
                 </ul>
