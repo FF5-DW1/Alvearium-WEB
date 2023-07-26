@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/jpg" href="{{ asset('img/icons/favicon-Alvearium.png') }}">
     <title>Alvearium</title>
 
@@ -21,6 +22,25 @@
     <link rel="stylesheet" href="{{ asset('css/roadmap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
+
+    <script type="text/javascript">
+        function callbackThen(response) {
+            console.log(response.status);
+
+            response.json().then(function(data) {
+                console.log(data);
+            });
+        }
+
+        function callbackCatch(error) {
+            console.error('Error:', error)
+        }
+    </script>
+    {!! htmlScriptTagJsApi([
+        'callback_then' => 'callbackThen',
+    
+        'callback_catch' => 'callbackCatch',
+    ]) !!}
 </head>
 
 <body>
@@ -704,7 +724,8 @@
 
                     <div id="ventanaModal7" class="modal formModal">
                         <span class="form_cerrar">&times;</span>
-                        <form action="{{ route('contactForm.store') }}" method="POST" class="form_container" autocomplete="off">
+                        <form action="{{ route('contactForm.store') }}" method="POST" class="form_container"
+                            autocomplete="off">
 
 
                             @csrf
@@ -722,13 +743,12 @@
                                                     opacity -= 0.1;
                                                     if (opacity <= 0) {
                                                         clearInterval(intervalID);
-                                                        opacity = 0; 
+                                                        opacity = 0;
                                                     }
                                                     element.style.opacity = opacity.toString();
-                                                }, 200);
+                                                }, 300);
                                             });
                                         </script>
-
                                     @endif
                                     <div class="input-dist">
                                         <div class="input-type">
@@ -757,6 +777,7 @@
                                             @enderror
                                         </div>
                                     </div>
+
                                 </div>
                                 <button type="submit">
                                     {{ __('ENVIAR') }}

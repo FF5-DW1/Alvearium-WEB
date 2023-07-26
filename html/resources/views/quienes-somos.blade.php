@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
     <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 
-
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
