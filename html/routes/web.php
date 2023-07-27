@@ -7,6 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Middleware\LocaleCookieMiddleware;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,37 +25,22 @@ use Illuminate\Support\Facades\Route;
 
 // RUTAS PUBLICAS
 
-<<<<<<< HEAD
-Route::get('/locale/{locale}', function ($locale) {
-
-    $allowed_locales = ['en', 'es'];
-
-    if (!in_array($locale, $allowed_locales)) {
-=======
 Route::get('/locale/{locale}' , function ($locale) {
     
     $allowed_locales = ['en','es'];
     
     if(! in_array($locale, $allowed_locales)) {
->>>>>>> 7e2aa3ddb347435d60ee3412a63ca63f944d1053
         abort(400, "Invalid locale"); // Retorna error 400 si el locale no es permitido
     }
     return redirect()->back()->withCookie('locale', $locale);
 });
 
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
-<<<<<<< HEAD
-    
-    Route::view('/' , 'index')->name('home');
-    Route::view('/quienes-somos' , 'quienes-somos')->name('quienes-somos');
-    
-=======
 
     Route::view('/', 'index')->name('home');
     Route::view('/quienes-somos', 'quienes-somos')->name('quienes-somos');
     Route::view('/news', 'news')->name('news');
     Route::post('contact' ,[ContactController::class, 'store'])->name('contactForm.store');
->>>>>>> 7e2aa3ddb347435d60ee3412a63ca63f944d1053
 });
 
 // ----------------------------------------------------------
@@ -70,6 +56,13 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+// ---------spatie---------------------------------------------------------------------------------
+Route::middleware(['role:Admin'])->group(function () {
+        Route::get('/roadmap-nodes', [RoadmapNodeController::class, 'index'])->name('roadmapNodes.index');
+        Route::post('/roadmap-nodes', [RoadmapNodeController::class, 'store'])->name('roadmapNodes.store');
+        
+    });
+    
     // Route::controller(UserController::class)->prefix('admin')->group(function() {
     //     Route::get('/list_user', 'index')->name('profile.edit');
     //     Route::put('profile', 'updateProfile');
@@ -88,11 +81,3 @@ Route::middleware('auth')->group(function () {
 
 
 require __DIR__.'/auth.php';
-<<<<<<< HEAD
-
-    Route::view('/', 'index')->name('home');
-    Route::view('/quienes-somos', 'quienes-somos')->name('quienes-somos');
-    Route::view('/news', 'news')->name('news');
-
-=======
->>>>>>> 7e2aa3ddb347435d60ee3412a63ca63f944d1053
