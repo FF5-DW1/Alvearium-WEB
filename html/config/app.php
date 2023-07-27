@@ -184,7 +184,6 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        'ReCaptcha' => Biscolab\ReCaptcha\Facades\ReCaptcha::class,
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 

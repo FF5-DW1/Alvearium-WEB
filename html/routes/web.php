@@ -54,17 +54,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    // Route::controller(UserController::class)->prefix('admin')->group(function() {
-    //     Route::get('/list_user', 'index')->name('profile.edit');
-    //     Route::put('profile', 'updateProfile');
-    //     Route::delete('profile', 'deleteProfile');
-    // });
     
     Route::controller(RoadmapNodeController::class)->prefix('admin')->middleware(['auth', 'verified'])->group(function() {
         Route::get('/roadmaps', 'index')->name('roadmaps.index');
         Route::post('/roadmaps', 'store')->name('roadmaps.store'); 
-        Route::post('/roadmaps/edit/{id}', 'edit')->name('roadmaps.edit'); 
+        Route::get('/roadmaps/edit/{id}', 'edit')->name('roadmaps.edit');
+        Route::put('/roadmaps/{id}', 'update')->name('roadmaps.update');
         Route::get('/roadmaps/delete/{id}', 'destroy')->name('roadmaps.destroy');
     });
 

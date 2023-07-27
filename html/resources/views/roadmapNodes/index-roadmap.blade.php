@@ -126,19 +126,19 @@
                             <thead
                                 class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                 <tr>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-6 py-3 text-center">
                                         Fase
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-6 py-3 text-center">
                                         Intervalo años
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-6 py-3 text-center">
                                         Imagen
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-6 py-3 text-center">
                                         Título imagen
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-6 py-3 text-center">
                                         <span class="sr-only">Edit</span>
                                     </th>
                                 </tr>
@@ -146,29 +146,30 @@
                             <tbody>
 
                                 @foreach ($roadmapNodes as $roadmapNode)
-
                                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                         <th scope="row"
-                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            {{$roadmapNode->phase}}
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
+                                            {{ $roadmapNode->phase }}
                                         </th>
-                                        <td class="px-6 py-4">
-                                            {{$roadmapNode->year_interval}}
+                                        <td class="px-6 py-4 text-center" >
+                                            {{ $roadmapNode->year_interval }}
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 flex justify-center">
                                             @if ($roadmapNode->image_path)
-                                                <img src="/images/{{ $roadmapNode->image_path}}" alt="Imagen de la fase"
-                                                    class="w-10 h-10 rounded-full">
-                                                @else
-                                                {{$roadmapNode->id}}
+                                                <img src="/images/{{ $roadmapNode->image_path }}"
+                                                    alt="Imagen de la fase" class="w-28 h-28 justify-items-center">
+                                            @else
+                                                {{ $roadmapNode->id }}
                                             @endif
                                         </td>
-                                        <td class="px-6 py-4">
-                                            {{$roadmapNode->title}}
+                                        <td class="px-6 py-4 text-center">
+                                            {{ $roadmapNode->title }}
                                         </td>
                                         <td class="px-6 py-4 text-right">
-                                            <a href="#"
-                                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                            <a href="{{route('roadmaps.edit', $roadmapNode->id) }}"
+                                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline mr-12">Edit</a>
+                                            <a href="{{route('roadmaps.destroy', $roadmapNode->id) }}"
+                                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Borrar</a>
                                         </td>
                                 @endforeach
                                 </tr>

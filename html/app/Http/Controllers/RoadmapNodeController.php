@@ -39,12 +39,10 @@ class RoadmapNodeController extends Controller
         $roadmapNodes->phase = $request->phase;
         $roadmapNodes->year_interval = $request->year_interval;
         if ($request->hasFile('image_path')) {
-            $file = $request->file('image_path');
-            // $path = Storage::putFile('public/images', $file , 'public');
             $path = $request->file('image_path')->store(
                 'roadmap', 'images'
             );
-            //$nuevo_path = str_replace('public/', '', $path);
+
             $roadmapNodes->image_path = $path; 
         }
 
@@ -67,7 +65,12 @@ class RoadmapNodeController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        if (!RoadmapNode::exists($id)) {
+            return redirect()->route('roadmaps.index');
+        }
+    
+        $roadmapNode = RoadmapNode::find($id);
+        return view('roadmapNodes.edit-roadmap', compact('roadmapNode'));
     }
 
     /**
@@ -75,7 +78,21 @@ class RoadmapNodeController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        
+        $roadmapNode = RoadmapNode::find($id);
+        $roadmapNode->phase = $request->phase;
+        $roadmapNode->year_interval = $request->year_interval;
+        if ($request->hasFile('image_path')) {
+            $path = $request->file('image_path')->store(
+                'roadmap', 'images'
+            );
+
+            $roadmapNode->image_path = $path; 
+        }
+        $roadmapNode->title = $request->title;
+        $roadmapNode->save();
+    
+        return redirect()->route('roadmaps.index');
     }
 
     /**
@@ -83,8 +100,15 @@ class RoadmapNodeController extends Controller
      */
     public function destroy(string $id)
     {
+
+        if (!RoadmapNode::exists($id)) {
+            return redirect()->route('roadmaps.index');
+        }
+    
         $roadmapNodes = RoadmapNode::find($id);
         $roadmapNodes->delete();
-        return redirect()->route('roadmapNodes.index');
+        Storage::disk('images')->delete($roadmapNodes->image_path);
+        return redirect()->route('roadmaps.index');
     }
+   
 }
