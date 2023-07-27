@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
     <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 
-    <script async src="https://www.google.com/recaptcha/api.js"></script>
+    
 </head>
 
 <body>
@@ -392,6 +392,8 @@
     <!--footer-->
 
     @include('partials.footer')
+
+    @include('partials.form')
 
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
             class="buttonUp"></a>

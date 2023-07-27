@@ -157,7 +157,7 @@
                                         </td>
                                         <td class="px-6 py-4">
                                             @if ($roadmapNode->image_path)
-                                                <img src="/storage/{{ $roadmapNode->image_path}}" alt="Imagen de la fase"
+                                                <img src="/images/{{ $roadmapNode->image_path}}" alt="Imagen de la fase"
                                                     class="w-10 h-10 rounded-full">
                                                 @else
                                                 {{$roadmapNode->id}}

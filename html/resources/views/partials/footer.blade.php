@@ -11,7 +11,7 @@
             <div class="buttonWrapper">
                 <a class="abrirModal">{{ __('Contacta con nosotros') }}</a>
 
-                @include('partials.form')
+              
 
             </div>
         </div>

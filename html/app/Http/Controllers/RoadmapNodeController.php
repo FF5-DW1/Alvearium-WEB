@@ -31,14 +31,21 @@ class RoadmapNodeController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'image' => 'image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+        ]);
+
         $roadmapNodes = new RoadmapNode();
         $roadmapNodes->phase = $request->phase;
         $roadmapNodes->year_interval = $request->year_interval;
         if ($request->hasFile('image_path')) {
             $file = $request->file('image_path');
-            $path = Storage::putFile('imagenesBaseDatos', $request->file('image_path'));
-            $nuevo_path = str_replace('public/img', '', $path);
-            $roadmapNodes->image_path = $nuevo_path;
+            // $path = Storage::putFile('public/images', $file , 'public');
+            $path = $request->file('image_path')->store(
+                'roadmap', 'images'
+            );
+            //$nuevo_path = str_replace('public/', '', $path);
+            $roadmapNodes->image_path = $path; 
         }
 
         $roadmapNodes->title = $request->title;

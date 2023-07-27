@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/jpg" href="{{ asset('img/icons/favicon-Alvearium.png') }}">
     <title>Alvearium</title>
 
@@ -23,24 +22,6 @@
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
 
-    <script type="text/javascript">
-        function callbackThen(response) {
-            // console.log(response.status);
-
-            response.json().then(function(data) {
-                // console.log(data);
-            });
-        }
-
-        function callbackCatch(error) {
-            console.error('Error:', error)
-        }
-    </script>
-    {!! htmlScriptTagJsApi([
-        'action' => 'homepage',
-        'callback_then' => 'callbackThen',
-        'callback_catch' => 'callbackCatch',
-    ]) !!}
 </head>
 
 <body>
@@ -713,6 +694,7 @@
 
     @include('partials.footer')
 
+    @include('partials.form')
 
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
             class="buttonUp"></a>

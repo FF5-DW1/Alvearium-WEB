@@ -1,11 +1,13 @@
-.footer_contact .formModal {
+ .formModal {
     padding-top: 16vh;
     background-image: url("/img/modal_fondo.png");
     background-size: cover;
     overflow: hidden;
+    background-blend-mode: lighten;
+    z-index: 4 !important;
 }
 
-.footer_contact .form_container {
+ .form_container {
     display: flex;
     margin: auto;
     align-items: center;
@@ -17,14 +19,14 @@
     margin-top: 22%;
 }
 
-.footer_contact .input-container {
+ .input-container {
     filter: drop-shadow(46px 36px 24px #4090b5)
         drop-shadow(-55px -40px 25px #9e30a9);
     animation: blinkShadowsFilter 8s ease-in infinite;
     margin: 10%;
 }
 
-.footer_contact .input-content {
+ .input-content {
     display: grid;
     align-content: center;
     justify-items: center;
@@ -34,7 +36,7 @@
     
 }
 
-.footer_contact .input-content::before {
+ .input-content::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -65,7 +67,7 @@
     transition: all 1s ease-in-out;
 }
 
-.footer_contact .input-content::after {
+ .input-content::after {
     content: "";
     position: absolute;
     width: 130%;
@@ -100,7 +102,7 @@
    
 }
 
-.footer_contact .input-dist {
+ .input-dist {
     z-index: 80;
     display: grid;
     align-items: center;
@@ -111,7 +113,7 @@
     grid-template-columns: 1fr;
 }
 
-.footer_contact .input-type {
+ .input-type {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -122,7 +124,7 @@
     border: none;
 }
 
-.footer_contact .input-is {
+ .input-is {
     color: var(--compViolet);
     font-size: 0.9rem;
     background-color: transparent;
@@ -136,7 +138,7 @@
     -webkit-text-fill-color: inherit;
 }
 
-.footer_contact .input-is:hover {
+ .input-is:hover {
     transition: all 1s ease-in-out;
     background: linear-gradient(
         90deg,
@@ -147,12 +149,12 @@
     );
 }
 
-.footer_contact .input-content:focus-within::before {
+ .input-content:focus-within::before {
     transition: all 1s ease-in-out;
     background: hsla(0, 0%, 100%, 0.814);
 }
 
-.footer_contact .input-is:focus {
+ .input-is:focus {
     outline: none;
     border-bottom: 1px solid hsl(192, 100%, 100%);
     color: var(--compViolet);
@@ -166,17 +168,17 @@
     
 }
 
-.footer_contact .input-is::-moz-placeholder {
+ .input-is::-moz-placeholder {
     color: var(--compViolet);
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
 }
 
-.footer_contact .input-is::placeholder {
+ .input-is::placeholder {
     color: var(--compViolet);
     font-family: "briller bold", Helvetica, Arial, Lucida, sans-serif;
 }
 
-.footer_contact .input-is{
+ .input-is{
     font-family: "open sans", Arial, Helvetica, sans-serif;
     color: var(--compViolet);
 }
@@ -223,9 +225,9 @@
 }
 
 
-/* button*/
+.formModal /* button*/
 
-.footer_contact .footer_contactbutton {
+ .formModal button {
     --glow-color: rgb(51, 50, 51);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
     --enhanced-glow-color: rgb(231, 206, 255);
@@ -246,7 +248,7 @@
     transition: all 0.3s;
 }
 
-.footer_contact button::after {
+ .formModal button::after {
     pointer-events: none;
     content: "";
     position: absolute;
@@ -260,7 +262,7 @@
     transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
 }
 
-.footer_contact .footer_contactbutton:hover {
+ .formModal button:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
     box-shadow: 0 0 1em 0.25em var(--glow-color),
@@ -268,17 +270,17 @@
         inset 0 0 0.75em 0.25em var(--glow-color);
 }
 
-.footer_contact button:active {
+ .formModal button:active {
     box-shadow: 0 0 0.6em 0.25em var(--glow-color),
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 0.5em 0.25em var(--glow-color);
 }
 
-.footer_contact div.modal_form {
+ div.modal_form {
     background-image: url("/img/modal_fondo1.png");
     background-size: cover;
 }
-.footer_contact button {
+ .formModal button {
     --glow-color: rgb(217, 176, 255);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
     --enhanced-glow-color: rgb(231, 206, 255);
@@ -299,7 +301,7 @@
     transition: all 0.3s;
 }
 
-.footer_contact button::after {
+ .formModal button::after {
     pointer-events: none;
     content: "";
     position: absolute;
@@ -313,7 +315,7 @@
     transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
 }
 
-.footer_contact button:hover {
+ .formModal button:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
     box-shadow: 0 0 1em 0.25em var(--glow-color),
@@ -321,13 +323,13 @@
         inset 0 0 0.75em 0.25em var(--glow-color);
 }
 
-.footer_contact button:active {
+ .formModal button:active {
     box-shadow: 0 0 0.6em 0.25em var(--glow-color),
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 0.5em 0.25em var(--glow-color);
 }
 
-.footer_contact .form_cerrar {
+ .form_cerrar {
     position: absolute;
     top: 27%;
     left: 80%;
@@ -360,36 +362,36 @@ textarea{
 
 
 @media only screen and (min-width: 768px) {
-    .footer_contact .form_cerrar {
+     .form_cerrar {
         top: 24%;
         left: 70%;
     }
-    .footer_contact .form_container {
+     .form_container {
         margin-top: 5%;
     }
-    .footer_contact .input-content::after {
+     .input-content::after {
         width: 130%;
         height: 136%;
     }
-    .footer_contact .input-is {
+     .input-is {
         color: var(--compViolet);
         font-size: 1.1rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .footer_contact .form_cerrar {
+     .form_cerrar {
         top: 26%;
         left: 65%;
     }
-    .footer_contact .input-is {
+     .input-is {
         color: var(--compViolet);
         font-size: 1.5rem;
     }
-    .footer_contact .form_container {
+     .form_container {
         margin-top: 0%;
     }
-    .footer_contact .input-content::after {
+     .input-content::after {
         width: 120%;
         height: 123%;
     }
@@ -397,14 +399,14 @@ textarea{
 }
 
 @media only screen and (min-width: 1440px) {
-    .footer_contact .form_cerrar {
+     .form_cerrar {
         top: 23%;
         left: 62%;
     }
-    .footer_contact .form_container {
+     .form_container {
         margin-top: -2%;
         }
-        .footer_contact .input-content::after {
+         .input-content::after {
             width: 135%;
             height: 135%;
         }
