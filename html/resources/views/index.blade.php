@@ -281,9 +281,10 @@
     <!-- Frase -->
 
     <section class="frase">
-        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium dolore ipsum consectetur deserunt
-            perspiciatis amet facilis consequatur quae? Omnis quod enim deleniti impedit sit rem obcaecati id numquam
-            iusto eum.</div>
+        <div>Alvearium
+            <br>
+            Donde lo virtual se convierte en real
+        </div>
 
     </section>
     <!--end Frase-->
