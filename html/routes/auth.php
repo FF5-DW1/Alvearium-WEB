@@ -13,13 +13,11 @@ use App\Http\Controllers\Auth\EmailVerificationPromptController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 
 Route::middleware('guest')->group(function () {
+
+    Route::get('/registro', 'App\Http\Controllers\Auth\RegisteredUserController@showRegistrationForm')
+        ->name('registro')
+        ->middleware('guest');
    
-    Route::get('/registro', 'App\Http\Controllers\Auth\RegisteredUserController@create')
-    ->name('registro')
-    ->middleware('guest')
-    ->instead(function () {
-        return Redirect::to('/login');
-    });
     Route::get('login', [AuthenticatedSessionController::class, 'create'])
                 ->name('login');
 

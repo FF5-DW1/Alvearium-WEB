@@ -26,9 +26,9 @@ class RegisteredUserController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function showRegistrationForm()
+    public function showRegistrationForm(Request $request)
     {
-        return view('auth.register');
+        return Redirect::to('/login');
     }
 
     // Resto del código del controlador...
