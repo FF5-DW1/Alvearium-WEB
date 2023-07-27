@@ -7,6 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Middleware\LocaleCookieMiddleware;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,6 +55,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+// ---------spatie---------------------------------------------------------------------------------
+Route::middleware(['role:Admin'])->group(function () {
+        Route::get('/roadmap-nodes', [RoadmapNodeController::class, 'index'])->name('roadmapNodes.index');
+        Route::post('/roadmap-nodes', [RoadmapNodeController::class, 'store'])->name('roadmapNodes.store');
+        
+    });
+    
     
     Route::controller(RoadmapNodeController::class)->prefix('admin')->middleware(['auth', 'verified'])->group(function() {
         Route::get('/roadmaps', 'index')->name('roadmaps.index');
