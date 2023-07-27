@@ -1,3 +1,10 @@
+.footer_contact .formModal {
+    padding-top: 16vh;
+    background-image: url("/img/modal_fondo.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
 .footer_contact .form_container {
     display: flex;
     margin: auto;
@@ -333,12 +340,6 @@
     font-weight: bold;
 }
 
-.footer_contact .formModal {
-    padding-top: 16vh;
-    background-image: url("/img/modal_fondo.png");
-    background-size: cover;
-    overflow: hidden;
-}
 
 textarea{
     resize:vertical;

@@ -11,7 +11,11 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $user = User::orderBy("nombre","ASC")->get();
+
+        return view('admin.usuarios.index',[
+            'user' => $user,
+        ]);
     }
 
     /**
@@ -19,7 +23,11 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $row = new User();
+
+        return view('admin.usuarios.editar',[
+            'row' => $row,
+        ]);
     }
 
     /**

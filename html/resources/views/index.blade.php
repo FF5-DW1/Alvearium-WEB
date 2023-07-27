@@ -25,10 +25,10 @@
 
     <script type="text/javascript">
         function callbackThen(response) {
-            console.log(response.status);
+            // console.log(response.status);
 
             response.json().then(function(data) {
-                console.log(data);
+                // console.log(data);
             });
         }
 
@@ -37,8 +37,8 @@
         }
     </script>
     {!! htmlScriptTagJsApi([
+        'action' => 'homepage',
         'callback_then' => 'callbackThen',
-    
         'callback_catch' => 'callbackCatch',
     ]) !!}
 </head>
@@ -324,7 +324,7 @@
                         <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 1">
                         <p class="road_p fase1">F.I</p>
                         <h3>
-                            2022 2023
+                            2022 - 2023
                         </h3>
                     </div>
                 </ul>
@@ -334,7 +334,7 @@
                         <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 2">
                         <p class="road_p fase2">F.II</p>
                         <h3>
-                            2022 2023
+                            2023 - 2024
                         </h3>
                     </li>
                 </ul>
@@ -343,7 +343,7 @@
                         <img class="road_img_phase_img" src="/img/roadmap/roadmap_fondo.png" alt="Fase 3">
                         <p class="road_p">F.III</p>
                         <h3>
-                            2022 2023
+                            2023 - 2030
                         </h3>
                     </li>
                 </ul>
@@ -375,7 +375,7 @@
                         <img class="road_img_state_img" src="/img/roadmap/escala_Co-Desarrollo_ciudad.png"
                             alt="Paisaje de la Luz">
                         <h3>
-                            Escala Co-Desarrollo ciudades TOP
+                            Escalar ciudades
                         </h3>
                     </li>
                 </ul>
@@ -711,113 +711,8 @@
 
     <!--footer-->
 
-    <footer class="footer_container">
+    @include('partials.footer')
 
-        <div class="footer_contact">
-            <div class="footer_frase">
-                {{ __('¿Quieres estar al día de todas las novedades, o colaborar en el proyecto?') }} <br>
-                {{ __('Contacta con nosotros y síguenos en redes') }}
-            </div>
-            <div class="footer_boton">
-                <div class="buttonWrapper">
-                    <a class="abrirModal">{{ __('Contacta con nosotros') }}</a>
-
-                    <div id="ventanaModal7" class="modal formModal">
-                        <span class="form_cerrar">&times;</span>
-                        <form action="{{ route('contactForm.store') }}" method="POST" class="form_container"
-                            autocomplete="off">
-
-
-                            @csrf
-
-                            <div class="input-container">
-                                <div class="input-content">
-                                    @if (session('info'))
-                                        <p class="form-confirm">{{ session('info') }}</p>
-
-                                        <script>
-                                            document.addEventListener('DOMContentLoaded', () => {
-                                                let element = document.querySelector('.form-confirm');
-                                                let opacity = 1;
-                                                let intervalID = setInterval(() => {
-                                                    opacity -= 0.1;
-                                                    if (opacity <= 0) {
-                                                        clearInterval(intervalID);
-                                                        opacity = 0;
-                                                    }
-                                                    element.style.opacity = opacity.toString();
-                                                }, 300);
-                                            });
-                                        </script>
-                                    @endif
-                                    <div class="input-dist">
-                                        <div class="input-type">
-                                            <input name="name" placeholder="{{ __('Nombre') }}" required
-                                                type="text" aria-label="Pon tu nombre" class="input-is"
-                                                value="{{ old('name') }}">
-                                            @error('name')
-                                                <p class="form-p-red"><strong>{{ $message }}</strong></p>
-                                            @enderror
-                                            <input name="tel" placeholder="{{ __('Teléfono') }}" required
-                                                type="tel" aria-label="Pon tu teléfono" class="input-is"
-                                                value="{{ old('tel') }}">
-                                            @error('tel')
-                                                <p class="form-p-red"><strong>{{ $message }}</strong></p>
-                                            @enderror
-                                            <input name="email" placeholder="{{ __('E-mail') }}" required
-                                                type="email" aria-label="Pon tu email" class="input-is"
-                                                value="{{ old('email') }}">
-                                            @error('email')
-                                                <p class="form-p-red"><strong>{{ $message }}</strong></p>
-                                            @enderror
-                                            <textarea name="message" placeholder="{{ __('Mensaje') }}" required aria-label="Pon tu comentario"
-                                                class="input-is">{{ old('message') }}</textarea>
-                                            @error('message')
-                                                <p class="form-p-red"><strong>{{ $message }}</strong></p>
-                                            @enderror
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <button type="submit">
-                                    {{ __('ENVIAR') }}
-                                </button>
-                            </div>
-
-                        </form>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <div class="footer_final">
-            <div class="footer_social">
-                <a href="https://www.linkedin.com/company/alveariumvr" class="socials" target="_blank">
-                    <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                </a>
-                <a href="https://twitter.com/alvearium__" target="_blank" class="socials">
-                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-                </a>
-                <a href="https://discord.com/invite/Kuc9H6Y5B4" target="_blank" class="socials">
-                    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
-                </a>
-                <a href="https://www.instagram.com/alvearium_/" target="_blank" class="socials">
-                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                </a>
-                <a href="https://www.facebook.com/people/Alvearium/100083367819508/" target="_blank" class="socials">
-                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                </a>
-            </div>
-            <div class="footer_privacidad">
-                <p><a href="#">{{ __('Conoce nuestra política de privacidad') }}</a></p>
-                <p><a href="#">{{ __('Conoce nuestra receta de cookies 😊') }}</a></p>
-            </div>
-            <div class="footer_derechos">
-                Alvearium 2023 ®
-            </div>
-        </div>
-    </footer>
 
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
             class="buttonUp"></a>

@@ -1,6 +1,7 @@
 .roadmap_container {
-    background-image: url("/img/alvearium-alvea.jpg");
+    background: linear-gradient(to right, #9f6ae0, rgb(255, 204, 212));
 }
+    
 
 .road_title {
     font-family: "briller bold", Arial, Helvetica, sans-serif;
@@ -146,7 +147,7 @@
     }
 
     .road_title {
-        padding: 1rem 0 1rem 0;
+        padding: 2rem 0 3rem 0;
     }
 
     .road_img_phase > h3 {
@@ -157,21 +158,21 @@
         align-items: center;
     }
     .road_img_phase_img {
-        width: 10rem;
-        height: 10rem;
+        width: 12rem;
+        height: 12rem;
         margin-left: 0rem;
     }
     .road_p {
-        left: 27px;
-        top: 40px;
+        left: 40px;
+        top: 55px;
         font-size: 50px;
     }
     .fase1 {
-        left: 47px;
-        top: 40px;
+        left: 58px;
+        top: 54px;
     }
     .fase2 {
-        left: 37px;
+        left: 50px;
     }
     .phase_container {
         margin-left: 6rem;
@@ -186,7 +187,7 @@
         font-size: 2rem;
     }
     .road_img_state_img {
-        width: 15rem;
-        height: 15rem;
+        width: 25rem;
+        height: 27rem;
     }
 }

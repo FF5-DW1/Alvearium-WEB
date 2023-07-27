@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <div class="hero">
+
+    @include('partials.header-2')
+
+    {{-- <div class="hero">
         <div class="hero-content">
             <div id="particles-js"></div>
             <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
@@ -52,7 +55,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <main>
         <div class="homeIconAndTitle">
@@ -99,6 +102,7 @@
         </div>
         <hr>
     </section>
+    
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/newsExt.js') }}"></script>
 </body>

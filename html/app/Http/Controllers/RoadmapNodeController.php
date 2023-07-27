@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\RoadmapNode;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 class RoadmapNodeController extends Controller
 {
@@ -11,7 +14,8 @@ class RoadmapNodeController extends Controller
      */
     public function index()
     {
-        //
+        $roadmapNodes = RoadmapNode::all();
+        return view('roadmapNodes.index-roadmap', compact('roadmapNodes'));
     }
 
     /**
@@ -27,7 +31,20 @@ class RoadmapNodeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $roadmapNodes = new RoadmapNode();
+        $roadmapNodes->phase = $request->phase;
+        $roadmapNodes->year_interval = $request->year_interval;
+        if ($request->hasFile('image_path')) {
+            $file = $request->file('image_path');
+            $path = Storage::putFile('imagenesBaseDatos', $request->file('image_path'));
+            $nuevo_path = str_replace('public/img', '', $path);
+            $roadmapNodes->image_path = $nuevo_path;
+        }
+
+        $roadmapNodes->title = $request->title;
+        $roadmapNodes->save();
+
+        return redirect()->route('roadmaps.index');
     }
 
     /**
@@ -59,6 +76,8 @@ class RoadmapNodeController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $roadmapNodes = RoadmapNode::find($id);
+        $roadmapNodes->delete();
+        return redirect()->route('roadmapNodes.index');
     }
 }
