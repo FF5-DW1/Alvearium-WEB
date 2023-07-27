@@ -31,9 +31,9 @@
     "Buscan experiencias inmersivas, de calidad. Además quieren beneficiarse de la generación de valor de su identidad y actividad digital y están comprometidos en generar impacto positivo en el mundo": "They are looking for immersive, quality experiences. They also want to benefit from generating value from their digital identity and activity and are committed to making a positive impact on the world",
     "✓ Usuarios de Redes sociales": "✓ Social Media users",
     "✓ Comunidad Crypto": "✓ Crypto Community",
-    "Equipo ": "Team ",
+    "Equipo ": "Management ",
     "Equipo": "Team",
-    "Dirección": "Direction",
+    "Dirección": "Team",
     "Quiénes somos": "About us",
     "Partners Estratégicos": "Strategic Partners",
     "Misión, Visión, Valores": "Mission, Vision, Values",
@@ -73,7 +73,7 @@
     "Noticias": "News",
     "Leer más": "Read more",
     "Ver todo": "See all",
-    "Más noticias": "More news",
+    "Más noticias": "Other news",
     "¿Quieres estar al día de todas las novedades, o colaborar en el proyecto?": "Do you want to keep up to date with all the news, or collaborate in the project?",
     "Contacta con nosotros y síguenos en redes": "Contact us and follow us in social media",
     "Contacta con nosotros": "Contact us",
@@ -81,6 +81,8 @@
     "Conoce nuestra receta de cookies 😊": "Read our cookies recipe 😊",
     "Nombre": "Name",
     "Teléfono": "Phone",
-    "Texto": "Text",
-    "ENVIAR": "SEND"
+    "Mensaje": "Message",
+    "ENVIAR": "SEND",
+    "Mensaje enviado": "Message sent"
+
 }

@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <div class="hero">
+
+    @include('partials.header-2')
+
+    {{-- <div class="hero">
         <div class="hero-content">
             <div id="particles-js"></div>
             <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
@@ -52,7 +55,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <main>
         <div class="homeIconAndTitle">
@@ -67,40 +70,41 @@
     </main>
     <h3>{{ __('Más noticias') }}</h3>
     <hr>
-    <section>
+    <section id="moreNews">
         <div class="newsItem">
-            <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium" class="moreNewsImg">
+            <div class="frame">
+                <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium" class="moreNewsImg">
+            </div>
             <div class="titleAndDate">
-                <h3>Título de otra noticia más largo como ejemplo y tal y eso</h3>
+                <h3>Título de otra noticia más largo como ejemplo y tal y eso y eso y tal y largo y mas largo ououiiuuioyu sdadasdasd</h3>
                 <p>23 ene. 2023</p>
             </div>
         </div>
         <hr>
         <div class="newsItem">
-            <div class="moreNewsImg"></div>
+            <div class="frame">
+                <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium" class="moreNewsImg">
+            </div>
             <div class="titleAndDate">
-                <h3>Título de otra noticia más largo</h3>
+                <h3>Título de otra noticia más largo como ejemplo y tal y eso y eso y tal y largo y mas largo ououiiuuioyu sdadasdasd</h3>
                 <p>23 ene. 2023</p>
             </div>
         </div>
         <hr>
         <div class="newsItem">
-            <div class="moreNewsImg"></div>
+            <div class="frame">
+                <img src="{{ asset('img/alvearium-logo.png') }}" alt="Logo Alvearium" class="moreNewsImg">
+            </div>
             <div class="titleAndDate">
-                <h3>Título de otra noticia más largo</h3>
+                <h3>Título de otra noticia más largo como ejemplo y tal y eso y eso y tal y largo y mas largo ououiiuuioyu sdadasdasd</h3>
                 <p>23 ene. 2023</p>
             </div>
         </div>
         <hr>
-        <div class="newsItem">
-            <div class="moreNewsImg"></div>
-            <div class="titleAndDate">
-                <h3>Título de otra noticia más largo</h3>
-                <p>23 ene. 2023</p>
-            </div>
-        </div>
     </section>
+    
     <script src="https://kit.fontawesome.com/3342157087.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/newsExt.js') }}"></script>
 </body>
 
 </html>

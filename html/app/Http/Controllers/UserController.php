@@ -4,14 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class NewsController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $user = User::orderBy("nombre","ASC")->get();
+
+        return view('admin.usuarios.index',[
+            'user' => $user,
+        ]);
     }
 
     /**
@@ -19,7 +23,11 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        $row = new User();
+
+        return view('admin.usuarios.editar',[
+            'row' => $row,
+        ]);
     }
 
     /**

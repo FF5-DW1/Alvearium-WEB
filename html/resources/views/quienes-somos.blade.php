@@ -14,61 +14,13 @@
     <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
     <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 
-
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
     <section class="quienesSomos">
-        <div class="hero">
-            <div class="hero-content">
-                <div id="particles-js"></div>
-                <img src="{{ asset('img/hombre_fondo_vr.png') }}" alt="Man" class="hidden">
-                <div>
-                    <h1 class="hero-title_layer">{{ __('Comienza una nueva experiencia') }}</h1>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/company/alveariumvr" class="socials" target="_blank">
-                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                    </a>
-                    <a href="https://twitter.com/alvearium__" target="_blank" class="socials">
-                        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-                    </a>
-                    <a href="https://discord.com/invite/Kuc9H6Y5B4" target="_blank" class="socials">
-                        <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
-                    </a>
-                    <a href="https://www.instagram.com/alvearium_/" target="_blank" class="socials">
-                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                    </a>
-                    <a href="https://www.facebook.com/people/Alvearium/100083367819508/" target="_blank"
-                        class="socials">
-                        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                    </a>
 
-                    <div class="cambioIdioma">
-                        <div class="current">
-                            @if (app()->getLocale() == 'en')
-                                <span><img src="{{ asset('img/icons/en.png') }}" class="shadowLocale"
-                                        alt="Bandera lenguaje español"></span>
-                            @else
-                                <span><img src="{{ asset('img/icons/es.png') }}" class="shadowLocale"
-                                        alt="Bandera lenguaje inglés"></span>
-                            @endif
-                        </div>
-                        <div class="options">
-                            @if (app()->getLocale() == 'en')
-                                <a class="locale" href="{{ asset('/locale/es') }}"><img
-                                        src="{{ asset('img/icons/es.png') }}" class="shadowLocale"
-                                        alt="Bandera lenguaje español"></a>
-                            @else
-                                <a class="locale" href="{{ asset('/locale/en') }}"><img
-                                        src="{{ asset('img/icons/en.png') }}" class="shadowLocale"
-                                        alt="Bandera lenguaje inglés"></a>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('partials.header-2')
 
         <div class="container_pestañas">
 
@@ -439,74 +391,7 @@
 
     <!--footer-->
 
-    <footer class="footer_container">
-
-        <div class="footer_contact">
-            <div class="footer_frase">
-                {{ __('¿Quieres estar al día de todas las novedades, o colaborar en el proyecto?') }} <br>
-                {{ __('Contacta con nosotros y síguenos en redes') }}
-            </div>
-            <div class="footer_boton">
-                <div class="buttonWrapper">
-                    <a class="abrirModal">{{ __('Contacta con nosotros') }}</a>
-
-                    <div id="ventanaModal6" class="modal formModal">
-                        <span class="form_cerrar">&times;</span>
-                        <form action="" method="POST" class="form_container">
-                            <div class="input-container">
-                                <div class="input-content">
-                                    <div class="input-dist">
-                                        <div class="input-type">
-                                            <input name="name" placeholder="{{ __('Nombre') }}" required
-                                                type="text" aria-label="Pon tu nombre" class="input-is">
-                                            <input name="tel" placeholder="{{ __('Teléfono') }}" required
-                                                type="tel" aria-label="Pon tu teléfono" class="input-is">
-                                            <input name="email" placeholder="{{ __('E-mail') }}" required
-                                                type="email" aria-label="Pon tu email" class="input-is">
-                                            <textarea name="text" placeholder="{{ __('Texto') }}" required aria-label="Pon tu comentario"
-                                                class="input-is"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit">
-                                    {{ __('ENVIAR') }}
-                                </button>
-                            </div>
-
-                        </form>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <div class="footer_final">
-            <div class="footer_social">
-                <a href="https://www.linkedin.com/company/alveariumvr" class="socials" target="_blank">
-                    <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                </a>
-                <a href="https://twitter.com/alvearium__" target="_blank" class="socials">
-                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-                </a>
-                <a href="https://discord.com/invite/Kuc9H6Y5B4" target="_blank" class="socials">
-                    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
-                </a>
-                <a href="https://www.instagram.com/alvearium_/" target="_blank" class="socials">
-                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                </a>
-                <a href="https://www.facebook.com/people/Alvearium/100083367819508/" target="_blank" class="socials">
-                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                </a>
-            </div>
-            <div class="footer_privacidad">
-                <p><a href="#">{{ __('Conoce nuestra política de privacidad') }}</a></p>
-                <p><a href="#">{{ __('Conoce nuestra receta de cookies 😊') }}</a></p>
-            </div>
-            <div class="footer_derechos">
-                Alvearium 2023 ®
-            </div>
-        </div>
-    </footer>
+    @include('partials.footer')
 
     <a href="#"><img src="{{ asset('img/icons/icon-up-100.png') }}" alt="Icono ir cabecera página"
             class="buttonUp"></a>
@@ -516,6 +401,13 @@
     <script src="{{ asset('lib/particles/app.js') }}"></script>
     <script src="{{ asset('js/buttonUp.js') }}"></script>
     <script src="{{ asset('js/modal.js') }}"></script>
+
+    @if ($errors->any() or session('info'))
+        <script>
+            let modalForm = document.querySelector("#ventanaModal7");
+            modalForm.style.display = "block";
+        </script>
+    @endif
 
 </body>
 
