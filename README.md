@@ -59,8 +59,9 @@ organización de eventos, menciones en TV, etc…)
 ## Tecnologías 
 
  <p align="center" width="200px">
- <img src= "https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/0f242422-dfc0-4cf5-997f-220d11e66bea" width=775"></img>
+ <img src= "https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/1ffdfb4e-eda7-43a7-b42a-21395b9ec722" width=775"></img>
  </p>
+
 
 
  ## Equipo de trabajo 
@@ -84,22 +85,23 @@ organización de eventos, menciones en TV, etc…)
 
 <p align="center" >
  
- <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/f6597f99-be5e-4025-9c83-0909c7369214" width="775" />
+ <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/ec7e3525-1f2e-4ff1-9641-c18c20db6be0" width="775" />
  
 </p>
 
 
 
   ### WEB 
+
   
   <p align="center" >
   
- <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/b9ab682a-fc34-4d26-b4cc-4f9003ea6bf4" width="775" />  
- <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/38e0b2b8-4532-42b8-a1bb-e4c50448b1863" width="775" />  
+ <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/39ad9e06-dcb4-42d8-a69f-7fdf263e05eb" width="775" />  
+ <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/94a9649c-5805-4edb-ba4c-ddf64291f52e" width="775" />  
  
- <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/798c229a-c1dd-4072-9052-d00c5cefdb39" width="270" />  
- <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/c53c04ae-ca04-4686-98bf-9e744e1ef315" width="270" />
- <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/485371a0-847b-4c77-8258-c3ce67e1db6a" width="270" />
+ <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/6bace335-bd37-431d-9dd5-de2a297ae050" width="270" />  
+ <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/71a29c5c-cb0f-4d2a-ac32-811b521dfe80" width="270" />
+ <img src="https://github.com/FF5-DW1/Alvearium-WEB/assets/126791645/59256f01-30e5-445b-aa80-863b5f9c20ad" width="270" />
  
   
 </p>
