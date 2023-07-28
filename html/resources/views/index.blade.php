@@ -584,13 +584,8 @@
             <div class="mySlides fade">
                 <img src="https://picsum.photos/300/250" alt="Foto de noticia">
                 <div class="text-content">
-                    <h3 class="title">Noticia #1</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui
-                        temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae
-                        ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste
-                        sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet
-                        deleniti. Esto es texto de más que no se vera jiji</p>
+                    <h3 class="title">Creación y lanzamiento del primer video promocional</h3>
+                    <p class="text">Uno de los primeros objetivos que nos hemos planteado ha sido la realización de un video promocional, pues entendemos que este es uno de los medios más adecuados para mostrar nuestras ideas. Ha sido crucial transmitir la esencia de nuestro proyecto de manera accesible y, al mismo tiempo, capturar parte de la pasión que sentimos por él. Hemos afrontado el reto con los recursos limitados de una startup emergente.</p>
                     <a href="#">{{ __('Leer más') }}</a>
                 </div>
             </div>
@@ -598,13 +593,9 @@
             <div class="mySlides fade">
                 <img src="https://picsum.photos/300/251" alt="Foto de noticia">
                 <div class="text-content">
-                    <h3 class="title">Noticia #2</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui
-                        temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae
-                        ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste
-                        sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet
-                        deleniti. Esto es texto de más que no se vera jiji</p>
+                    <h3 class="title">Lanzamiento del whitepaper y aprobación del tokenomics</h3>
+                    <p class="text">Después de meses de trabajo y estudio, nos complace informarles de la versión final de nuestro whitepaper, que también contiene de forma detallada el tokenomics del proyecto.
+                    </p>
                     <a href="#">{{ __('Leer más') }}</a>
                 </div>
             </div>
@@ -612,13 +603,8 @@
             <div class="mySlides fade">
                 <img src="https://picsum.photos/300/252" alt="Foto de noticia">
                 <div class="text-content">
-                    <h3 class="title">Noticia #3</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores autem qui
-                        temporibus repellat repellendus adipisci veritatis molestias delectus ducimus. Eligendi beatae
-                        ipsam illo dignissimos totam labore? Sint voluptates excepturi voluptatibus. Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Voluptatem delectus reprehenderit temporibus, amet iste
-                        sequi quis tempore molestiae, commodi dolorem ea aspernatur qui quia sint animi illum et eveniet
-                        deleniti. Esto es texto de más que no se vera</p>
+                    <h3 class="title">Desarrollo de la prueba de concepto (versión web)</h3>
+                    <p class="text">Nuestro equipo ha desarrollado la prueba de concepto en su versión web, que tuvo la oportunidad de mostrarse en el 4YFN del Mobile World Congress en Barcelona, en marzo de 2022. Ha sido nuestra primera participación en un evento, donde hemos presentado nuestras ideas y nos hemos respaldado en esta interesante prueba de concepto.</p>
                     <a href="#">{{ __('Leer más') }}</a>
                 </div>
             </div>
