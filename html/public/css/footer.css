@@ -25,6 +25,7 @@
 .footer_boton {
     width: 100%;
     margin-left: 7rem;
+    cursor: pointer;
 }
 .footer_boton .buttonWrapper,
 .footer_boton > div:last-of-type {

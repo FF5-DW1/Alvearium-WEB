@@ -12,7 +12,7 @@ use Illuminate\Routing\Controller;
     {
         $validatedData = $request->validate([
             'user' => 'required|string',
-            'roll' => 'required|unique:users|string',
+            'role' => 'required|string',
             'email' => 'required|unique:users|email',
             'password' => 'required|string',
         ]);

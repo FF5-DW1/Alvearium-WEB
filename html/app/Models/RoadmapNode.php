@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class roadmap_node extends Model
+class RoadmapNode extends Model
 {
     use HasFactory;
 
@@ -17,9 +17,11 @@ class roadmap_node extends Model
      */
     protected $fillable = [
         'phase',
-        'short_title',
-        'image',
-        'related_activities',
-        'status',
+        'year_interval',
+        'image_path',
+        'title',
     ];
+
+    protected $table = 'roadmap_nodes';
+
 }

@@ -124,7 +124,7 @@
 
 :root {
     --tabs-border-color: #abcdef;
-    --tabs-border-size: 3px;
+    --tabs-border-size: 1px;
     --tabs-text-color: var(--compPurple);
     --tabs-dark-color: #7300f672;
     --tabs-lite-color: white;

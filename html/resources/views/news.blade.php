@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="{{ asset('img/icons/favicon-Alvearium.png') }}">
     <title>Alvearium</title>
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/newsExtended.css') }}">
 </head>
 
 <body>
-    @include('partials.header-2');
+
+    @include('partials.header-2')
 
     <main>
         <div class="homeIconAndTitle">
