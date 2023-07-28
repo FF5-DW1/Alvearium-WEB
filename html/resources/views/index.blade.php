@@ -281,7 +281,8 @@
     <!-- Frase -->
 
     <section class="frase">
-        <div>Alvearium
+        <div><span>Alvearium</span>
+            <br>
             <br>
             Donde lo virtual se convierte en real
         </div>
