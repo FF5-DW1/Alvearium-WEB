@@ -9,7 +9,7 @@
     font-size: 100%;
     text-align: center;
 }
-.frase span{
+.frase span {
     font-weight: bold;
 }
 .frase div {
@@ -28,7 +28,6 @@
 
 @media screen and (min-width: 992px) {
     .frase {
-        
         display: flex;
         justify-content: center;
     }

@@ -351,7 +351,7 @@
 
         </div>
     </section>
-    {{-- <div class="section_transicion"></div> --}}
+    
     {{-- Portfolio --}}
 
     <section class="portfolio" id="portfolio">
