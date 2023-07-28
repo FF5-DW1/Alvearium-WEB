@@ -14,15 +14,13 @@ return new class extends Migration
         Schema::create('news', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('image');
-            $table->string('description');
-            $table->string('content');
+            $table->string('image_path')->nullable();
+            $table->mediumText('content');
+            $table->date('publish_date');
             $table->unsignedBigInteger('user_id'); // Crear columna para la clave foránea
             $table->foreign('user_id')->references('id')->on('users'); // Definir la clave foránea
             $table->timestamps();
         });
-        
-        
     }
 
     /**
