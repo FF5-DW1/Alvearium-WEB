@@ -1,10 +1,9 @@
 const nameField = document.querySelector("#name");
-const lNameField = document.querySelector("#lname");
-const phoneField = document.querySelector("#phone");
+const phoneField = document.querySelector("#tel");
 const emailField = document.querySelector("#email");
-const commentsField = document.querySelector("#comments");
+const commentsField = document.querySelector("#message");
 const formFields = document.querySelectorAll("[data-field]");
-const formFieldErrors = document.querySelectorAll(".formError");
+const formFieldErrors = document.querySelectorAll(".form-p-red");
 
 function changeToErrorStyles(field, error) {
     for (i in formFields) {
@@ -107,18 +106,6 @@ function validateName() {
     }
 }
 
-function validateLName() {
-    if (checkIfFieldIsNotEmpty(lNameField) == true) {
-        if (limitCharacters(lNameField, 60) && checkIfLettersOnly(lNameField)) {
-            return true;
-        } else {
-            return false;
-        }
-    } else {
-        return false;
-    }
-}
-
 function validatePhone() {
     if (checkIfFieldIsNotEmpty(phoneField) == true) {
         if (minCharacters(phoneField, 9) && limitCharacters(phoneField, 14) && checkIfNumbersOnly(phoneField)) {
@@ -143,7 +130,7 @@ function validateEmail() {
     }
 }
 
-function validateComments() {
+function validateMessage() {
     if (checkIfFieldIsNotEmpty(commentsField)) {
         return true;
     } else {
@@ -157,16 +144,13 @@ function validateForm(ev) {
     if (!validateName()) {
         valid = false;
     }
-    if (!validateLName()) {
-        valid = false;
-    }
     if (!validatePhone()) {
         valid = false;
     }
     if (!validateEmail()) {
         valid = false;
     }
-    if (!validateComments()) {
+    if (!validateMessage()) {
         valid = false;
     }
 
@@ -178,8 +162,7 @@ function validateForm(ev) {
 }
 
 nameField.addEventListener("blur", validateName);
-lNameField.addEventListener("blur", validateLName);
 phoneField.addEventListener("blur", validatePhone);
 emailField.addEventListener("blur", validateEmail);
-commentsField.addEventListener("blur", validateComments);
+commentsField.addEventListener("blur", validateMessage);
 document.querySelector("#contacto").addEventListener("submit", validateForm);

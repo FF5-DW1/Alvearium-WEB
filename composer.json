@@ -1,0 +1,5 @@
+{
+    "require": {
+        "biscolab/laravel-recaptcha": "^6.0"
+    }
+}
