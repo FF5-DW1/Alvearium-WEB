@@ -12,7 +12,7 @@ class ContactController extends Controller
 {
     public function store(Request $request)
     {
-        dd($request->all());
+        
         $request->validate([
             'name' => 'required|min:2',
             'tel' => 'required|regex:/^(?:(?:\+?[0-9]{2,4})?[ ]?[6789][0-9 ]{8,13})$/',
