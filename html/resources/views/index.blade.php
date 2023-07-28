@@ -292,7 +292,6 @@
 
     </section>
     <!--end Frase-->
-    {{-- <div class="section_transicion"></div> --}}
 
     <!--Roadmap-->
     <section id="roadmap_container" class="roadmap_container">
